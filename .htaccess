@@ -1,0 +1,16 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^travelovietnam.com
+RewriteRule ^.*$ http://www.travelovietnam.com%{REQUEST_URI} [R=301,L]
+
+RewriteCond %{HTTPS} off
+RewriteCond %{REQUEST_URI} (tours/booking/|tours/booking/review|tours/checkout|cal-fees|payment-online)
+RewriteRule ^(.*)$ https://www.travelovietnam.com%{REQUEST_URI} [R=301,L]
+
+RewriteCond %{HTTPS} on
+RewriteCond %{REQUEST_URI} !(tours/booking/|tours/booking/review|tours/checkout|template|files|tours/cal-fees|newsletter/signup|payment-online)
+RewriteRule ^(.*)$ http://www.travelovietnam.com%{REQUEST_URI} [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.php/$0 [PT,L]

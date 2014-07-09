@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS `tv_blog_category` (
+	`id` bigint(20) unsigned NOT NULL auto_increment,
+	`name` varchar(255) default NULL,
+	`alias` varchar(255) default NULL,
+	`parent_id` bigint(20) unsigned default NULL,
+	`active` tinyint(1) NOT NULL default '1',
+	`created_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+	PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;

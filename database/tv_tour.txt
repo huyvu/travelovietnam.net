@@ -1,0 +1,6 @@
+ALTER TABLE `travel`.`tv_tour` ADD COLUMN `popular` BOOLEAN DEFAULT 0 AFTER `best_deal`,
+ ADD COLUMN `popular_image` VARCHAR(255) AFTER `popular`;
+
+ALTER TABLE `tv_tour`  ADD `note` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL AFTER `sub_title`;
+
+ALTER TABLE `tv_tour` ADD `tags` TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL AFTER `brochure` ;

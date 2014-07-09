@@ -1,0 +1,1085 @@
+@CHARSET "ISO-8859-1";
+
+.stickytooltip {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid black;
+    display: none;
+    line-height: 1.5em;
+    padding: 10px;
+    position: absolute;
+    width: 320px;
+    z-index: 3000;
+}
+
+/* Template Layout */
+
+#visa-search-widget {
+	background-color: #13ABDC;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+	margin-top: 5px;
+	margin-bottom: 15px;
+	width: 250px;
+}
+
+#visa-search-widget .widget-content h1 {
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 36px;
+	margin: 0px 5px;
+	text-align: center;
+}
+
+#visa-search-widget .widget-content .detail {
+	background-color: #FFFFFF;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #FFFFFF 75%, #E8E8E8);
+	border-radius: 5px 5px 5px 5px;
+	margin: 0px 5px;
+	padding: 10px;
+	line-height: 24px;
+}
+
+#visa-search-widget .widget-content .text-form {
+	margin-top: 6px;
+}
+
+#visa-search-widget .widget-content .text-form .title {
+	font-weight: bold;
+}
+
+#visa-search-widget .widget-content .text-form select {
+	border: 1px solid #CCCCCC;
+    color: #666666;
+    font-size: 11px;
+    padding: 3px;
+    width: 100%;
+}
+
+#visa-search-widget .widget-content .total-fee {
+	margin-top: 6px;
+	font-weight: bold;
+}
+
+#visa-search-widget .applynow {
+	background-color: #81A928;
+    background-image: -moz-linear-gradient(center top , #81A928, #6B8C23);
+	background-repeat: repeat-x;
+	border-radius: 5px 5px 5px 5px;
+	border-style: none;
+	border-width: 1px;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: normal;
+	margin: 5px 0px;
+	padding: 4px 8px;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+#visa-search-widget .applynow:hover {
+	background-image: none;
+}
+
+#visa-search-widget .signature {
+    color: #FFFFFF;
+    line-height: 24px;
+    text-align: right;
+    margin-right: 5px;
+}
+
+/* End Custom Controls */
+
+/* Confidence */
+#confidence {
+	background-color: #81A430;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+	margin-top: 5px;
+	margin-bottom: 15px;
+	width: 250px;
+	padding-bottom: 5px;
+}
+#confidence .title {
+}
+#confidence .title h1 {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 36px;
+    margin: 0 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#confidence .content {
+    background-color: #FFFFFF;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #FFFFFF 75%, #E8E8E8);
+    margin: 0px 5px;
+    padding: 10px;
+}
+#confidence .content ul li {
+    background: url("../images/red-tick.gif") no-repeat scroll 0 3px transparent;
+    padding: 0 0 0 26px;
+}
+#confidence .content ul li span {
+    line-height: 32px;
+    vertical-align: bottom;
+}
+/* End Confidence */
+
+/* Wizban */
+.feeds {
+	margin-top: 5px;
+	padding: 0;
+	width: 715px;
+	height: 260px;
+}
+
+#viewTab1 .img {
+	background: url("../images/wizban/visa.jpg") no-repeat scroll 0 0
+		transparent;
+	height: 260px;
+	width: 715px;
+}
+
+#viewTab1 .img div {
+	padding: 50px 0 0 25px;
+	color: #0FAADA;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#viewTab1 .img ul {
+	padding: 0px 0 0 25px;
+}
+
+#viewTab1 .img ul li {
+	background: url("../images/blue-bullet.png") no-repeat scroll left center
+		transparent;
+	line-height: 20px;
+	font-size: 14px;
+	font-weight: normal;
+	margin-top: 10px;
+	text-indent: 26px;
+}
+
+#viewTab1 .img ul li a {
+	font-size: 14px;
+}
+
+#viewTab1 .img ul li a:hover {
+	
+}
+
+/* End Wizban */
+
+/* Visa Processing */
+#visa-processing {
+	margin: 15px 0px;
+}
+
+#visa-processing h3 {
+	border-left: 4px solid #FE8700;
+	padding-left: 6px;
+	font-weight: bold;
+}
+#visa-processing .step {
+	width: 140px;
+	text-align: center;
+}
+#visa-processing .nav {
+	background: url("../images/visa-processing-nav.jpg") no-repeat scroll center center	transparent;
+	width: 40px;
+	height: 76px;
+}
+#visa-processing .step div.img {
+}
+#visa-processing .step div {
+	width: 100%;
+	margin-top: 10px;
+	text-align: center;
+}
+/* End Visa Processing */
+
+/* Visa News */
+#visa-news-container {
+	background: url("../images/vietnam-visa-news.jpg") no-repeat scroll 0 0
+		transparent;
+	height: 43px;
+	margin: 18px 0;
+	overflow: hidden;
+	width: 700px;
+}
+
+#visa-news-container ul {
+}
+
+#visa-news-container ul li div {
+	line-height: 43px;
+	margin-left: 178px;
+	overflow: hidden;
+	width: 460px;
+}
+
+#visa-news-container .nav {
+	float: right;
+	margin-right: 16px;
+	width: 40px;
+}
+
+#visa-news-container .nav .up {
+	height: 12px;
+	margin-top: 0;
+}
+
+#visa-news-container .nav .current {
+	background: url("../images/current-news-box.jpg") no-repeat scroll 0 0
+		transparent;
+	height: 16px;
+	margin-top: 0;
+	width: 40px;
+}
+
+#visa-news-container .nav .current .news-number {
+	font-size: 8px;
+	padding-top: 4px;
+	text-align: center;
+}
+
+#visa-news-container .nav .down {
+	height: 12px;
+	margin-top: 0;
+}
+/* End Visa News */
+
+/* Check Requirement */
+#check-requirement {
+    background: url("../images/requirement-bg.jpg") no-repeat scroll right top transparent;
+    margin: 25px 0;
+    width: 100%;
+}
+#check-requirement .content {
+    background: url("../images/check.jpg") no-repeat scroll 10px 0 transparent;
+    padding-left: 100px;
+    height: 62px;
+}
+#check-requirement .content h3 {
+	margin: 5px 0px;
+	font-weight: bold;
+}
+#check-requirement .content select {
+    padding: 5px 5px;
+    width: 420px;
+}
+#check-requirement .content input {
+    margin-left: 10px;
+}
+/* End Check Requirement */
+
+/* Visa Information */
+#news-container {
+	border-top: 4px solid #FF8A00;
+    margin: 0;
+    padding: 0;
+}
+#news-container .content {
+    padding: 0 10px;
+}
+#news-container .content h1 {
+    border-bottom: 1px dotted #DDDDDD;
+    color: #DA0000;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+}
+#news-container .content ul {
+}
+#news-container .content ul li {
+    background: url("../images/red-li.jpg") no-repeat scroll 0 6px transparent;
+    line-height: 20px;
+    overflow: hidden;
+    padding-left: 12px;
+    width: 100%;
+}
+#news-container .content ul li a {
+}
+#news-container .content p.more {
+    border-top: 1px dotted #DDDDDD;
+    margin-top: 8px;
+    padding-top: 8px;
+    text-align: right;
+}
+/* End Visa Information */
+
+/* Live support */
+#support-online {
+	background-color: #81A430;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+	margin-top: 5px;
+	margin-bottom: 15px;
+	width: 250px;
+	padding-bottom: 5px;
+}
+#support-online .title {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 8px;
+    padding-left: 5px;
+}
+#support-online .subtitle {
+    color: #FFFFFF;
+    padding: 0px 5px 5px 5px;
+}
+#support-online .content {
+    background-color: #FFFFFF;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #FFFFFF 75%, #E8E8E8);
+    margin: 0px 5px;
+    padding: 10px;
+}
+#support-online table {
+}
+#support-online td {
+    padding: 3px 2px;
+    vertical-align: middle;
+}
+#support-online .number {
+    color: #00588C;
+    font-weight: bold;
+}
+#support-online .content .local {
+    color: #076095;
+    font-weight: bold;
+}
+#support-online .content .phone {
+    color: #DA0000;
+}
+#support-online .livechat-button {
+    background-color: #F8F8F8;
+    border-radius: 5px 5px 5px 5px;
+    margin: 0px;
+    width: 220px;
+}
+#support-online .livechat-button:hover {
+    background-color: #FFFFCC;
+}
+#support-online .livechat-button a {
+    text-decoration: none;
+}
+#support-online .livechat-button span.text {
+    color: #666666;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 38px;
+    padding: 12px 15px 12px 10px;
+    text-align: left;
+}
+#support-online .livechat-button span.online:before {
+    background: url("../images/chat-icon.png") no-repeat scroll 4px 4px #0B9601;
+    color: #FFFFFF;
+    content: "ONLINE";
+    display: inline-block;
+    padding: 8px 15px 8px 50px;
+}
+#support-online .livechat-button span.offline:before {
+    background: url("../images/chat-icon.png") no-repeat scroll 4px 4px #BB0200;
+    color: #FFFFFF;
+    content: "OFFLINE";
+    padding: 8px 15px 8px 50px;
+}
+#support-online .ticket-button {
+    display: inline-table;
+    font-weight: 500;
+    height: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    width: 220px;
+}
+#support-online .yahoo {
+    background: url("../images/icon-yahoo.png") no-repeat scroll 0 0 transparent;
+    color: #1D4A89;
+    float: left;
+    font-weight: bold;
+    height: 26px;
+    margin-top: 8px;
+    padding-left: 30px;
+    padding-top: 8px;
+    width: 40px;
+}
+#support-online .skype {
+    background: url("../images/icon-skype.png") no-repeat scroll 0 0 transparent;
+    color: #1D4A89;
+    float: left;
+    font-weight: bold;
+    height: 26px;
+    margin-left: 12px;
+    margin-top: 8px;
+    padding-left: 30px;
+    padding-top: 8px;
+    width: 40px;
+}
+/* End Live support */
+
+/* Testimonial */
+#external-block {
+    margin-top: 15px;
+}
+#external-block .testimonial {
+    background: url("../images/testimonial-bg.jpg") no-repeat scroll 0 0 transparent;
+    height: 202px;
+    padding: 15px 15px;
+    width: 270px;
+}
+#external-block .testimonial h1 {
+    color: #DC0100;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 18px;
+    width: 270px;
+}
+#external-block .testimonial .content {
+    font-family: Comic Sans MS;
+    font-size: 12px;
+    font-style: italic;
+    height: 110px;
+    line-height: 20px;
+    overflow: hidden;
+}
+#external-block .testimonial p.more {
+    margin-top: 8px;
+    text-align: right;
+}
+#external-block .blog-post {
+    background: url("../images/blog-bg.jpg") no-repeat scroll right top transparent;
+    height: 202px;
+    padding: 10px 15px;
+    width: 275px;
+}
+#external-block .blog-post h1 {
+    border-bottom: 1px solid #EEEEEE;
+    color: #DC0100;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 4px;
+    width: 100%;
+}
+#external-block .blog-post ul li {
+    background: url("../images/blog.png") no-repeat scroll 0 1px transparent;
+    line-height: 17px;
+    margin-top: 6px;
+    overflow: hidden;
+    padding-left: 22px;
+    width: 100%;
+}
+/* End Testimonial */
+
+#view-container {
+	padding: 10px 10px 10px 10px;
+}
+
+#view-container .headtitle {
+	margin-top: 10px;
+}
+
+/* Visa Processing */
+.liststep {
+    float: left;
+    width: 100%;
+}
+.liststep li {
+    color: #4A4A4A;
+    float: left;
+    line-height: 16px;
+    margin-top: 20px;
+    width: 100%;
+}
+.liststep li .imgproces {
+    background: url("../images/processing.gif") no-repeat scroll 0 0 transparent;
+    display: inline;
+    float: left;
+    margin-right: 10px;
+    width: 92px;
+}
+.liststep li .imgpr1 {
+    background-position: 0 0;
+    height: 79px;
+}
+.liststep li .imgpr2 {
+    background-position: 0 -79px;
+    height: 132px;
+}
+.liststep li .imgpr3 {
+    background-position: 0 -211px;
+    height: 210px;
+}
+.liststep li .imgpr4 {
+    background-position: 0 -421px;
+    height: 132px;
+}
+.liststep li .infostep {
+    background: none repeat scroll 0 0 #E0E0E0;
+    border-radius: 3px 3px 3px 3px;
+    float: right;
+    width: 580px;
+}
+.liststep li .numberstep {
+    float: left;
+    padding-top: 12px;
+    text-align: center;
+    width: 42px;
+}
+.liststep li .typrstep {
+    background: none repeat scroll 0 0 #F8F8F8;
+    float: left;
+    padding: 0 0 10px 10px;
+    width: 528px;
+}
+.liststep li .typrstep h2 {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0px 16px 0px;
+}
+.liststep li .typrstep p {
+    line-height: 18px;
+    margin: 0 0 4px;
+}
+.liststep li .imgnumber {
+    background: url("../images/processing.gif") no-repeat scroll 0 0 transparent;
+    height: 37px;
+}
+.liststep li .num1 {
+    background-position: 0 -554px;
+    width: 11px;
+}
+.liststep li .num2 {
+    background-position: -11px -554px;
+    width: 20px;
+}
+.liststep li .num3 {
+    background-position: -31px -554px;
+    width: 21px;
+}
+.liststep li .num4 {
+    background-position: -52px -554px;
+    width: 21px;
+}
+/* End Visa Processing */
+
+/* Visa Fees */
+.servicefees {
+	margin-top: 20px;
+}
+.servicefees h3 {
+    font-size: 14px;
+}
+.servicefees p {
+    line-height: 18px;
+    margin: 10px 0px;
+}
+.servicefees .infomation {
+    padding: 0 0 0 15px;
+}
+.servicefees table {
+    border: 1px solid #A5CDE7;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #444444;
+    margin: 0;
+    width: 100%;
+}
+.servicefees table th {
+    background: none repeat scroll 0 0 #ECF4FD;
+    border: 1px solid #A5CDE7;
+    color: #444444;
+    font: 12px tahoma;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+.servicefees table td {
+    border: 1px solid #A5CDE7;
+    font: 12px tahoma;
+    padding: 6px 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+.servicefees table .sp {
+    width: 38%;
+}
+.servicefees table .vn td {
+    font-weight: bold;
+}
+.servicefees table .vg {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+.servicefees table .bc {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+.servicefees table .dg {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+/* End Visa Fees */
+
+/* Apply Visa */
+.view_detail {
+    line-height: 18px;
+    text-align: justify;
+}
+.view_detail ul li {
+    list-style-type: disc;
+    margin-left: 16px;
+}
+.tab-step {
+    border-bottom: 3px solid #DF1F26;
+    float: left;
+    height: 36px;
+    margin: 20px 0 28px 0;
+    width: 100%;
+}
+.tab-step h1.note {
+    float: left;
+    font-size: 18px;
+    font-weight: normal;
+    padding-top: 10px;
+    width: 280px;
+}
+ul.style-step {
+    float: right;
+    min-width: 390px;
+}
+ul.style-step li {
+    background: none repeat scroll 0 0 #F2F3F3;
+    color: #D4D4D4;
+    display: inline;
+    float: left;
+    font-family: Tahoma,Geneva,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    height: 36px;
+    margin-left: 2px;
+    padding-left: 15px;
+    width: 180px;
+}
+ul.style-step li font.number {
+    font-size: 26px;
+}
+ul.style-step li.active {
+    background: none repeat scroll 0 0 #DF1F26;
+    color: #FFFFFF;
+}
+.rush-info {
+    background-color: #F5F8FB;
+    padding: 10px;
+}
+.detailvisa td {
+    padding: 6px 4px;
+}
+.detailvisa input[type="text"] {
+    border: 1px solid #CCCCCC;
+    color: #666666;
+    font-size: 11px;
+    padding: 4px 5px;
+    width: 290px;
+}
+.detailvisa select {
+    border: 1px solid #CCCCCC;
+    color: #666666;
+    font-size: 11px;
+    padding: 3px 5px;
+    width: 300px;
+}
+.detailvisa textarea {
+    border: 1px solid #CCCCCC;
+    color: #666666;
+    font-size: 11px;
+    height: 120px;
+    padding: 4px 5px;
+    resize: none;
+    width: 290px;
+}
+.detailvisa .colleft {
+    float: left;
+    margin: 0;
+    width: 665px;
+}
+.detailvisa .colright {
+    float: right;
+    padding: 0;
+    position: relative;
+    width: 280px;
+}
+.detailvisa .feepanel {
+    background-color: #FFFFFF;
+    border: 8px solid #DEE8F1;
+    padding: 0 10px 10px;
+    position: relative;
+}
+.detailvisa .arrow {
+    background: url("../images/sum-arrow.png") no-repeat scroll 0 0 transparent;
+    height: 16px;
+    left: -30px;
+    position: relative;
+    top: 24px;
+    width: 20px;
+}
+.detailvisa .feepanel h3 {
+    color: #005286;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    text-align: center;
+}
+.detailvisa .feepanel li {
+    border-bottom: 1px solid #BDC6CA;
+    padding: 9px 0;
+}
+.detailvisa .feepanel .last {
+    border-bottom: 1px solid #6997B3;
+}
+.detailvisa .feepanel span, .detailvisa .feepanel table.extra_service {
+    float: right;
+}
+.detailvisa .feepanel table.extra_service td {
+    padding: 0 0 10px;
+}
+.detailvisa .feepanel .total {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #6997B3 -moz-use-text-color -moz-use-text-color;
+    border-image: none;
+    border-right: medium none;
+    border-style: solid none none;
+    border-width: 1px medium medium;
+    margin-top: -1px;
+}
+.detailvisa .feepanel .price {
+    color: #005286;
+    font-weight: bold;
+}
+.detailvisa .feepanel .yoursavepercent_t {
+    color: #005286;
+    float: none;
+    font-weight: bold;
+}
+.detailvisa .feepanel .total span {
+    color: #DC2222;
+    font-size: 14px;
+    font-weight: bold;
+}
+.detailvisa .group h2 {
+    background-color: #F5F8FB;
+    border-top: 1px solid #CCDFF3;
+    color: #666666;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 2em;
+    margin: 0;
+    padding: 0 0 0 10px;
+}
+.detailvisa .group h2 span {
+    font-size: 11px;
+    font-weight: normal;
+}
+.detailvisa .group .group_content {
+    padding: 10px 0 20px 10px;
+}
+.detailvisa .group .group_content .tbapplicant th {
+    padding: 4px;
+    text-align: left;
+}
+.detailvisa .group .group_content .tbapplicant td {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.detailvisa .group .group_content .applicant {
+    background: url("../images/applicant.png") no-repeat scroll left center transparent;
+    font-weight: bold;
+    margin: 15px 0;
+    padding: 10px 0 0 20px;
+}
+.detailvisa .group .group_content span {
+    color: #FF0000;
+    font-weight: bold;
+}
+.terms_conditions_confirm {
+    text-decoration: underline;
+}
+.detailstep3 h3 {
+    color: #333333;
+    font-weight: bold;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+}
+.detailstep3 table {
+    border-bottom: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    margin: 0 0 18px;
+}
+.detailstep3 th, .detailstep3 td {
+    border-left: 1px solid #DDDDDD;
+    border-top: 1px solid #DDDDDD;
+    padding: 7px 10px;
+}
+.detailstep3 th {
+    background: none repeat scroll 0 0 #EEEEEE;
+    text-align: left;
+}
+.detailstep3 td {
+    font-weight: normal;
+}
+.detailstep3 .edit {
+    text-align: center;
+    width: 100px;
+}
+.detailstep3 .center {
+    text-align: center;
+}
+.detailstep3 .total {
+    color: red;
+    font-weight: bold;
+}
+.detailstep3 .selectpayment table, .detailstep3 .selectpayment td {
+    border: medium none;
+}
+/* End Apply Visa */
+
+/* Extra Service */
+.extra-service-banner {
+	margin-top: 20px;
+}
+/* End Extra Service */
+
+/* Pagination */
+.pagination {
+    margin: 10px 0;
+    text-align: center;
+}
+.pagination a {
+    background: -moz-linear-gradient(center top , #F9F9F9 0%, #E8E8E8 100%) repeat scroll 0 0 transparent;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+    color: #717171;
+    font: bold 11px Arial,sans-serif;
+    margin: 4px;
+    padding: 5px 8px;
+    text-decoration: none;
+    text-shadow: 0 1px white;
+}
+.pagination a.current {
+    background: -moz-linear-gradient(center top , #7CB9E5 0%, #57A1D8 100%) repeat scroll 0 0 transparent;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.8);
+    color: white;
+    text-shadow: 0 1px #3F789F;
+}
+.pagination a:hover {
+    background: -moz-linear-gradient(center top , #FFFFFF 0%, #E8E8E8 100%) repeat scroll 0 0 transparent;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.55);
+}
+.pagination a.active, #pagination a.current:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5) inset, 0 1px 1px 0 #FFFFFF !important;
+}
+.pagination a.current:hover {
+    background: -moz-linear-gradient(center top , #99CEFC 0%, #57A1D8 100%) repeat scroll 0 0 transparent;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.9);
+}
+/* End Pagination */
+
+/* Vietnam Embassies */
+#vietnam-embassies {
+	margin-top: 20px;
+}
+.nations {
+    margin: 20px 0;
+}
+.nations .embassies {
+    border-top: 1px solid #E9E9E9;
+    float: left;
+    padding: 15px 0;
+    width: 100%;
+}
+.nations .embassies .number {
+    border-right: 1px solid #888888;
+    display: inline;
+    float: left;
+    font: 30px/40px Tahoma,Geneva,sans-serif;
+    height: 40px;
+    margin: 7px 28px 0 7px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 40px;
+}
+.nations .embassies ul {
+    float: left;
+    width: 800px;
+}
+.nations .embassies ul li {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 150px;
+}
+.nations .embassies ul img {
+    height: 16px;
+    padding-right: 4px;
+    width: 16px;
+}
+.nations .embassies ul a {
+}
+.embassy-l {
+    float: left;
+    margin: 10px 0 0;
+    width: 590px;
+}
+.embassy-l embassy-ct {
+    line-height: 18px;
+    padding: 15px 0 0 15px;
+}
+.embassy-l h1.title {
+    color: #888888;
+    float: left;
+    font-family: "Times New Roman",Times,serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 12px;
+    width: 108px;
+}
+.embassy-l p.message {
+    color: #005286;
+    font-weight: bold;
+    padding-left: 108px;
+    text-transform: uppercase;
+}
+.embassy-l p.error {
+    color: #FF0000;
+    padding-left: 108px;
+}
+ul.listpost {
+    float: left;
+    margin-top: 10px;
+    position: relative;
+    width: 430px;
+}
+ul.listpost li {
+    color: #888888;
+    float: left;
+    font-weight: bold;
+    line-height: 18px;
+    margin-top: 5px;
+    width: 100%;
+}
+ul.listpost li img {
+    float: left;
+}
+.embassy-r {
+    display: inline;
+    float: left;
+    margin: 10px 0 0 10px;
+    width: 350px;
+}
+.embassy-scroll {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #FBFBFB;
+    border-color: #E9E9E9;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px 0;
+    float: left;
+    height: 568px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0 0 12px;
+    position: relative;
+    top: 6px;
+    width: 350px;
+}
+.line-embassy {
+    float: left;
+    margin-top: 22px;
+    width: 100%;
+}
+.bgnumber {
+    background: url("../images/bg-number.gif") repeat-x scroll center top transparent;
+    border: 1px solid #8C8C8C;
+    display: inline;
+    float: left;
+    font-family: Tahoma,Geneva,sans-serif;
+    font-weight: bold;
+    height: 17px;
+    line-height: 16px;
+    margin-left: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 17px;
+}
+ul.list-embassy {
+    display: inline;
+    float: left;
+    margin-left: 12px;
+    width: 280px;
+}
+ul.list-embassy li {
+    float: left;
+    line-height: 18px;
+    width: 140px;
+}
+/* End Vietnam Embassies */
+
+/* Customer Questions */
+#customerquestion {
+    background: url("../images/requirement-bg.jpg") no-repeat scroll right top transparent;
+    margin: 26px 0;
+    width: 100%;
+}
+#customerquestion .content {
+}
+#customerquestion .content h2 {
+	font-size: 14px;
+	font-weight: bold;
+	margin: 5px 0px;
+}
+#customerquestion .content .text {
+    padding: 5px 10px;
+    width: 400px;
+}
+#customerquestion .content input[type="submit"] {
+    margin-left: 10px;
+}
+#customerquestion .content a {
+    text-decoration: none;
+}
+.customerquestion li {
+    border-bottom: 1px solid #005286;
+    margin: 0 0 10px;
+    padding: 10px 0;
+}
+.customerquestion .last {
+    border: medium none;
+}
+.customerquestion .titlequestion {
+    color: #2A2A2A;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.customerquestion .introquestion {
+    line-height: 18px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+.customerquestion .viewquestion {
+    text-align: right;
+}
+.customerquestion .viewquestion a {
+    font-size: 11px;
+    font-weight: bold;
+}
+/* End Customer Questions */

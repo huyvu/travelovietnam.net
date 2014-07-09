@@ -1,0 +1,1 @@
+ALTER TABLE `tv_tour_destination` ADD `tags` TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL AFTER `glong` ;

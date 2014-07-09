@@ -1,0 +1,9 @@
+CREATE TABLE  `travel`.`tv_user_online` (
+  `id` bigint(20) unsigned NOT NULL auto_increment,
+  `ip` varchar(45) NOT NULL,
+  `url` varchar(255) default NULL,
+  `open_time` bigint(20) unsigned NOT NULL default '0',
+  `created_date` datetime NOT NULL,
+  `active` tinyint(1) NOT NULL default '1',
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;

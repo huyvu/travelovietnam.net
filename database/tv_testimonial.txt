@@ -1,0 +1,1 @@
+ALTER TABLE `travel`.`tv_testimonial` ADD COLUMN `avatar` VARCHAR(255) NULL AFTER `author`;

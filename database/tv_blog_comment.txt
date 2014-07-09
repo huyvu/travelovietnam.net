@@ -1,0 +1,16 @@
+ALTER TABLE `tv_blog_comment` CHANGE `parent_id` `parent_id` BIGINT(20) NULL DEFAULT '0';
+
+
+
+CREATE TABLE IF NOT EXISTS `tv_blog_comment` (
+	`id` bigint(20) unsigned NOT NULL auto_increment,
+	`content` text character set utf8 collate utf8_unicode_ci,
+	`name` varchar(255) default NULL,
+	`email` varchar(255) default NULL,
+	`blog_id` bigint(20) NOT NULL,
+	`parent_id` bigint(20) default NULL,
+	`avatar` varchar(255) character set utf8 collate utf8_unicode_ci default NULL,
+	`active` tinyint(1) NOT NULL default '1',
+	`created_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+	PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;

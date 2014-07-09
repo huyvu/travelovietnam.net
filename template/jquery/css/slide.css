@@ -1,0 +1,223 @@
+
+#travelslide {
+	position: absolute;
+}
+
+.travelads {
+	margin: 0;
+	height: 310px;
+	background: #EFEFEF url(../images/assets/home.jpg) no-repeat;
+	position: relative;
+	overflow: hidden;
+}
+
+#travelslide .travelitem {
+	position: absolute;
+	width: 980px;
+	height: 310px;
+	overflow: hidden;
+}
+                      
+#travelslide .travelitem span {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", helvetica, verdana, arial, sans-serif;
+}
+
+#travelslide .travelitem a {
+	text-decoration: none;
+}
+
+/* slide 1 */
+#travelslide img.img1 {
+	position: absolute;
+	top: 4px;
+	left: 410px;
+}
+
+#travelslide img.img2 {
+	position: absolute;
+	top: 10px;
+	left: 400px;
+}
+
+#travelslide .travelitem .title {
+	position: relative;
+	clear: both;
+	float: right;
+	margin-right: 10px;
+	margin-top: 30px;
+}
+
+#travelslide .travelitem .price {            
+	position: relative;
+	clear: both;
+	float: right;
+	margin-right: 10px;
+	margin-top: 0px;
+}
+
+#travelslide .travelitem .button {
+	position: relative;
+	clear: both;
+	float: right;
+	margin-right: 20px;
+	margin-top: 30px;
+}
+
+#travelslide .travelitem .text1 {
+	position: relative;
+	float: left;
+	margin: 140px 12px 0 48px;
+	color: #333333;
+	font-size: 48px;
+}
+
+#travelslide .travelitem .text2 {              
+	clear: left;
+	position: relative;
+	float: left;
+	margin: 4px 12px 0 48px;
+	color: #666666;
+	font-size: 24px;
+}
+
+/* slide 2 */
+#travelslide img.img3 {
+	position: absolute;
+	top: 24px;
+	left: 80px;
+}
+#travelslide img.img4 {
+	position: absolute;
+	top: 64px;
+	left: 160px;
+}
+#travelslide img.img5 {
+	position: absolute;
+	top: 230px;
+	left: 420px;
+}
+#travelslide .travelitem .text3 {
+	clear: left;
+	position: relative;
+	float: left;
+	margin: 120px 12px 0 580px;
+	color: #333333;
+	font-size: 48px;
+}          
+#travelslide .travelitem .text4 {
+	clear: left;
+	position: relative;
+	float: left;
+	margin: 12px 12px 0 580px;
+	color: #666666;
+	font-size: 22px;
+}
+
+/* slide 3 */
+#travelslide .slide3 img.wp1 {
+	position: absolute;
+	top: 255px;
+	left: 512px;
+}
+#travelslide .slide3 img.wp2 {
+	position: absolute;
+	top: 190px;
+	left: 360px;
+}
+#travelslide .slide3 img.wp3 {
+	position: absolute;
+	top: 64px;
+	left: 80px;
+}
+
+#travelslide .slide3 span.txt1 {
+	clear: left;
+	position: relative;
+	float: left;
+	margin: 120px 12px 0 540px;
+	background: #B22222;
+	padding: 8px;
+	color: #FFFFFF;
+	font-size: 40px;
+}
+#travelslide .slide3 span.txt1 a {
+	color: #FFFFFF;
+}
+#travelslide .slide3 span.txt2 {
+	clear: left;
+	position: relative;
+	float: left;
+	margin: 12px 12px 0 540px;
+	color: #FFFFFF;
+	background: #A0522D;
+	padding: 8px;
+	font-size: 22px;
+}
+
+/* slide 4 */
+#travelslide img.wp1 {
+	position: absolute;
+	top: 240px;
+	left: 380px;
+}
+#travelslide img.wp2 {
+	position: absolute;
+	top: 200px;
+	left: 470px;
+}
+#travelslide img.wp3 {
+	position: absolute;
+	top: 100px;
+	left: 600px;
+}
+
+#travelslide .travelitem span.wp1 {
+	clear: left;
+	position: relative;
+	float: left;
+	margin: 120px 12px 0 60px;
+	background: #20B2AA;
+	padding: 8px;
+	color: #FFFFFF;
+	font-size: 40px;
+}
+#travelslide .travelitem span.wp1 a {
+	color: #FFFFFF;
+}         
+#travelslide .travelitem span.wp2 {
+	clear: left;
+	position: relative;
+	float: left;
+	margin: 12px 12px 0 60px;
+	color: #FFFFFF;
+	background: #5F9EA0;
+	padding: 8px;
+	font-size: 16px;
+}
+
+/* slide 5 */
+#travelslide .travelitem img.bigImage {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#travelslide .travelitem span.slide5Txt1 {
+  	position: relative;
+	float: left;
+	margin: 150px 12px 0 600px;
+	color: #9ACD32;
+	font-size: 24px;
+	background: #FFFFFF;
+	padding: 8px;
+}
+
+#travelslide .travelitem span.slide5Txt2 { 
+  	position: relative;
+	clear: left;
+	float: left;
+	margin: 12px 12px 0 600px;
+	color: #666666;
+	font-size: 12px;
+	background: #FFFFFF;
+	padding: 8px;
+}

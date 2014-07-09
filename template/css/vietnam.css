@@ -1,0 +1,3009 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	background: none;
+	background-color: #F0F0EF;
+	color: #000;
+}
+
+#topmenu {
+	right: 0px;
+}
+
+#topmenu ul li a {
+	font-weight: normal;
+}
+
+#topmenu .phone {
+	background-image: none;
+	padding-left: 0px;
+	font-weight: normal;
+}
+#mainmenu {
+	margin: 0px;
+	margin-top: -36px;
+	padding: 0px;
+	background-color: #FFFFFF;
+	border-bottom: 4px solid #00539E;
+}
+
+#mainmenu .inner {
+	position: relative;
+}
+
+#mainmenu .inner .submenu {
+	margin: 0px;
+	padding: 0px;
+	background: none repeat scroll 0 0 #FFFFFF;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+	border-top: 4px solid #00539E;
+	position: absolute;
+	left: 0;
+	width: 980px;
+	z-index: 999;
+	display: none;
+}
+
+#mainmenu .inner .handbook-submenu {
+	margin: 0px;
+	padding: 0px;
+	background: url("../images/tour/menu/handbook-submenu-bg.jpg") no-repeat scroll right bottom #FFFFFF;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+	border-top: 4px solid #00539E;
+	position: absolute;
+	left: 0;
+	width: 980px;
+	height: 250px;
+	z-index: 999;
+	display: none;
+}
+
+#mainmenu #ex-service-submenu {
+	margin: 0px;
+	padding: 0px;
+	background: url("../images/tour/menu/service-submenu-bg.jpg") no-repeat scroll right bottom #FFFFFF;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+	border-top: 4px solid #00539E;
+	position: absolute;
+	left: 0;
+	width: 980px;
+	height: 250px;
+	z-index: 999;
+	display: none;
+}
+
+#mainmenu ul.megamenu > li .ex-service-submenu-content {
+	padding: 10px;
+}
+#mainmenu ul.megamenu > li .ex-service-submenu-content .ex-service {
+	float: left;
+	margin-right: 0px;
+	padding: 6px;
+}
+#mainmenu ul.megamenu > li .ex-service-submenu-content .ex-service:hover {
+	background-color: #F8F8F8;
+}
+#mainmenu ul.megamenu > li .ex-service-submenu-content .last {
+	margin-right: 0px;
+}
+#mainmenu ul.megamenu > li .ex-service-submenu-content .ex-service a {
+	text-decoration: none;
+}
+#mainmenu ul.megamenu > li .ex-service-submenu-content .ex-service .label {
+	font-size: 16px;
+}
+#mainmenu ul.megamenu > li .ex-service-submenu-content .ex-service .img {
+	margin-top: 10px;
+}
+#mainmenu ul.megamenu > li .ex-service-submenu-content .ex-service img {
+	width: 228px;
+	height: 150px;
+}
+
+#megamenu {
+	float: right;
+}
+
+#mainmenu ul.megamenu > li {
+	border: none;
+	position: inherit;
+}
+
+#mainmenu ul.megamenu > li > a {
+	margin: 0px 0px 0px 2px;
+	background-color: #FFFFFF;
+	color: #00539E;
+	text-shadow: none;
+	padding: 8px 15px;
+}
+#mainmenu ul.megamenu > li > a:hover, #mainmenu ul.megamenu > li.selected > a {
+	background: none repeat scroll 0 0 #00539E;
+	color: #FFFFFF;
+}
+#mainmenu ul.megamenu > li.active > a {
+	background-color: #00539E;
+	color: #FFFFFF;
+}
+
+#mainmenu ul.megamenu > li > a:hover {
+	background-color: #00539E;
+	color: #FFFFFF;
+}
+
+#mainmenu ul.megamenu li ul {
+}
+
+#mainmenu ul.megamenu div ul li a {
+	margin: 4px 0px;
+}
+
+#mainmenu ul.megamenu > li .regions {
+	background-color: #FFFFFF;
+	padding: 10px;
+}
+#mainmenu ul.megamenu > li .regions .region {
+	float: left;
+	margin-right: 0px;
+	padding: 6px;
+}
+#mainmenu ul.megamenu > li .regions .region:hover {
+	background-color: #F8F8F8;
+}
+#mainmenu ul.megamenu > li .regions .last {
+	margin-right: 0px;
+}
+#mainmenu ul.megamenu > li .regions .region a {
+	text-decoration: none;
+}
+#mainmenu ul.megamenu > li .regions .region .label {
+	font-size: 16px;
+}
+#mainmenu ul.megamenu > li .regions .region .img {
+	margin-top: 10px;
+}
+#mainmenu ul.megamenu > li .regions .region img {
+	width: 228px;
+	height: 150px;
+}
+
+#mainmenu ul.megamenu > li .tourtypes {
+	background-color: #F8F8F8;
+	border-top: 1px solid #EFEFEF;
+	position: relative;
+	margin-top: 15px;
+}
+#mainmenu ul.megamenu > li .tourtypes .title {
+	background: none repeat scroll 0 0 #EFEFEF;
+	border-radius: 3px;
+	display: inline;
+	font-size: 14px;
+	left: 50%;
+	margin-left: -50px;
+	padding: 5px 20px;
+	position: absolute;
+	top: -15px;
+}
+#mainmenu ul.megamenu > li .tourtypes .tourtype {
+	float: left;
+	width: 98px;
+	text-align: center;
+}
+#mainmenu ul.megamenu > li .tourtypes .tourtype:hover {
+	background-color: #FFFFFF !important;
+}
+#mainmenu ul.megamenu > li .tourtypes .first {
+	border-left: none;
+}
+#mainmenu ul.megamenu > li .tourtypes .last {
+	border-right: none;
+}
+#mainmenu ul.megamenu > li .tourtypes .tourtype a {
+	text-decoration: none;
+	padding: 15px 0px;
+	display: inline-table;
+}
+#mainmenu ul.megamenu > li .tourtypes .tourtype .img {
+	width: 98px;
+	height: 50px;
+}
+#mainmenu ul.megamenu > li .tourtypes .tourtype .label {
+	margin-top: 5px;
+	text-align: center;
+}
+#mainmenu ul.megamenu > li .tourtypes .tourtype .adventure {
+	background: url("../images/tour/menu/adventure.png") no-repeat scroll center center transparent;
+}
+#mainmenu ul.megamenu > li .tourtypes .tourtype .biking {
+	background: url("../images/tour/menu/biking.png") no-repeat scroll center center transparent;
+}
+#mainmenu ul.megamenu > li .tourtypes .tourtype .classic {
+	background: url("../images/tour/menu/classic.png") no-repeat scroll center center transparent;
+}
+#mainmenu ul.megamenu > li .tourtypes .tourtype .cruise {
+	background: url("../images/tour/menu/cruise.png") no-repeat scroll center center transparent;
+}
+#mainmenu ul.megamenu > li .tourtypes .tourtype .culture {
+	background: url("../images/tour/menu/culture.png") no-repeat scroll center center transparent;
+}
+#mainmenu ul.megamenu > li .tourtypes .tourtype .gastronomy {
+	background: url("../images/tour/menu/gastronomy.png") no-repeat scroll center center transparent;
+}
+#mainmenu ul.megamenu > li .tourtypes .tourtype .historic {
+	background: url("../images/tour/menu/historic.png") no-repeat scroll center center transparent;
+}
+#mainmenu ul.megamenu > li .tourtypes .tourtype .homestay {
+	background: url("../images/tour/menu/homestay.png") no-repeat scroll center center transparent;
+}
+#mainmenu ul.megamenu > li .tourtypes .tourtype .relaxing {
+	background: url("../images/tour/menu/relaxing.png") no-repeat scroll center center transparent;
+}
+#mainmenu ul.megamenu > li .tourtypes .tourtype .sightseeing {
+	background: url("../images/tour/menu/sightseeing.png") no-repeat scroll center center transparent;
+}
+#mainmenu ul.megamenu > li .tourtypes .tourtype .nature {
+	background: url("../images/tour/menu/nature.png") no-repeat scroll center center transparent;
+}
+#mainmenu ul.megamenu > li .tourtypes .tourtype .beach {
+	background: url("../images/tour/menu/beach.png") no-repeat scroll center center transparent;
+}
+#mainmenu ul.megamenu > li .tourtypes .tourtype .trekking {
+	background: url("../images/tour/menu/trekking.png") no-repeat scroll center center transparent;
+}
+#mainmenu ul.megamenu > li .tourtypes .tourtype .family {
+	background: url("../images/tour/menu/family.png") no-repeat scroll center center transparent;
+}
+
+#mainmenu ul.megamenu > li .destinations {
+	display: inline;
+	float: left;
+	height: 379px;
+	margin: 10px 0 10px 10px;
+	position: relative;
+	width: 961px;
+}
+#mainmenu ul.megamenu > li .destinations a {
+	padding: 0;
+}
+#mainmenu ul.megamenu > li .des-hanoi {
+	height: 189px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 300px;
+}
+#mainmenu ul.megamenu > li .destinations img {
+	left: 0;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+}
+#mainmenu ul.megamenu > li .des-hanoi .bgblack {
+	height: 189px;
+}
+#mainmenu ul.megamenu > li .bgblack {
+	background: none repeat scroll 0 0 #000000;
+	float: left;
+	opacity: 0.5;
+	position: relative;
+	width: 100%;
+	z-index: 2;
+}
+#mainmenu ul.megamenu > li .destinations a:hover .bgblack {
+	opacity: 0;
+	transition-duration: 1s;
+}
+#mainmenu ul.megamenu > li .namedes {
+	color: #FFFFFF;
+	font-weight: normal;
+	opacity: 0.7;
+	position: absolute;
+	z-index: 3;
+}
+#mainmenu ul.megamenu > li .des-hanoi .namedes {
+	bottom: 12px;
+	font-size: 34px;
+	right: 20px;
+}
+#mainmenu ul.megamenu > li .des-nwne {
+	height: 94px;
+	left: 301px;
+	position: absolute;
+	top: 0;
+	width: 251px;
+}
+#mainmenu ul.megamenu > li .des-nwne .bgblack {
+	height: 94px;
+}
+#mainmenu ul.megamenu > li .des-nwne .namedes {
+	font-size: 22px;
+	font-weight: normal;
+	right: 10px;
+	top: 10px;
+}
+#mainmenu ul.megamenu > li .des-nhatrang {
+	height: 94px;
+	left: 301px;
+	position: absolute;
+	top: 95px;
+	width: 251px;
+}
+#mainmenu ul.megamenu > li .des-nhatrang .bgblack {
+	height: 94px;
+}
+#mainmenu ul.megamenu > li .des-nhatrang .namedes {
+	bottom: 15px;
+	font-size: 22px;
+	font-weight: normal;
+	right: 15px;
+}
+
+#mainmenu ul.megamenu > li .des-halong {
+	height: 94px;
+	left: 553px;
+	position: absolute;
+	top: 0;
+	width: 251px;
+}
+#mainmenu ul.megamenu > li .des-halong .bgblack {
+	height: 94px;
+}
+#mainmenu ul.megamenu > li .des-halong .namedes {
+	bottom: 15px;
+	font-size: 22px;
+	font-weight: normal;
+	right: 15px;
+}
+#mainmenu ul.megamenu > li .des-hue {
+	height: 94px;
+	position: absolute;
+	right: 157px;
+	top: 95px;
+	width: 251px;
+}
+#mainmenu ul.megamenu > li .des-hue .bgblack {
+	height: 94px;
+}
+#mainmenu ul.megamenu > li .des-hue .namedes {
+	bottom: 15px;
+	font-size: 22px;
+	font-weight: normal;
+	left: 22px;
+}
+#mainmenu ul.megamenu > li .des-sapa {
+	height: 189px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 156px;
+}
+#mainmenu ul.megamenu > li .des-sapa .bgblack {
+	height: 189px;
+}
+#mainmenu ul.megamenu > li .des-sapa .namedes {
+	bottom: 10px;
+	font-size: 26px;
+	font-weight: normal;
+	right: 10px;
+}
+#mainmenu ul.megamenu > li .des-hoian {
+	height: 189px;
+	left: 0;
+	position: absolute;
+	top: 190px;
+	width: 156px;
+}
+#mainmenu ul.megamenu > li .des-hoian .bgblack {
+	height: 189px;
+}
+#mainmenu ul.megamenu > li .des-hoian .namedes {
+	bottom: 12px;
+	font-size: 28px;
+	font-weight: normal;
+	right: 14px;
+}
+#mainmenu ul.megamenu > li .des-mekong {
+	height: 94px;
+	left: 157px;
+	position: absolute;
+	top: 190px;
+	width: 251px;
+}
+#mainmenu ul.megamenu > li .des-mekong .bgblack {
+	height: 94px;
+}
+#mainmenu ul.megamenu > li .des-mekong .namedes {
+	bottom: 5px;
+	font-size: 24px;
+	font-weight: normal;
+	right: 12px;
+}
+#mainmenu ul.megamenu > li .des-cambodia {
+	bottom: 0;
+	height: 94px;
+	left: 157px;
+	position: absolute;
+	width: 251px;
+}
+#mainmenu ul.megamenu > li .des-cambodia .bgblack {
+	height: 94px;
+}
+#mainmenu ul.megamenu > li .des-cambodia .namedes {
+	bottom: 12px;
+	font-size: 22px;
+	font-weight: normal;
+	left: 12px;
+}
+#mainmenu ul.megamenu > li .des-lao {
+	bottom: 95px;
+	height: 94px;
+	left: 409px;
+	position: absolute;
+	width: 251px;
+}
+#mainmenu ul.megamenu > li .des-lao .bgblack {
+	height: 94px;
+}
+#mainmenu ul.megamenu > li .des-lao .namedes {
+	bottom: 10px;
+	font-size: 24px;
+	font-weight: normal;
+	left: 15px;
+}
+#mainmenu ul.megamenu > li .des-burmar {
+	bottom: 0;
+	height: 94px;
+	left: 409px;
+	position: absolute;
+	width: 251px;
+}
+#mainmenu ul.megamenu > li .des-burmar .bgblack {
+	height: 94px;
+}
+#mainmenu ul.megamenu > li .des-burmar .namedes {
+	bottom: 10px;
+	font-size: 22px;
+	font-weight: normal;
+	left: 12px;
+}
+#mainmenu ul.megamenu > li .des-hcm {
+	bottom: 0;
+	height: 189px;
+	position: absolute;
+	right: 0;
+	width: 300px;
+}
+#mainmenu ul.megamenu > li .des-hcm .bgblack {
+	height: 189px;
+}
+#mainmenu ul.megamenu > li .des-hcm .namedes {
+	font-size: 24px;
+	font-weight: normal;
+	right: 12px;
+	top: 20px;
+}
+#mainmenu ul.megamenu > li .btsub-des {
+	background: none repeat scroll 0 0 #F0F0F0;
+	border-top: 1px dashed #A1A1A1;
+	color: #FFFFFF;
+	float: left;
+	height: 15px;
+	margin: 22px 0 0;
+	position: relative;
+	width: 100%;
+}
+#mainmenu ul.megamenu > li .all-destination {
+	background: none repeat scroll 0 0 #F0F0F0;
+	border-top: 1px solid #DDDDDD;
+	width: 100%;
+}
+#mainmenu ul.megamenu > li .all-destination a {
+	color: #333333;
+	width: 100%;
+	line-height: 40px;
+	text-align: center;
+	display: inline-table;
+}
+/* Template Layout */
+
+#page {
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+}
+
+#page .page-title {
+	line-height: 1.2em;
+}
+
+#page .left-img {
+}
+
+#page .right-img {
+}
+
+#breadcrumbs {
+	background: none;
+}
+
+#header {
+	background-color: #FFFFFF;
+}
+
+#banner {
+	height: 100px;
+}
+
+#pagecontent {
+	background-color: transparent;
+	padding: 0px;
+}
+
+#banner .inner {
+	position: relative;
+}
+
+.inner {
+	margin: 0 auto;
+	padding: 0;
+	width: 980px;
+}
+
+#footer .association {
+	background: url("../images/association/bg.jpg") repeat scroll 0 0 transparent;
+	padding-top: 10px;
+}
+
+#footer .association .association-info {
+	background-color: #dff2ff;
+	padding: 10px;
+}
+
+#footer .association .association-info .text {
+	color: #009daf;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+#footer .association .association-info .icons a {
+	float: left;
+	margin-left: 20px;
+}
+
+#footer .info-area {
+	background-color: #FFFFFF;
+	padding: 25px 10px;
+}
+
+#footer .info-area .links {
+	float: left;
+	margin: 0px;
+	margin-right: 10px;
+	width: 16%;
+}
+
+#footer .info-area h2 {
+	color: #2A2A2A;
+}
+
+#footer .info-area ul {
+	margin-left: 0px;
+	margin-top: 10px;
+}
+
+#footer .info-area ul li {
+	list-style-type: none;
+}
+
+#footer .info-area ul li a {
+	color: #333333;
+}
+
+#footer .company-info {
+	background: #FFFFFF;
+	border-top: 2px solid #0072bc;
+	height: 1em;
+	margin-top: 0px;
+	padding: 20px 0px 50px;
+}
+
+#footer .company-info .copyright {
+	padding: 0px;
+}
+
+#footer .company-info .copyright div {
+	color: #2A2A2A;
+}
+
+#footer .company-info .copyright div.left {
+	margin-left: 0px;
+}
+
+#footer .company-info .copyright div.right {
+	margin-right: 0px;
+}
+
+#footer .newsletter-signup {
+	width: 300px;
+}
+#footer .newsletter-signup .label {
+	color: #333333;
+	margin-top: 10px;
+}
+#footer .newsletter-signup .newsletter-signup-form {
+	margin: 4px 0px 20px;
+}
+#footer .newsletter-signup .newsletter-signup-form .signup-email {
+	width: 210px;
+	padding: 4px;
+}
+#footer .newsletter-signup .newsletter-signup-form .signup-button {
+	background-color: #008392;
+	background-image: -moz-linear-gradient(center top , #008392, #008392);
+	background-repeat: repeat-x;
+	border: none;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: normal;
+	padding: 5px 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#footer .newsletter-signup .follow-icons {
+	margin: 6px 0px 0px;
+}
+#footer .newsletter-signup .follow-icons a {
+	float: left;
+	margin-right: 10px;
+}
+
+/* End Template Layout */
+
+/* Overview */
+
+.page-title {
+	margin-bottom: 10px;
+}
+
+#vietnam-view-detailed {
+}
+
+#vietnam-view-detailed .overview-name {
+	color: #008392;
+	font-size: 18px;
+	font-weight: normal;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+}
+
+#vietnam-view-detailed .overview-name .expand-all {
+	background: url("../images/tour/icon/expanded.png") no-repeat scroll right center transparent;
+	color: #2A2A2A;
+	font-weight: normal;
+	padding-right: 18px;
+	cursor: pointer;
+}
+
+#vietnam-view-detailed .overview-name .close-all {
+	margin-left: 10px;
+	background: url("../images/tour/icon/collapsed.png") no-repeat scroll right center transparent;
+	color: #2A2A2A;
+	font-weight: normal;
+	padding-right: 18px;
+	cursor: pointer;
+}
+
+#vietnam-view-detailed .overview-destmap {
+	margin: 10px 0px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+#vietnam-view-detailed .overview-desc {
+	margin: 10px 0px;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 20px;
+}
+
+#vietnam-view-detailed .overview-summary {
+	background-color: #FFFFFF;
+	border: 1px solid #DDDDDD;
+	padding: 10px;
+	margin: 10px 0px;
+}
+
+#vietnam-view-detailed .overview-summary ol,
+#vietnam-view-detailed .overview-summary ul {
+	list-style: inherit !important;
+	margin-left: 40px !important;
+}
+#vietnam-view-detailed .overview-summary ol li,
+#vietnam-view-detailed .overview-summary ul li {
+	list-style: inherit !important;
+}
+#vietnam-view-detailed .overview-summary h2 * {
+	font-size: 18px;
+}
+#vietnam-view-detailed hr {
+	border: none;
+	border-bottom: 1px solid #CC6633;
+}
+
+#vietnam-view-detailed .vietnam-view-itineraries {
+}
+#vietnam-view-detailed .vietnam-view-itineraries .vietnam-view-itinerary {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #DDDDDD;
+	margin-top: -1px;
+	padding: 0px;
+}
+#vietnam-view-detailed .vietnam-view-itineraries .vietnam-view-itinerary .itinerary-header {
+	padding: 10px;
+	cursor: pointer;
+}
+#vietnam-view-detailed .vietnam-view-itineraries .vietnam-view-itinerary .itinerary-header:hover {
+	background-color: #FFFFCC;
+}
+#vietnam-view-detailed .vietnam-view-itineraries .vietnam-view-itinerary .more-detail {
+	display: none;
+}
+#vietnam-view-detailed .vietnam-view-itineraries .vietnam-view-itinerary .itinerary-title {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+}
+#vietnam-view-detailed .vietnam-view-itineraries .vietnam-view-itinerary .expanded a {
+	background: url("../images/tour/icon/expanded.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+	display: inline-table;
+}
+#vietnam-view-detailed .vietnam-view-itineraries .vietnam-view-itinerary .collapsed a {
+	background: url("../images/tour/icon/collapsed.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+	display: inline-table;
+}
+#vietnam-view-detailed .vietnam-view-itineraries .vietnam-view-itinerary .thumbnail {
+	float: left;
+	margin-right: 10px;
+}
+#vietnam-view-detailed .vietnam-view-itineraries .vietnam-view-itinerary .thumbnail img {
+	width: 160px;
+	height: 120px;
+}
+#vietnam-view-detailed .vietnam-view-itineraries .vietnam-view-itinerary .itinerary-content {
+	padding: 0px 10px 10px;
+}
+#vietnam-view-detailed .vietnam-view-itineraries .vietnam-view-itinerary .itinerary-content h2 * {
+	font-size: 18px;
+}
+#vietnam-view-detailed .vietnam-view-itineraries .vietnam-view-itinerary .itinerary-content .itinerary-detail {
+}
+#vietnam-view-detailed .vietnam-view-itineraries .vietnam-view-itinerary .itinerary-content .itinerary-detail p {
+	text-align: justify;
+}
+#vietnam-view-detailed .vietnam-view-itineraries .vietnam-view-itinerary .itinerary-content .itinerary-detail ol,
+#vietnam-view-detailed .vietnam-view-itineraries .vietnam-view-itinerary .itinerary-content .itinerary-detail ul {
+	list-style: inherit !important;
+	margin-left: 40px !important;
+}
+#vietnam-view-detailed .vietnam-view-itineraries .vietnam-view-itinerary .itinerary-content .itinerary-detail ol li,
+#vietnam-view-detailed .vietnam-view-itineraries .vietnam-view-itinerary .itinerary-content .itinerary-detail ul li {
+	list-style: inherit !important;
+}
+#vietnam-view-detailed .vietnam-view-itineraries .vietnam-view-itinerary .view-more {
+	margin-top: 10px;
+	text-align: right;
+}
+
+#vietnam-view-nav {
+	width: 280px;
+}
+
+#vietnam-view-nav ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+#vietnam-view-nav ul li {
+	margin: 0px 0px 5px;
+	padding: 0px;
+}
+
+#vietnam-view-nav ul li a {
+	background-color: #009DAF;
+	color: #FFFFFF;
+	font-size: 15px;
+	font-weight: bold;
+	width: 260px;
+	padding: 10px;
+	display: inline-table;
+	text-decoration: none;
+}
+
+#vietnam-view-nav .overview {
+	background: url("../images/vietnam/icon/overview.png") no-repeat scroll 10px center #009DAF;
+	border: 1px solid #FFFFFF;
+	width: 228px;
+	padding-left: 40px;
+}
+
+#vietnam-view-nav .overview:hover, #vietnam-view-nav .overview-selected {
+	background-color: #009DAF;
+	background: url("../images/vietnam/icon/overview-on.png") no-repeat scroll 10px center #FFFFFF;
+	border: 1px solid #DDDDDD;
+	width: 228px;
+	padding-left: 40px;
+	color: #FF9C00;
+}
+
+#vietnam-view-nav .snapshot {
+	background: url("../images/vietnam/icon/snapshot.png") no-repeat scroll 10px center #009DAF;
+	border: 1px solid #FFFFFF;
+	width: 228px;
+	padding-left: 40px;
+}
+
+#vietnam-view-nav .snapshot:hover, #vietnam-view-nav .snapshot-selected {
+	background-color: #009DAF;
+	background: url("../images/vietnam/icon/snapshot-on.png") no-repeat scroll 10px center #FFFFFF;
+	border: 1px solid #DDDDDD;
+	width: 228px;
+	padding-left: 40px;
+	color: #FF9C00;
+}
+
+#vietnam-view-nav .culture {
+	background: url("../images/vietnam/icon/culture.png") no-repeat scroll 10px center #009DAF;
+	border: 1px solid #FFFFFF;
+	width: 228px;
+	padding-left: 40px;
+}
+
+#vietnam-view-nav .culture:hover, #vietnam-view-nav .culture-selected {
+	background-color: #009DAF;
+	background: url("../images/vietnam/icon/culture-on.png") no-repeat scroll 10px center #FFFFFF;
+	border: 1px solid #DDDDDD;
+	width: 228px;
+	padding-left: 40px;
+	color: #FF9C00;
+}
+
+#vietnam-view-nav .event {
+	background: url("../images/vietnam/icon/event.png") no-repeat scroll 10px center #009DAF;
+	border: 1px solid #FFFFFF;
+	width: 228px;
+	padding-left: 40px;
+}
+
+#vietnam-view-nav .event:hover, #vietnam-view-nav .event-selected {
+	background-color: #009DAF;
+	background: url("../images/vietnam/icon/event-on.png") no-repeat scroll 10px center #FFFFFF;
+	border: 1px solid #DDDDDD;
+	width: 228px;
+	padding-left: 40px;
+	color: #FF9C00;
+}
+
+#vietnam-view-nav .lifestyle {
+	background: url("../images/vietnam/icon/lifestyle.png") no-repeat scroll 10px center #009DAF;
+	border: 1px solid #FFFFFF;
+	width: 228px;
+	padding-left: 40px;
+}
+
+#vietnam-view-nav .lifestyle:hover, #vietnam-view-nav .lifestyle-selected {
+	background-color: #009DAF;
+	background: url("../images/vietnam/icon/lifestyle-on.png") no-repeat scroll 10px center #FFFFFF;
+	border: 1px solid #DDDDDD;
+	width: 228px;
+	padding-left: 40px;
+	color: #FF9C00;
+}
+
+#vietnam-view-nav .traveltip {
+	background: url("../images/vietnam/icon/traveltip.png") no-repeat scroll 10px center #009DAF;
+	border: 1px solid #FFFFFF;
+	width: 228px;
+	padding-left: 40px;
+}
+
+#vietnam-view-nav .traveltip:hover, #vietnam-view-nav .traveltip-selected {
+	background-color: #009DAF;
+	background: url("../images/vietnam/icon/traveltip-on.png") no-repeat scroll 10px center #FFFFFF;
+	border: 1px solid #DDDDDD;
+	width: 228px;
+	padding-left: 40px;
+	color: #FF9C00;
+}
+
+#vietnam-view-nav .faq {
+	background: url("../images/vietnam/icon/faq.png") no-repeat scroll 10px center #009DAF;
+	border: 1px solid #FFFFFF;
+	width: 228px;
+	padding-left: 40px;
+}
+
+#vietnam-view-nav .faq:hover, #vietnam-view-nav .faq-selected {
+	background-color: #009DAF;
+	background: url("../images/vietnam/icon/faq-on.png") no-repeat scroll 10px center #FFFFFF;
+	border: 1px solid #DDDDDD;
+	width: 228px;
+	padding-left: 40px;
+	color: #FF9C00;
+}
+
+#vietnam-view-nav .guide4beginner {
+	background: url("../images/vietnam/icon/4beginner.png") no-repeat scroll 10px center #009DAF;
+	border: 1px solid #FFFFFF;
+	width: 228px;
+	padding-left: 40px;
+}
+
+#vietnam-view-nav .guide4beginner:hover, #vietnam-view-nav .guide4beginner-selected {
+	background-color: #009DAF;
+	background: url("../images/vietnam/icon/4beginner-on.png") no-repeat scroll 10px center #FFFFFF;
+	border: 1px solid #DDDDDD;
+	width: 228px;
+	padding-left: 40px;
+	color: #FF9C00;
+}
+
+#vietnam-view-nav .insurance {
+	background: url("../images/vietnam/icon/insurance.png") no-repeat scroll 10px center #009DAF;
+	border: 1px solid #FFFFFF;
+	width: 228px;
+	padding-left: 40px;
+}
+
+#vietnam-view-nav .insurance:hover, #vietnam-view-nav .insurance-selected {
+	background-color: #009DAF;
+	background: url("../images/vietnam/icon/insurance-on.png") no-repeat scroll 10px center #FFFFFF;
+	border: 1px solid #DDDDDD;
+	width: 228px;
+	padding-left: 40px;
+	color: #FF9C00;
+}
+
+#vietnam-view-nav .travelvisa {
+	background: url("../images/vietnam/icon/travelvisa.png") no-repeat scroll 10px center #009DAF;
+	border: 1px solid #FFFFFF;
+	width: 228px;
+	padding-left: 40px;
+}
+
+#vietnam-view-nav .travelvisa:hover, #vietnam-view-nav .travelvisa-selected {
+	background-color: #009DAF;
+	background: url("../images/vietnam/icon/travelvisa-on.png") no-repeat scroll 10px center #FFFFFF;
+	border: 1px solid #DDDDDD;
+	width: 228px;
+	padding-left: 40px;
+	color: #FF9C00;
+}
+
+#vietnam-view-nav .sight {
+	background: url("../images/vietnam/icon/sight.png") no-repeat scroll 10px center #009DAF;
+	border: 1px solid #FFFFFF;
+	width: 233px;
+	padding-left: 35px;
+}
+
+#vietnam-view-nav .sight:hover, #vietnam-view-nav .sight-selected {
+	background-color: #009DAF;
+	background: url("../images/vietnam/icon/sight-on.png") no-repeat scroll 10px center #FFFFFF;
+	border: 1px solid #DDDDDD;
+	width: 233px;
+	padding-left: 35px;
+	color: #FF9C00;
+}
+
+#vietnam-view-nav .entertainment {
+	background: url("../images/vietnam/icon/entertainment.png") no-repeat scroll 10px center #009DAF;
+	border: 1px solid #FFFFFF;
+	width: 233px;
+	padding-left: 35px;
+}
+
+#vietnam-view-nav .entertainment:hover, #vietnam-view-nav .entertainment-selected {
+	background-color: #009DAF;
+	background: url("../images/vietnam/icon/entertainment-on.png") no-repeat scroll 10px center #FFFFFF;
+	border: 1px solid #DDDDDD;
+	width: 233px;
+	padding-left: 35px;
+	color: #FF9C00;
+}
+
+#vietnam-view-nav .restaurant {
+	background: url("../images/vietnam/icon/restaurant.png") no-repeat scroll 10px center #009DAF;
+	border: 1px solid #FFFFFF;
+	width: 233px;
+	padding-left: 35px;
+}
+
+#vietnam-view-nav .restaurant:hover, #vietnam-view-nav .restaurant-selected {
+	background-color: #009DAF;
+	background: url("../images/vietnam/icon/restaurant-on.png") no-repeat scroll 10px center #FFFFFF;
+	border: 1px solid #DDDDDD;
+	width: 233px;
+	padding-left: 35px;
+	color: #FF9C00;
+}
+
+#vietnam-view-nav .shopping {
+	background: url("../images/vietnam/icon/shopping.png") no-repeat scroll 10px center #009DAF;
+	border: 1px solid #FFFFFF;
+	width: 233px;
+	padding-left: 35px;
+}
+
+#vietnam-view-nav .shopping:hover, #vietnam-view-nav .shopping-selected {
+	background-color: #009DAF;
+	background: url("../images/vietnam/icon/shopping-on.png") no-repeat scroll 10px center #FFFFFF;
+	border: 1px solid #DDDDDD;
+	width: 233px;
+	padding-left: 35px;
+	color: #FF9C00;
+}
+
+#vietnam-glance {
+	background-color: #009DAF;
+	border: 1px solid #FFFFFF;
+	margin-top: 15px;
+	padding: 10px;
+	width: 258px;
+}
+
+#vietnam-glance .vietnam-glance-title {
+	border-bottom: 1px solid #80CED7;
+	color: #FFFFFF;
+	font-family: Myriad Pro;
+	font-size: 20px;
+	font-weight: normal;
+	margin: 5px 0px 10px;
+	padding-bottom: 5px;
+}
+
+#vietnam-glance ul {
+	list-style-type: none;
+}
+
+#vietnam-glance ul li {
+	clear: both;
+	line-height: 22px;
+}
+
+#vietnam-glance ul li label {
+	display: block;
+	float: left;
+	width: 100px;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#vietnam-glance ul li span {
+	float: left;
+	width: 158px;
+	color: #FFFFFF;
+	font-size: 12px;
+}
+
+#vietnam-moment {
+	margin-top: 15px;
+	padding: 1px 0px;
+	background-color: #FFFFFF;
+	text-align: center;
+}
+
+/* End Overview */
+
+/* Shortlist */
+
+#tour-view-shortlist {
+	background-color: #FFFFFF;
+	border: 1px solid #DDDDDD;
+	margin-top: 10px;
+	padding: 10px;
+}
+#tour-view-shortlist .shortlist-header {
+	border-bottom: 1px solid #EFEFEF;
+	font-size: 16px;
+	font-weight: normal;
+	padding: 5px 0;
+}
+#tour-view-shortlist ul {
+}
+#tour-view-shortlist ul li {
+	padding: 10px 0;
+}
+#tour-view-shortlist ul li .shortlist-tour-thumbnail {
+	height: 75px;
+	overflow: hidden;
+	width: 100px;
+}
+#tour-view-shortlist ul li .shortlist-tour-thumbnail img {
+	height: 75px;
+	width: 100px;
+}
+#tour-view-shortlist ul li .shortlist-tour-name {
+}
+#tour-view-shortlist ul li .shortlist-tour-duration {
+	margin-top: 4px;
+}
+#tour-view-shortlist ul li .shortlist-tour-price {
+	margin-top: 4px;
+}
+#tour-view-shortlist ul li .shortlist-tour-price label {
+	color: #FF0000;
+}
+#tour-view-shortlist ul li .shortlist-tour-type {
+	background-color: #F8F8F8;
+	padding: 6px;
+}
+
+/* End Shortlist */
+
+/* Gallery */
+
+#vietnam-moments {
+}
+
+#vietnam-moments .nav {
+	margin-top: 20px;
+}
+
+#vietnam-moments .nav .types {
+}
+
+#vietnam-moments .nav .types {
+}
+
+#vietnam-moments .nav .types ul li {
+	background: none repeat scroll 0 0 #FFFFFF;
+	display: inline;
+	float: left;
+	font-weight: bold;
+	line-height: 34px;
+	padding: 0 15px;
+	position: relative;
+	text-transform: uppercase;
+}
+
+#vietnam-moments .nav .types ul li a {
+	color: #000000;
+}
+
+#vietnam-moments .nav .types ul li.on {
+	background: none repeat scroll 0 0 #FF9C00;
+}
+
+#vietnam-moments .nav .types ul li.on a {
+	color: #FFFFFF;
+}
+
+#vietnam-moments .nav .types .caret {
+	border-left: 4px solid rgba(255, 255, 255, 0);
+	border-right: 4px solid rgba(255, 255, 255, 0);
+	border-top: 4px solid #FF9C00;
+	border-bottom-color: #FF9C00;
+	content: "";
+	position: absolute;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	bottom: -4px;
+	left: 45%;
+}
+
+#vietnam-moments .nav .categories {
+}
+
+#vietnam-moments .nav .categories ul li {
+	background: none repeat scroll 0 0 #FFFFFF;
+	display: inline;
+	float: left;
+	line-height: 34px;
+	margin-left: 5px;
+	padding: 0 10px;
+	position: relative;
+}
+
+#vietnam-moments .nav .categories ul li a {
+	color: #000000;
+}
+
+#vietnam-moments .nav .categories ul li.on {
+	background: none repeat scroll 0 0 #0072BC;
+}
+
+#vietnam-moments .nav .categories ul li.on a {
+	color: #FFFFFF;
+}
+
+#vietnam-moments .gallery {
+	margin-top: 10px;
+}
+
+#vietnam-moments .gallery .album {
+	background: url("../images/vietnam/album-frame.png") no-repeat scroll 0 0 transparent;
+	width: 245px;
+	height: 234px;
+	float: left;
+	margin-top: 10px;
+}
+
+#vietnam-moments .gallery .album .content {
+	padding: 20px;
+}
+
+#vietnam-moments .gallery .album .img {
+	width: 200px;
+	height: 140px;
+	border: 1px solid #EFEFEF;
+	padding: 1px;
+	overflow: hidden;
+}
+
+#vietnam-moments .gallery .album .img img {
+	width: 200px;
+	height: 140px;
+}
+
+#vietnam-moments .gallery .album .img-caption {
+	padding: 8px 0px;
+	font-weight: bold;
+	border-bottom: 1px dotted #EFEFEF;
+	line-height: 20px;
+	height: 16px;
+	overflow: hidden;
+}
+
+#vietnam-moments .gallery .album .img-caption a {
+	color: #333333;
+}
+
+#vietnam-moments .gallery .album .author {
+	color: #999999;
+	padding: 5px 0px;
+}
+
+#vietnam-moments .gallery .album .created-date {
+	color: #999999;
+}
+
+#vietnam-moments .photos {
+	margin-top: 10px;
+	background-color: #FFFFFF;
+}
+
+#vietnam-moments .photos .photo {
+	width: 245px;
+	height: 234px;
+	float: left;
+}
+
+#vietnam-moments .photos .photo .content {
+	padding: 20px;
+}
+
+#vietnam-moments .photos .photo .img {
+	width: 200px;
+	height: 130px;
+	background-color: #EFEFEF;
+	border: 1px solid #EFEFEF;
+	padding: 1px;
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+#vietnam-moments .photos .photo .img img {
+	max-width: 200px;
+	max-height: 130px;
+}
+
+#vietnam-moments .photos .photo .img-caption {
+	padding: 8px 0px;
+	font-weight: bold;
+}
+
+#vietnam-moments .photos .photo .img-caption a {
+	color: #333333;
+}
+
+#vietnam-moments .videos {
+	margin-top: 10px;
+	background-color: #FFFFFF;
+}
+
+#vietnam-moments .videos .video {
+	width: 245px;
+	height: 234px;
+	float: left;
+	padding-bottom: 10px;
+}
+
+#vietnam-moments .videos .video .content {
+	padding: 20px;
+}
+
+#vietnam-moments .videos .video .img {
+	width: 200px;
+	height: 140px;
+	border: 1px solid #EFEFEF;
+	padding: 1px;
+	overflow: hidden;
+	position: relative;
+}
+
+#vietnam-moments .videos .video .img .play-icon {
+	top: 45px;
+	left: 75px;
+	opacity: 0.5;
+	position: absolute;
+}
+
+#vietnam-moments .videos .video .img a:hover .play-icon {
+	opacity: 1;
+}
+
+#vietnam-moments .videos .video .img .play-icon img {
+	width: 50px;
+	height: 50px;
+}
+
+#vietnam-moments .videos .video .img img {
+	width: 200px;
+	height: 140px;
+}
+
+#vietnam-moments .videos .video .img-caption {
+	padding: 8px 0px;
+	font-weight: bold;
+	border-bottom: 1px dotted #EFEFEF;
+	height: 30px;
+}
+
+#vietnam-moments .videos .video .img-caption a {
+	color: #333333;
+}
+
+#vietnam-moments .videos .video .author {
+	color: #999999;
+	padding: 5px 0px;
+}
+
+#vietnam-moments .videos .video .created-date {
+	color: #999999;
+}
+
+#vietnam-moments .video-detail {
+	margin-top: 10px;
+}
+
+#vietnam-moments .video-detail .video {
+	background-color: #FFFFFF;
+	padding: 10px;
+	width: 644px;
+}
+
+#vietnam-moments .video-detail .video .content {
+}
+
+#vietnam-moments .video-detail .video .img {
+	width: 640px;
+	height: 360px;
+	border: 1px solid #EFEFEF;
+	padding: 1px;
+	overflow: hidden;
+}
+
+#vietnam-moments .video-detail .video .img img {
+	width: 640px;
+	height: 360px;
+}
+
+#vietnam-moments .video-detail .video .img-caption {
+	padding: 8px 0px;
+	font-size: 24px;
+	font-weight: normal;
+	border-bottom: 1px dotted #EFEFEF;
+}
+
+#vietnam-moments .video-detail .video .hit-rate {
+	color: #999999;
+	padding: 5px 0px;
+}
+
+#vietnam-moments .video-detail .video .created-date {
+	color: #999999;
+}
+
+#vietnam-moments .video-detail .related {
+	background-color: #FFFFFF;
+	padding: 10px;
+	width: 286px;
+}
+
+#vietnam-moments .video-detail .related .related-item {
+}
+
+#vietnam-moments .video-detail .related .related-item-div {
+	border-bottom: 1px dotted #EFEFEF;
+	margin: 5px;
+}
+
+#vietnam-moments .video-detail .related .related-item .img {
+	width: 100px;
+	height: 75px;
+	border: 1px solid #EFEFEF;
+	padding: 1px;
+	margin-right: 10px;
+	overflow: hidden;
+}
+
+#vietnam-moments .video-detail .related .related-item .img img {
+	width: 100px;
+	height: 75px;
+}
+
+#vietnam-moments .video-detail .related .related-item .img-caption {
+	padding: 0px 0px 8px;
+	font-weight: bold;
+}
+
+#vietnam-moments .video-detail .related .related-item .img-caption a {
+	color: #333333;
+}
+
+#vietnam-moments .video-detail .related .related-item .hit-rate {
+	color: #999999;
+	font-size: 11px;
+	padding: 5px 0px;
+}
+
+#vietnam-moments .video-detail .related .related-item .created-date {
+	color: #999999;
+	font-size: 11px;
+}
+
+/* End Gallery */
+
+/* Vietnam Destinations */
+
+#vietnam-destinations {
+}
+
+#vietnam-destinations .overview-summary {
+	background: url("../images/quote.png") no-repeat scroll left top transparent;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 0px 30px;
+}
+
+#vietnam-destinations .destinations {
+	margin-top: 30px;
+}
+
+#vietnam-destinations .destinations .regions {
+	margin: 0px 0px 10px;
+	border-bottom: 1px solid #DDDDDD;
+}
+#vietnam-destinations .destinations ul.tabs {
+	padding: 10px 0px;
+	margin-bottom: -1px;
+}
+#vietnam-destinations .destinations ul.tabs li {
+	color: #666666;
+	float: left;
+	padding-right: 10px;
+}
+#vietnam-destinations .destinations ul.tabs li a {
+	color: #2A2A2A;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 8px 10px;
+	text-decoration: none;
+}
+#vietnam-destinations .destinations ul.tabs li a.selected {
+	border-bottom: 2px solid #FF9C00;
+	color: #FF9C00;
+}
+#vietnam-destinations .destinations ul.tabs li a:hover {
+	border-bottom: 2px solid #FF9C00;
+	color: #FF9C00;
+}
+
+#vietnam-destinations .destination-noresult {
+	margin: 20px 0px;
+}
+
+#vietnam-destinations .search-form {
+	padding: 2px 0px 0px;
+}
+#vietnam-destinations .search-form .search-terms {
+	height: 29px;
+}
+#vietnam-destinations .search-btn-component, #vietnam-destinations .search-btn-component .start {
+	border-bottom-left-radius: 0;
+	border-left: 0 none;
+	border-top-left-radius: 0;
+}
+#vietnam-destinations .search-btn-component {
+	filter: none;
+	float: right;
+	height: 28px;
+}
+#vietnam-destinations .search-form .search-button .search-button-icon {
+	background: url('../images/vietnam/icon-search.png') no-repeat scroll center center transparent;
+	width: 28px;
+	height: 26px;
+	display: block;
+}
+#vietnam-destinations .search-form .search-button {
+	background-color: #F8F8F8;
+	background-image: linear-gradient(to bottom, #FCFCFC 0px, #F8F8F8 100%);
+	border-color: #D3D3D3;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	border-style: solid;
+	border-width: 1px;
+	cursor: pointer;
+	font-size: 11px;
+	font-weight: bold;
+	height: 28px;
+	outline: 0 none;
+	vertical-align: middle;
+	white-space: nowrap;
+	word-wrap: normal;
+}
+#vietnam-destinations .search-form .search-terms {
+	background-color: #FFFFFF;
+	border-radius: 0 0 0 0;
+	font-size: 14px;
+	height: 26px;
+	line-height: 26px;
+	overflow: hidden;
+	transition: border-color 0.2s ease 0s;
+}
+#vietnam-destinations .search-form .search-terms-border {
+	border: 1px solid #CCCCCC;
+	border-right: none;
+	box-shadow: 0 1px 2px #EEEEEE inset;
+}
+#vietnam-destinations label {
+	border: medium none;
+	height: 100%;
+	line-height: 28px;
+	overflow: hidden;
+	padding: 0;
+}
+#vietnam-destinations .search-form .search-terms input {
+	-moz-box-sizing: border-box;
+	background: none repeat scroll 0 0 transparent;
+	border: 0 none;
+	display: inline-block;
+	margin: 0;
+	outline: medium none;
+	padding: 2px 6px;
+	width: 250px;
+}
+
+#vietnam-destinations .destinations .destination {
+	float: left;
+	background-color: #2692BE;
+	border: 1px solid #DDDDDD;
+	width: 228px;
+	height: 400px;
+	overflow: hidden;
+	position: relative;
+}
+
+#vietnam-destinations .destinations .destination1 {
+	margin: 10px 20px 10px 0px;
+}
+
+#vietnam-destinations .destinations .destination2 {
+	margin: 10px 20px 10px 0px;
+}
+
+#vietnam-destinations .destinations .destination3 {
+	margin: 10px 20px 10px 0px;
+}
+
+#vietnam-destinations .destinations .destination4 {
+	margin: 10px 0px 10px 0px;
+}
+
+#vietnam-destinations .destinations .destination .flag {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	display: inline-block;
+	z-index: 2;
+}
+
+#vietnam-destinations .destinations .destination .thumbnail {
+	width: 230px;
+	height: 150px;
+	overflow: hidden;
+}
+
+#vietnam-destinations .destinations .destination .thumbnail img {
+	width: 230px;
+	height: 150px;
+}
+
+#vietnam-destinations .destinations .destination .content {
+	position: absolute;
+	top: 150px;
+	left: 0px;
+	height: 400px;
+	padding: 10px;
+	transition: 1s;
+	background-color: #FFFFFF;
+	z-index: 1;
+}
+
+#vietnam-destinations .destinations .content:hover {
+	top: 35px;
+}
+
+#vietnam-destinations .destinations .destination .content {
+	padding: 10px;
+}
+
+#vietnam-destinations .destinations .destination .content * {
+}
+
+#vietnam-destinations .destinations .destination .content .title {
+	overflow: hidden;
+}
+
+#vietnam-destinations .destinations .destination .content .title a {
+	color: #0072BC;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+#vietnam-destinations .destinations .destination .content .summary {
+	margin: 10px 0;
+}
+
+#vietnam-destinations .destinations .destination .content .summary p {
+}
+
+#vietnam-destinations .destinations .destination .extra {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	z-index: 3;
+	margin: 0px;
+	padding: 10px 0px;
+	border-top: 1px solid #FFFFFF;
+	background-color: #2692BE;
+	width: 100%;
+}
+
+#vietnam-destinations .destinations .destination .extra a {
+	margin-left: 10px;
+	color: #FFFFFF;
+	line-height: 20px;
+}
+
+#vietnam-destinations .slideshow {
+	width: 367px;
+	height: 285px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+#vietnam-destinations .slideshow .creative-layer {
+	transition-duration: 1s;
+}
+
+#vietnam-destinations .slideshow .creative-layer .caption-blue {
+	background-color: #000000;
+	color: #FFFFFF;
+	font-size: 20px;
+	width: 100%;
+	overflow: hidden;
+	padding: 10px 10px;
+	position: absolute;
+	top: 310px;
+	left: 0px;
+	z-index: 1200;
+	opacity: 0.8;
+}
+
+.bannerscollection_zoominout.opportune .bottomOverThumb {
+	display: none;
+}
+
+#vietnam-destinations .highlights {
+	width: 266px;
+	margin-left: 20px;
+}
+
+#vietnam-destinations .highlights * {
+}
+
+#vietnam-destinations .highlights .title {
+	color: #333333;
+	font-size: 20px;
+	padding-bottom: 4px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #AAAAAA;
+}
+
+#vietnam-destinations .highlights ul {
+	margin-top: 10px;
+}
+
+#vietnam-destinations .highlights ul li {
+	line-height: 22px;
+	padding: 8px 0px 4px 35px;
+}
+
+#vietnam-destinations .highlights ul li span {
+	font-weight: bold;
+	color: #00539e;
+}
+
+#vietnam-destinations .destination .highlights > ul > li:nth-child(1) {
+	background: url('../images/area.png') no-repeat scroll left 8px transparent;
+}
+
+#vietnam-destinations .destination .highlights > ul > li:nth-child(2) {
+	background: url('../images/population.png') no-repeat scroll left 8px transparent;
+}
+
+#vietnam-destinations .destination .highlights > ul > li:nth-child(3) {
+	background: url('../images/location.png') no-repeat scroll left 8px transparent;
+}
+
+#vietnam-destinations .destination .highlights > ul > li:nth-child(4) {
+	background: url('../images/climate.png') no-repeat scroll left 8px transparent;
+}
+
+#vietnam-destinations .destination .highlights > ul > li:nth-child(5) {
+	background: url('../images/explore-map.png') no-repeat scroll left 8px transparent;
+}
+
+#vietnam-destinations .sight .highlights > ul > li:nth-child(1) {
+	background: url('../images/address.png') no-repeat scroll left 8px transparent;
+}
+
+#vietnam-destinations .sight .highlights > ul > li:nth-child(2) {
+	background: url('../images/attraction-type.png') no-repeat scroll left 8px transparent;
+}
+
+#vietnam-destinations .sight .highlights > ul > li:nth-child(3) {
+	background: url('../images/destination.png') no-repeat scroll left 11px transparent;
+}
+
+#vietnam-destinations .sight .highlights > ul > li:nth-child(4) {
+	background: url('../images/useful-info.png') no-repeat scroll left 8px transparent;
+}
+
+#vietnam-destinations .destination .highlights ul li ul {
+	margin: 0px;
+}
+
+#vietnam-destinations .highlights ul li ul li {
+	background: url('../images/list-check.png') no-repeat scroll left 8px transparent;;
+	list-style-type: none;
+	padding: 4px 0px 4px 20px;
+	line-height: 18px;
+}
+
+#vietnam-destinations .top-destination-widget {
+	margin-top: 20px;
+}
+
+#vietnam-destinations .detailed {
+	margin-top: 20px;
+	width: 660px;
+	padding: 10px;
+}
+
+#vietnam-destinations .detailed * {
+}
+
+#vietnam-destinations .detailed h2, #vietnam-destinations .detailed h2 span {
+	font-size: 20px;
+	font-weight: normal;
+	padding-bottom: 10px;
+}
+
+#vietnam-destinations .detailed ul {
+	list-style: inherit !important;
+	margin-left: 40px;
+}
+
+#vietnam-destinations .detailed ul li {
+	list-style: inherit !important;
+	line-height: 22px;
+	padding: 5px 0px;
+}
+
+#vietnam-destinations .related-tours {
+	float: left;
+}
+
+#vietnam-destinations .sight .label {
+	color: #0072bc;
+	font-weight: bold;
+}
+
+#vietnam-destinations .sight .address {
+	background: url("../images/vietnam/icon/address.png") no-repeat scroll left top transparent;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	line-height: 18px;
+}
+
+#vietnam-destinations .sight .area {
+	background: url("../images/vietnam/icon/address.png") no-repeat scroll left top transparent;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	line-height: 18px;
+}
+
+#vietnam-destinations .sight .open-time {
+	background: url("../images/vietnam/icon/open-time.png") no-repeat scroll left top transparent;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	line-height: 18px;
+}
+
+#vietnam-destinations .sight .description {
+	margin-top: 20px;
+}
+
+#vietnam-destinations .sight .description ul ul {
+	list-style: inherit !important;
+	margin-left: 40px;
+}
+
+#vietnam-destinations .sight .description ul li {
+	list-style: inherit !important;
+	line-height: 18px;
+	padding: 5px 0px;
+}
+
+#vietnam-destinations .sight .googlemap {
+	width: 376px;
+	height: 220px;
+	border: 2px solid #FFFFFF;
+}
+#vietnam-destinations .sight #mapcanvas {
+	width: 376px;
+	height: 220px;
+}
+
+#vietnam-destinations .destination .location .googlemap {
+	width: 276px;
+	height: 250px;
+	border: 2px solid #FFFFFF;
+}
+#vietnam-destinations .destination .location #mapcanvas {
+	width: 276px;
+	height: 250px;
+}
+
+#top-destination-tours div.title, #attraction-reviews div.title, #vietnam-destinations .detailed .title {
+	font-size: 20px;
+	color: #cc6633;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #cc6633;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+#top-destination-tours .viewmore {
+	color: #333333;
+	font-style: italic;
+	text-decoration: none;
+}
+#top-destination-tours .viewmore:hover {
+	text-decoration: underline;
+}
+#top-destination-tours .list, .destination-list .list {
+	margin-top: 10px;
+}
+#top-destination-tours .list li, .destination-list .list li {
+	float: left;
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #DDDDDD;
+	transition: box-shadow 0.2s ease 0s;
+	margin-right: 20px;
+	margin-bottom: 15px;
+	padding: 0px;
+	line-height: 20px;
+	width: 218px;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+}
+.destination-list .list li {
+	height: 370px;
+	width: 218px;
+}
+
+#top-destination-tours .list li.col1,
+#top-destination-tours .list li.col2,
+#top-destination-tours .list li.col3 {
+	margin-right: 10px !important;
+}
+
+.destination-list .list li.col1,
+.destination-list .list li.col2 {
+	margin-right: 10px !important;
+}
+
+#top-destination-tours .list li.col4, #top-destination-tours .list li.col3, .destination-list .list li.col3 {
+	margin-right: 0px !important;
+}
+
+#top-destination-tours .list li:hover, .destination-list .list li:hover {
+	box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+}
+#top-destination-tours .list li.hidden, .destination-list .list li.hidden {
+	background: none repeat scroll 0 0 #F8F8F8;
+}
+#top-destination-tours .list li.hidden:hover, .destination-list .list li.hidden:hover {
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+#top-destination-tours .list .thumb, .destination-list .list .thumb {
+	position: relative;
+	width: 228px;
+	height: 150px;
+	overflow: hidden;
+}
+#top-destination-tours .list .thumb img, .destination-list .list .thumb img {
+	width: 230px;
+	height: 150px;
+	display: inline-block;
+}
+#top-destination-tours .list .thumb .promotion, .destination-list .list .thumb .promotion {
+	width: 230px;
+	background-color: #FF8800;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding: 5px 10px;
+	position: absolute;
+	bottom: 0px;
+}
+#top-destination-tours .list .detail, .destination-list .list .detail {
+	padding: 8px;
+	background: none repeat scroll 0 0 #FFFFFF;
+	left: 0;
+	position: absolute;
+	top: 150px;
+	height: 400px;
+	transition: all 1s ease 0s;
+}
+#top-destination-tours .list .detail p, .destination-list .list .detail p {
+}
+#top-destination-tours .list .tourname, .destination-list .list .tourname {
+	color: #00A0D4;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 18px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	display: block;
+	width: 200px;
+}
+#top-destination-tours .list .tourname a, .destination-list .list .tourname a {
+	color: #0072BC;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 18px;
+}
+#top-destination-tours .list .price {
+	color: #ff8a00;
+	font-weight: bold;
+}
+#top-destination-tours .list .price label {
+	color: #2A2A2A;
+	font-weight: normal;
+}
+#top-destination-tours .list .price label.original {
+	color: #999999;
+	font-weight: normal;
+	text-decoration: line-through;
+}
+#top-destination-tours .list .photo {
+}
+#top-destination-tours .list .separator {
+	border-bottom: 1px dotted #DDDDDD;
+	margin: 8px 0px;
+}
+#top-destination-tours .list .rating {
+}
+#top-destination-tours .list .desc {
+	height: 90px;
+	overflow: hidden;
+	line-height: 18px;
+}
+#top-destination-tours .list .booknow {
+	text-align: center;
+	position: absolute;
+	top: 348px;
+	z-index: 1;
+	width: 100%;
+	background: white;
+	padding: 10px 0;
+	height: 40px;
+}
+#top-destination-tours .list .booknow a {
+	padding: 4px 10px;
+	background-color: #FF8800;
+	background-image: -moz-linear-gradient(center top , #FFD200, #FF8800);
+	background-repeat: repeat-x;
+	border-radius: 5px 5px 5px 5px;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: normal;
+	border-style: solid;
+	border-width: 0px;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	margin-bottom: 0;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+}
+#top-destination-tours .list .booknow a:hover {
+	background-image: none;
+}
+.large-map{
+	display: block;
+	cursor: pointer;
+	position: relative;
+}
+div.map-mask {
+	/*background:url('../images/icon-zoom.png') no-repeat 112px 119px;*/
+	display: none;
+	height: 250px;
+	left: 0;top: 0;
+	position: absolute;
+	width: 276px;  
+}
+div.map-mask > div{
+	display: block;
+	background: #000;
+	opacity: .5; /*for real browsers (Chrome, Firefox, Safari..)*/
+	filter:alpha(opacity=60); /* for IE */
+	height: 250px;
+	width: 276px;
+	border: 2px solid #000;
+	left: 0;top: 0;
+	position: absolute;
+	z-index: 1; 
+}
+div.map-mask img {
+	width: 46px;
+	height: 46px;
+	margin-top: 112px;
+	margin-left: 119px;
+	z-index: 9999; 
+}
+#vietnam-destinations .sight div.map-mask > div{
+	height: 220px;
+	width: 376px;
+}
+#vietnam-destinations .sight div.map-mask img{
+	margin-top: 87px;
+	margin-left: 165px;
+}
+/* End Vietnam Destinations */
+
+/* Things Todo */
+
+#things-todo {
+}
+
+#things-todo .sights {
+}
+
+#things-todo .sights .destination {
+	float: left;
+	background-color: #FFFFFF;
+	border: 1px solid #DDDDDD;
+	width: 218px;
+	height: 395px;
+	overflow: hidden;
+	margin: 0px 8px 10px 0px;
+	position: relative;
+}
+
+#things-todo .sights .destination1 {
+	margin: 0px 10px 10px 0px !important;
+}
+
+#things-todo .sights .destination2 {
+	margin: 0px 10px 10px 0px !important;
+}
+
+#things-todo .sights .destination3 {
+	margin: 0px 0px 10px 0px !important;
+}
+
+#things-todo .sights .destination .flag, .destination-list .flag {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	display: inline-block;
+	z-index: 2;
+}
+
+#things-todo .sights .destination .thumbnail {
+	width: 220px;
+	height: 150px;
+	overflow: hidden;
+}
+
+#things-todo .sights .destination .thumbnail img {
+	width: 220px;
+	height: 150px;
+}
+
+#things-todo .sights .destination .content {
+	position: absolute;
+	top: 150px;
+	left: 0px;
+	height: 400px;
+	padding: 10px;
+	transition: 1s;
+	background-color: #FFFFFF;
+	z-index: 1;
+}
+
+#things-todo .sights .destination .content:hover, #top-destination-tours .list .detail:hover, .destination-list .list .detail:hover {
+	top: 35px;
+}
+
+#things-todo .sights .destination .content * {
+}
+
+#things-todo .sights .destination .content .title {
+}
+
+#things-todo .sights .destination .content .title a {
+	color: #0072bc;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+#things-todo .sights .destination .content .summary {
+	margin: 10px 0px;
+}
+
+#things-todo .sights .destination .content .summary p {
+}
+
+#things-todo .sights .destination .extra {
+	margin: 0px 0px 15px;
+	padding-top: 10px;
+	border-top: 1px dotted #FFFFFF;
+}
+
+#things-todo .sights .destination .extra a {
+	margin-left: 10px;
+	color: #FFFFFF;
+	line-height: 20px;
+}
+
+#things-todo .sights .detailed {
+	margin-top: 10px;
+}
+
+#things-todo .sights .detailed h2 {
+	font-size: 18px;
+	font-weight: normal;
+}
+
+#things-todo .sights .detailed ul {
+	list-style: inherit !important;
+	margin-left: 40px;
+}
+
+#things-todo .sights .detailed ul li {
+	list-style: inherit !important;
+	line-height: 18px;
+	padding: 5px 0px;
+}
+
+#things-todo .sights .related-tours {
+	margin-top: 20px;
+}
+
+/* End Things Todo */
+
+/* Things Todo Filter Widget */
+
+#todo-filter-widget {
+	margin-top: 10px;
+	background-color: #009DAF;
+	width: 268px;
+	padding: 5px;
+	border: 1px solid #FFFFFF;
+}
+#todo-filter-widget .container {
+}
+#todo-filter-widget .widget-title {
+	color: #FFFFFF;
+	font-family: Myriad Pro;
+	font-size: 20px;
+	font-weight: normal;
+	padding: 10px 10px 5px;
+	border-bottom: 1px solid #80CED7;
+}
+#todo-filter-widget .widget-content {
+	padding: 10px;
+}
+#todo-filter-widget .widget-content .text-form {
+	padding: 4px 0px;
+}
+
+#todo-filter-widget .widget-content input[type="checkbox"] {
+	display: none;
+}
+
+#todo-filter-widget .widget-content input[type="checkbox"] + label.input {
+	background: url("../images/tour/icon/checkbox.gif") no-repeat scroll 0 center transparent;
+	padding-left: 16px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+#todo-filter-widget .widget-content input[type="checkbox"]:checked + label.input {
+	background: url("../images/tour/icon/checkbox-on.gif") no-repeat scroll 0 center transparent;
+}
+
+#todo-filter-widget .widget-content label {
+	float: left;
+	color: #FFFFFF;
+}
+#todo-filter-widget .widget-content label.total-number {
+	color: #00d6ee;
+	margin-left: 5px;
+}
+#todo-filter-widget .widget-content .show-more,
+#todo-filter-widget .widget-content .show-fewer {
+	color: #FFFFFF;
+	cursor: pointer;
+	padding: 10px 0px;
+	text-decoration: underline;
+}
+/* End Things Todo Filter Widget */
+
+/* Customize Tour */
+
+#tour-view-planning {
+	background-color: #009DAF;
+	border: 1px solid #FFFFFF;
+	margin-top: 10px;
+	padding: 5px;
+	width: 268px;
+}
+#tour-view-planning .widget-title {
+	border-bottom: 1px solid #80CED7;
+	color: #FFFFFF;
+	font-family: Myriad Pro;
+	font-size: 20px;
+	font-weight: normal;
+	margin: 10px 10px 0px;
+	padding-bottom: 10px;
+}
+#tour-view-planning .widget-subtitle {
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: normal;
+}
+#tour-view-planning .widget-content {
+	padding: 10px;
+}
+#tour-view-planning .widget-content .planning-description {
+	width: 100%;
+	height: 100px;
+	font-family: Arial;
+	font-size: 12px;
+	border: 1px solid #FFFFFF;
+}
+#tour-view-planning .widget-content .input {
+	margin-bottom: 10px;
+}
+#tour-view-planning .widget-content input[type="text"] {
+	width: 242px;
+	padding: 4px;
+	border: 1px solid #FFFFFF;
+}
+#tour-view-planning .widget-content .widget-button-bar {
+	border-top: 1px solid #80CED7;
+	text-align: right;
+}
+#tour-view-planning .widget-content .inquiry-button {
+	background: url("../images/tour/icon/inquiry.png") no-repeat scroll right center rgba(0, 0, 0, 0);
+	border: 0 none;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-family: Myriad Pro;
+	font-size: 20px;
+	font-weight: normal;
+	padding-right: 30px;
+	margin-top: 10px;
+}
+
+/* End Customize Tour */
+
+/* Need To Know Widget */
+
+#need-to-know-widget {
+	margin-top: 10px;
+	background: url("../images/vietnam/need-to-know-bg.jpg") no-repeat scroll left top transparent;
+	width: 280px;
+	height: 235px;
+}
+
+#need-to-know-widget ul {
+	padding-top: 60px;
+	margin-left: 15px;
+	list-style-type: none;
+}
+
+#need-to-know-widget ul li {
+	background: url("../images/vietnam/icon/arrow-org.png") no-repeat scroll left center transparent;
+	padding-left: 15px;
+	line-height: 30px;
+}
+
+#need-to-know-widget ul li a {
+	color: #0072BC;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+/* End Need To Know Widget */
+
+/* Show More Items */
+
+.show-more-container {
+	border: 1px solid #DDDDDD;
+	background-color: #F8F8F8;
+}
+
+.show-more-container .link {
+	color: #333333;
+	width: 100%;
+	line-height: 40px;
+	text-align: center;
+	display: inline-table;
+	cursor: pointer;
+}
+
+.show-more-container .loading {
+}
+
+.show-more-container .hidden {
+	display: none;
+}
+
+/* End Show More Items */
+
+/* Video Share Tools */
+#share-tools {
+	margin: 20px 0px;
+}
+
+#review-tools {
+	margin-top: 20px;
+}
+
+#review-tools ul.tabs {
+	border-bottom: 1px solid #D4D4D4;
+	padding-bottom: 28px;
+}
+#review-tools ul.tabs li {
+	color: #666666;
+	float: left;
+	padding-right: 20px;
+}
+#review-tools ul.tabs li a.selected {
+	border-bottom: 3px solid #FF9C00;
+	color: #FF9C00;
+	font-weight: bold;
+}
+#review-tools ul.tabs li a {
+	color: #2A2A2A;
+	padding: 8px 0;
+	text-decoration: none;
+}
+#review-tools div.tab-selected {
+	display: block;
+}
+#review-tools div.tab-content {
+	display: none;
+}
+/* End Share Tools */
+
+/* Support mega menu */
+#mainmenu ul.megamenu > li .support-submenu-content {
+	padding: 10px;
+}
+#mainmenu ul.megamenu > li .support-submenu-content .support {
+	float: left;
+	margin-right: 0px;
+	padding: 6px;
+}
+#mainmenu ul.megamenu > li .support-submenu-content .support:hover {
+	background-color: #F8F8F8;
+}
+#mainmenu ul.megamenu > li .support-submenu-content .last {
+	margin-right: 0px;
+}
+#mainmenu ul.megamenu > li .support-submenu-content .support a {
+	text-decoration: none;
+}
+#mainmenu ul.megamenu > li .support-submenu-content .support .label {
+	font-size: 16px;
+}
+#mainmenu ul.megamenu > li .support-submenu-content .support .img {
+	margin-top: 10px;
+}
+#mainmenu ul.megamenu > li .support-submenu-content .support img {
+	width: 228px;
+	height: 150px;
+}
+
+#mainmenu #support-submenu {
+	margin: 0px;
+	padding: 0px;
+	background: url("../images/tour/menu/support-bg.jpg") no-repeat scroll right bottom #FFFFFF;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+	border-top: 4px solid #00539E;
+	position: absolute;
+	left: 0;
+	width: 980px;
+	height: 250px;
+	z-index: 999;
+	display: none;
+}
+/* End Support mega menu */
+
+/* Destination Attractions */
+#destination-attractions {
+	width: 680px;
+	float: left;
+	margin-bottom: 25px;
+}
+
+#destination-attractions > ul {
+	border-bottom: 1px solid #cc6633;
+	overflow: hidden;
+	margin-top: 40px;
+	display: table;
+	width: 100%;
+}
+
+#destination-attractions > ul li:nth-child(4) {
+	border: none;
+}
+
+#destination-attractions > ul li {
+	display: table-cell;
+	border-right: 6px solid #F0F0EF;
+}
+
+#destination-attractions > ul li a {
+	background: #FFFFFF;
+	padding: 15px 11px 5px 10px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #787878; 
+	display: block;
+	text-decoration: none;
+}
+
+#destination-attractions > ul li a:hover, #destination-attractions ul li a.active {
+	background: #cc6633;
+	color: #FFFFFF;
+}
+
+#destination-attractions .tab-selected {
+	display: block;
+}
+
+#destination-attractions .tab-content {
+	display: none;
+}
+
+#destination-select {
+	background: url("../images/member/down-arrow.png") no-repeat scroll 255px center #FFFFFF;
+	margin:18px 0 10px 0;
+	padding:10px 0 10px 15px;
+	width: 100%;
+	font-weight: bold;
+	border: 1px solid #d5d5d5; 
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;  
+	text-indent: 0.01px;
+	text-overflow: "";
+	color: #414141;
+	cursor: pointer;
+}
+
+#related-post, #popular-attractions {
+	background: none repeat scroll 0 0 #FFFFFF;
+	float: right;
+	/*margin-top: 15px;*/
+	padding: 5px 15px 10px 15px;
+	width: 250px;
+}
+
+#popular-attractions {
+	background: none repeat scroll 0 0 #FFFFFF;
+	margin-bottom: 15px;
+	padding: 5px 15px 20px 15px;
+	width: 250px;
+}
+
+#related-post .related-title {
+	background: url("../images/related.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+	border-bottom: 1px solid #cc6633;
+	padding: 15px 0 15px 50px;
+}
+
+#popular-attractions .title, #attraction-nearby .title {
+	background: url("../images/camera.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+	border-bottom: 1px solid #cc6633;
+	padding: 15px 0 15px 50px;
+	overflow: hidden;
+}
+
+#attraction-nearby {
+	background: #FFFFFF;
+}
+
+#attraction-nearby .title {
+	background: url("../images/nearby.png") no-repeat scroll 15px 22px rgba(0, 0, 0, 0);
+	border: none;
+	padding-left: 65px;
+	padding-top: 30px;
+}
+
+#related-post .related-title h2, #popular-attractions .title h2, #attraction-nearby .title h2 {
+	font-size: 18px;
+	font-weight: bold;
+	color: #cc6633;
+	float: left;
+	display: table-cell;
+}
+
+#related-post ul li {
+	padding: 10px 0 10px;
+	border-top: 1px solid #ccc;
+}
+
+#related-post ul li a {
+	color: #282828;
+}
+
+#related-post ul li span {
+	font-weight: bold;
+	color: #cc6633;
+	padding-right: 10px;
+}
+
+#popular-attractions ul {
+	margin-top: 15px;
+	padding-left: 15px;
+	/*max-height: 200px;*/
+	overflow: hidden;
+}
+
+#popular-attractions ul li {
+	margin-bottom: 10px;
+}
+
+#popular-attractions ul li a {
+	color: #0072bc;
+}
+
+#popular-attractions span {
+	padding: 20px 0 0 15px;
+	display: block;
+}
+
+#popular-attractions span a {
+	font-size: 12px;
+}
+
+#destination-video {
+	display: block;
+	width: 100%;
+	height: 210px;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.destination .viewmore, .sight .viewmore, .sight .viewfewer {
+	font-style: italic;
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: #2075c2;
+	border-bottom: 2px solid #c0d2e9;
+	text-decoration: none;
+}
+
+.destination-list .top-choice, #things-todo .top-choice {
+	position: absolute;
+	top: -3px;
+	left: 160px;
+	display: inline-block;
+	z-index: 2;
+}
+
+.destination-list .reviews, #things-todo .sights .destination .reviews {
+	margin-bottom: 10px;
+}
+
+.destination-list .reviews img, #things-todo .sights .destination .reviews img {
+	margin-top: 2px;
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+
+.destination-list .reviews a, #things-todo .sights .destination .reviews a {
+	text-decoration: none;
+	font-size: 12px;
+	color: #2075c2;
+	border-bottom: 2px solid #c0d2e9;
+}
+
+.destination-nav ul li {
+	background: #FFFFFF url("../images/right-arrow") no-repeat 260px center scroll;
+	padding: 10px 8px;
+	border-top: 1px solid #f0f0ef;
+}
+
+.destination-nav ul li:nth-child(1) {
+	border: none;
+}
+
+.destination-nav ul li a {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 55px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #464646;
+}
+
+.destination-nav ul li a.attraction {
+	background: url("../images/destination/attraction-icon.png") no-repeat scroll center left;
+}
+
+.destination-nav ul li a.restaurant {
+	background: url("../images/destination/restaurant-icon.png") no-repeat scroll center left;
+}
+
+.destination-nav ul li a.shopping {
+	background: url("../images/destination/shopping-icon.png") no-repeat scroll center left;
+}
+
+.destination-nav ul li a.entertainment {
+	background: url("../images/destination/entertainment-icon.png") no-repeat scroll center left;
+}
+
+.destination-nav ul li a.tours {
+	background: url("../images/destination/tours-icon.png") no-repeat scroll center left;
+}
+
+#attraction-reviews {
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+#attraction-reviews .review-content {
+	width: 520px;
+	padding: 15px 20px 15px 20px;
+	background-color: #FFFFFF;
+	position: relative;
+	border-radius: 10px;
+	-moz-border-radius : 10px;
+	-webkit-border-radius: 10px;
+}
+
+#attraction-reviews > ul li {
+	display: block;
+	padding-bottom: 20px;
+	overflow: hidden;
+	border-bottom: 1px solid #cfcfcf;
+	margin-top: 20px;
+}
+
+#attraction-reviews .review-content:before {
+	width: 0px; 
+	height: 0px; 
+	border-bottom: 5px solid transparent;  /* left arrow slant */
+	border-top: 9px solid transparent; /* right arrow slant */
+	border-right: 25px solid #ffffff; /* bottom, add background color here */
+	font-size: 0;
+	line-height: 0;
+	position:absolute;
+	top:50px;
+	left:-20px;
+	content:"";
+	z-index: 2;
+	-webkit-transform: rotate(-15deg);
+	-moz-transform: rotate(-15deg);
+	-ms-transform: rotate(-15deg);
+	-o-transform: rotate(-15deg);
+	transform: rotate(-15deg);
+}
+
+#attraction-reviews .review-content h2 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #00539e;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+#attraction-reviews .review-content .main-content {
+	margin-top: 15px;
+	line-height: 24px;
+}
+
+#attraction-reviews .user-info .img-circle {
+	height: 88px;
+	width: 88px;
+	overflow: hidden;
+	display: block;
+	border-radius: 50%;
+	border: 3px solid #ffffff;
+}
+
+#attraction-reviews .user-info p.user-name {
+	color: #4f4f4f;
+	font-size: 12px;
+	text-align: center;
+}
+
+#attraction-reviews .user-info p.user-name span {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#new-review {
+	margin: 25px 0;
+	overflow: hidden;
+}
+
+#new-review h1{
+	font-size: 20px;
+	color: #cc6633;
+	display: inline-block;
+	width: 500px;
+}
+
+#new-review a {
+	display: inline-block;
+	margin-left: 20px;
+	color: #FFFFFF;
+	background-color: #cc6633;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 3px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	text-decoration: none;
+	float: right;
+}
+
+#review-box {
+	width: 760px;
+	padding: 4px;
+}
+
+#review-box .header {
+	background: #0e7ab0 url("../images/logo-white.png") no-repeat 12px center;
+	padding: 25px 0 25px 200px;
+}
+
+#review-box .header h1 {
+	color: #FFFFFF;
+	font-size: 22px;
+}
+#review-box .title {
+	padding: 28px 0 20px 0;
+	border-bottom: 1px solid #d6d6d6;
+}
+
+#review-box .title h1 {
+	font-size: 24px;
+	color: #0e7ab0;
+}
+
+#review-box .title h3 {
+	font-size: 18px;
+	color: #7e7e7e;
+	margin-top: 12px;
+}
+
+#review-box a.btn-review {
+	border: none;
+	padding: 8px 10px 8px 15px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background: #ff9000;
+	border-radius: 7px;
+	line-height: 18px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#review-box form p {
+    line-height: 32px;
+    margin-top: 10px;
+}
+
+#review-box form p label {
+    width: 100px;
+    font-size: 14px;
+    display: block;
+    float: left
+}
+
+#review-box form p input, #review-box form p select {
+    padding: 8px 10px;
+    border: 1px solid #cfcfcf;
+    width: 280px;
+}
+
+#review-box form p select {
+    width: 302px;
+}
+
+#review-box form p textarea {
+    width:737px;
+    padding: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#review-info {
+	padding: 50px 0;
+	width: 500px;
+	overflow: hidden;
+}
+
+#review-info .left {
+	border-right: 1px solid #dedede;
+	padding: 0px 2% 0px 0;
+	width: 35%;
+	float: left;
+	height: 176px;
+}
+
+#review-info .right {
+	width: 61%;
+}
+
+#review-info .info-title {
+	font: 700 14px arial;
+	color: #000;
+	margin: 0px 0px 5px;
+	overflow: hidden;
+}
+
+#review-info .p-social {
+	display: block;
+	overflow: hidden;
+	margin: 0px 0px 10px;
+}
+
+#review-info .p-social .login-social {
+	width: 134px;
+	height: 30px;
+	float: right;
+	background: url("../images/social-login.gif") no-repeat;
+}
+
+#review-info .p-social .lg-facebook {
+	background-position: 0px 0px;
+}
+
+#review-info .p-social .lg-google {
+	background-position: 0px -42px;
+}
+
+#review-info .login-txt {
+	margin-bottom: 15px;
+}
+
+#review-info .login-txt .txt-login {
+	border: 1px solid #c0c0c0;
+	background: #fff;
+	font: 400 14px arial;
+	color: #666;
+	width: 85%;
+	padding: 2px 7px;
+	height: 20px;
+	outline: none;
+}
+
+#review-info .btt-complete {
+	text-align: center;
+	padding: 5px 15px;
+	font: 700 14px arial;
+	color: #FFFFFF;
+	background: #FF8800;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#review-info span.errormsg {
+	margin: .5em 0 0;
+	display: block;
+	color: #d9534f;
+	line-height: 17px;
+}
+
+#star {
+	width:130px !important;
+	display:inline-block;
+	margin: -4px 0 -4px 0;
+}
+
+#review-success {
+	width: 500px;
+	text-align: center;
+	padding: 25px 0;
+	line-height: 20px;
+	font-weight: 500;
+}
+
+#attraction-nearby #mapcanvas, #attraction-nearby .googlemap {
+	width: 276px !important;
+}
+
+#attraction-nearby div.map-mask > div {
+	width: 276px !important;
+}
+
+#attraction-nearby div.map-mask img {
+	margin-left: 115px !important;
+}
+
+#attraction-nearby a.nearby-place {
+	font-size: 11px;
+	font-weight: 700;
+	color: #00539e;
+	padding-right: 3px;
+}
+
+#attraction-nearby > ul {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#attraction-nearby > ul li {
+	font-size: 11px;
+	display: inline-block;
+}
+/* End Destination Attractions */

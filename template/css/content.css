@@ -1,0 +1,107 @@
+.underline-heading {
+	font-size: 18px;
+	color: #cc6633;
+	padding-bottom: 8px;
+	margin-bottom: 8px;
+	border-bottom: 1px solid #cc6633;
+}
+
+
+.table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	/*width: 100%;*/
+	margin-bottom: 20px;
+}
+
+.table > tbody > tr:nth-child(odd) > td,
+.table > tbody > tr:nth-child(odd) > th {
+  background-color: #f9f9f9;
+}
+
+.table > tbody > tr:hover > td,
+.table > tbody > tr:hover > th {
+  background-color: #f5f5f5;
+  cursor: default;
+}
+
+.table th {
+  text-align: left;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+.table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+}
+
+.well {
+	min-height: 20px;
+	padding: 19px;
+	margin-bottom: 20px;
+	background-color: #f5f5f5;
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.dropcap { 
+	float: left; 
+	color: #903; 
+	font-size: 75px; 
+	line-height: 60px; 
+	/*padding-top: 4px; */
+	padding-right: 8px; 
+	padding-left: 3px; 
+	font-family: Georgia; 
+}
+
+.download-button {
+	color: #fff;
+	border-color: #357ebd;
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: 600;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	padding: 6px 12px 6px 30px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	border-radius: 4px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	background: #428bca url("../images/download_alt.png") no-repeat 8px center;
+	text-decoration: none;
+}
+
+.blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+.blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}

@@ -1,0 +1,18 @@
+CREATE TABLE IF NOT EXISTS `tv_blog` (
+  `id` bigint(20) unsigned NOT NULL auto_increment,
+  `title` varchar(255) default NULL,
+  `alias` varchar(255) default NULL,
+  `thumbnail` varchar(255) default NULL,
+  `summary` text,
+  `content` text character set utf8 collate utf8_unicode_ci,
+  `user_id` bigint(20) unsigned NOT NULL,
+  `cat_id` bigint(20) unsigned NOT NULL,
+  `active` tinyint(1) NOT NULL default '1',
+  `tags` text,
+  `created_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+ALTER TABLE `tv_blog` ADD `meta_title` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL AFTER `tags` ,
+ADD `meta_key` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL AFTER `meta_title` ,
+ADD `meta_desc` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL AFTER `meta_key` ;

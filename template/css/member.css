@@ -1,0 +1,724 @@
+.maincontent{
+	width: 980px;
+	margin: 0 auto;
+}
+.signup-container {
+	margin: 10px 0px 20px 0px;
+	/*Remove border style and shadow*/
+	/*border: 1px solid #DDDDDD;
+	box-shadow: 0 14px 8px -12px #CCCCCC;*/
+}
+.signup-container h1 {
+	background-color: #9bcc5e;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 8px;
+	margin-top: -12px;
+}
+.signup-container .content {
+	margin: 20px 50px;
+}
+.signup-container .content h2 {
+	font-weight: bold;
+}
+.signup-container .content table {
+	margin-top: 20px;
+	width: 100%;
+}
+.signup-container .content table tr td {
+	padding: 5px 5px 5px 0px;
+	vertical-align: top;
+}
+.register-form .sub-title {
+	margin: 10px 0px;
+}
+.login-input {
+	width: 250px;
+}
+.info-bar {
+	background-color: #9bcc5e;
+	width: 100%;
+	height: 40px;
+	margin: 10px 0px;
+}
+.info-bar .ico {
+	background: url("../images/member/info.png") no-repeat scroll left center transparent;
+	width: 61px;
+	height: 61px;
+	position: absolute;
+	margin-top: -10px;
+	margin-left: 6px;
+}
+.info-bar h1 {
+	padding-top: 15px;
+	padding-left: 75px;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+.info-bar .right-panel {
+	float: right;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.info-bar a {
+	color: #FFFFFF;
+}
+.menumember {
+	border: 1px solid #B0CADB;
+	border-radius: 5px 5px 5px 5px;
+	float: left;
+	padding-bottom: 10px;
+	width: 100%;
+	background: #fff;
+}
+.menumember ul.topmenu {
+	background: url("../images/member/bg-menu.gif") repeat-x scroll 0 0 transparent;
+	border: 1px solid #B0CADB;
+	display: inline;
+	float: left;
+	margin: -1px;
+	width: 100%;
+}
+.menumember ul.topmenu li {
+	border-left: 1px solid #B0CADB;
+	float: left;
+	font-weight: bold;
+	height: 33px;
+	margin: -1px;
+	width: 24%;
+}
+.menumember ul.topmenu li.order a {
+	background: url("../images/member/i-order.gif") no-repeat scroll left center transparent;
+	display: inline;
+	float: left;
+	line-height: 18px;
+	margin: 7px 0 0 14px;
+	padding-left: 24px;
+}
+.menumember ul.topmenu li.order a.current {
+	background: url("../images/member/i-order-active.gif") no-repeat scroll left center transparent;
+	color: #DF1F26;
+}
+.menumember ul.topmenu li.ticket a {
+	background: url("../images/member/i-order.gif") no-repeat scroll left center transparent;
+	display: inline;
+	float: left;
+	line-height: 18px;
+	margin: 7px 0 0 14px;
+	padding-left: 24px;
+}
+.menumember ul.topmenu li.profile a {
+	background: url("../images/member/i-profile.gif") no-repeat scroll left center transparent;
+	display: inline;
+	float: left;
+	line-height: 18px;
+	margin: 7px 0 0 9px;
+	padding-left: 29px;
+}
+.menumember ul.topmenu li.profile a.current {
+	background: url("../images/member/i-profile-active.gif") no-repeat scroll left center transparent;
+	color: #DF1F26;
+}
+.menumember ul.topmenu li.password a {
+	background: url("../images/member/i-pass.gif") no-repeat scroll left center transparent;
+	display: inline;
+	float: left;
+	line-height: 18px;
+	margin: 7px 0 0 11px;
+	padding-left: 27px;
+}
+.menumember ul.topmenu li.password a.current {
+	background: url("../images/member/i-pass-active.gif") no-repeat scroll left center transparent;
+	color: #DF1F26;
+}
+.menumember ul.topmenu li.logout a {
+	background: url("../images/member/i-logout.gif") no-repeat scroll left center transparent;
+	display: inline;
+	float: left;
+	line-height: 18px;
+	margin: 7px 0 0 11px;
+	padding-left: 27px;
+}
+.menumember ul.topmenu li.logout a.current {
+	background: url("../images/member/i-logout-active.gif") no-repeat scroll left center transparent;
+	color: #DF1F26;
+}
+.ico{
+	float:left;
+}
+
+/* LOGIN ACCOUNT */
+.login-account{
+	margin: 20px 0 15px 0;
+	text-align: left;
+}
+.register-form .login-account{
+	height: 32px;
+}
+.register-form .login-account ul{
+	 float: right;
+	 text-align: right;
+}
+.login-account ul{
+	width: 222px;
+}
+.login-account ul li{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.login-account ul li:first-child{
+	margin: 0;
+}
+
+.login-account ul li a{
+	background-image:url(../images/member/social-icons.png);
+	height: 32px;
+	width: 32px;
+	display: block;
+	text-indent: -9999px;
+	background-repeat: no-repeat;
+}
+a.facebook{
+	background-position: left top;
+}
+a.twitter{
+	background-position: -40px top;
+}
+a.linkedin{
+	background-position: -80px top;
+}
+a.google{
+	background-position: -120px top;
+}
+a.flickr{
+	background-position: -160px top;
+}
+
+/* CSS for menu tabs */
+.tab-details{
+	background:#fbfbfb;
+	border:1px solid #fff;
+	margin:34px 0 0;}
+	
+.tab-contents{
+	padding:20px}
+	
+.tab-contents h1{
+	color:#333;
+	font-size:18px;
+	padding:0 0 10px;}
+
+.tab-contents p{
+	padding:0 0 10px;
+	text-align:justify;}
+
+
+#frmUpdateProfile,#frmChangePassword{
+	width: 450px;
+	margin: 0 auto;
+}
+
+
+.tab-contents .register-form table tr td {
+	padding: 5px 5px 10px 0;
+	/*vertical-align: top;*/
+}
+
+.tab-contents .register-form table tr td:first-child{
+	font-weight: bold;
+	width: 110px;
+	text-align: right;
+	padding-right: 10px;
+	color: #666;
+}
+
+.register-form table tr td input[type=text],.register-form table tr td input[type=password],.register-form table tr td select{
+	padding: 4px;
+}
+.register-form table tr td select{
+    width: 100%;
+}
+/* ORDER TAB */
+.client-name{
+	background-color: #F2F2F2;
+	margin-bottom: 20px;
+	padding: 8px 10px;
+	overflow: hidden;
+}
+.client-name > p > span{
+	width: 150px;
+	float:left;
+}
+.client-name > p{
+	margin-left: 10px;
+	margin-top: 8px;
+}
+
+#order h3{
+	cursor: pointer;
+	background: none repeat scroll 0 0 #C6E1EC;
+	box-shadow: 0 0 0 1px rgba(155, 155, 155, 0.3), 0 2px 2px rgba(0, 0, 0, 0.1);
+	color: #3D7489;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+	cursor: pointer;
+	display: block;
+	font-size: 16px;
+	height: 30px;
+	line-height: 33px;
+	padding: 5px 20px;
+	position: relative;
+	z-index: 20;
+}
+
+.booking-detail{
+	width: 100%;
+	/*height: 50px;*/
+}
+
+
+.linetb {
+	width: 100%;
+	display: inline-table;
+}
+.noborder {
+	border: none;
+}
+.linetb .tablemb {
+	border: 1px solid #B0CADB;
+}
+.linetb .tablemb tr.title {
+	background: none repeat scroll 0 0 #DBE9F2;
+}
+.linetb .tablemb td {
+	border-color: #B0CADB;
+	border-style: solid;
+	border-width: 0 1px 1px 0;
+	padding: 6px 4px 6px 4px;
+}
+.linetb .tablemb td.min {
+	width: 160px;
+}
+.linetb tr.title {
+	background: none repeat scroll 0 0 #DBE9F2;
+}
+.linetb td {
+	border-color: #B0CADB;
+	border-style: solid;
+	border-width: 0 0 1px;
+	padding: 10px 4px 10px 4px;
+}
+.linetb ul li {
+	background: url("../images/member/i-down.gif") no-repeat scroll left center transparent;
+	font-size: 11px;
+	margin-top: 5px;
+	text-indent: 12px;
+}
+.linetb tr.title {
+	background: none repeat scroll 0 0 #DBE9F2;
+}
+.linetb td {
+	-moz-border-bottom-colors: none;
+	-moz-border-image: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: #B0CADB;
+	border-style: solid;
+	border-width: 0 0 1px;
+	padding: 10px 4px 10px 4px;
+}
+span.title-tb {
+	color: #DF1F26;
+	float: left;
+	font-weight: bold;
+	padding: 22px 0 5px 0;
+	width: 100%;
+}
+.expand {
+	background: url("../images/member/plus.jpg") no-repeat scroll 0 0 transparent;
+	padding-left: 20px;
+}
+.collapse {
+	background: url("../images/member/minus.jpg") no-repeat scroll 0 0 transparent;
+	padding-left: 20px;
+}
+
+td.right-text{
+	text-align: right;
+}
+
+td.center-text{
+	text-align: center;
+}
+
+td.error-message{
+	color: red;
+}
+
+.navigate-info{
+	height: 25px;
+	font-size: 12px;
+	font-weight: 500;
+	vertical-align: middle;
+	padding-top: 10px;
+}
+
+.register-content{
+	margin: 0px auto 20px;
+	width: 100%;
+}
+
+.contact-title{
+	height: 33px;
+	padding-top: 7px;
+	border-bottom: #e0e0d3 1px solid;
+	margin-bottom: 30px;
+}
+
+.contact-title h1{
+	font-size: 20px;
+	font-weight: bold;
+	color: #ff9900;
+	background: transparent;
+	padding: 0;
+	margin: 0;
+}
+
+#sign-in{
+	width: 247px;
+	padding-right: 40px;
+	float: left;
+	border-right: #e0e0d3 1px solid;
+	position: relative;
+}
+
+.register-form{
+	width: 363px;
+	padding-left: 28px;
+	float: left;
+	text-align: right;
+}
+
+#benefit{
+	width: 248px;
+	float: right;
+	padding-left: 15px;
+	border: 1px solid #DDDDDD;
+	background: #fff url('../images/member/benefit-ad.png') no-repeat top right;
+}
+#benefit h1{
+	font-size: 30px;
+	background:none;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding:5px 0 0 0;
+	margin-top: 20px;
+	color: #ff9900;
+	margin-bottom:10px;
+}
+#benefit h3{
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #909090;
+	padding-bottom: 17px;
+	margin-right: 15px;
+	border-bottom: 1px solid #ff9900
+}
+#benefit ul{
+	margin-top: 25px;
+}
+#benefit ul li{
+	font-size: 12px;
+	background: url('../images/member/check.gif') no-repeat left 3px;
+	padding:5px 20px;
+	margin-bottom: 15px;
+}
+
+#sign-in h2,#sign-in h3{
+	text-transform: uppercase;
+	color: #414141;
+}
+#sign-in h2,.register-form h2{
+	font-size: 22px;
+}
+#sign-in h3,.register-form h3{
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.register-form h2,.register-form h3{    
+	text-transform: uppercase;
+	text-align: right;
+}
+
+.register-form h4{
+	margin-top: 20px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #0072bc;
+	text-align: right;
+}
+
+#sign-in h4{
+	margin-top: 20px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #0072bc;
+	text-align: left;
+}
+
+.login-form p{
+	margin-bottom:14px;
+	width: 245px;
+}
+.login-form input[type=text],.login-form input[type=password]{
+	width: 234px;
+	-webkit-border-radius: 3px ;  
+	-moz-border-radius: 3px ;  
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;  
+	border-radius: 3px ;
+	border: 1px solid #c3c3c3;
+	height:29px;
+	margin-bottom:14px;
+	padding-left:10px;           
+}
+
+.login-form p span{
+	float: left;
+}
+
+#sign-in h2.or, .register-form h2.or{
+	font-size: 18px;
+	color: #0072bc;
+	margin-bottom: 20px;
+}
+h2.edit-profile-title{
+	text-align: left;
+}
+
+#btnLogin, #btnSignUp, #btnReset, #btnUpdatePassword, .btnstep{
+	float: right;
+	text-transform: uppercase;
+	background: #009daf url('../images/member/double-arrow.png') no-repeat;
+	background-position: 90% 50%;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: normal;
+	padding: 6px 25px 6px 10px;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	border: none;
+	-moz-box-shadow:    1px 1px 1px .1px #a8a8a8;
+	-webkit-box-shadow: 1px 1px 1px .1px #a8a8a8;
+	box-shadow:         1px 1px 1px .1px #a8a8a8;
+}
+
+#btnReset, #btnUpdatePassword{
+	float: left !important;
+}
+
+#btnLogin:hover, #btnSignUp:hover, #btnReset:hover, #btnUpdatePassword:hover, .btnstep:hover{
+	background: #ff8800 url('../images/member/double-arrow.png') no-repeat;
+	background-position: 90% 50%;
+}
+
+.btnstep{
+	padding-right: 25px !important;
+	background-position: 98% 50% !important;
+}
+
+img#signin-delimiter{
+	position: absolute;
+	top:-10px;
+	right: -30px;
+	z-index: 1;
+}
+
+#register-section p{
+	width: 363px;
+	margin-bottom: 10px;
+	text-align: right;
+}
+
+#register-section input[type=text],#register-section input[type=password],#register-section select{
+	padding:5px;
+	border: 1px solid #c3c3c3;
+	border-radius:3px;
+	color: #414141;
+	margin: 0;
+	height: 30px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	vertical-align:top;
+	outline: none;
+}
+#register-section input[type=text],#register-section input[type=password]{
+	width: 351px;
+}
+#register-section input[type=text]#phone{
+	width: 134px;
+}
+#register-section input[type=text]#fullname{
+	width: 269px;
+}
+#register-section select{
+	-webkit-appearance: none;
+	-moz-appearance: none;  
+	text-indent: 0.01px;
+	text-overflow: "";
+	outline:none;
+	color: #414141;
+	cursor: pointer;
+}
+/* all elements */
+
+::-webkit-input-placeholder { 
+	color: #b0b0b0; text-overflow: ellipsis; 
+}
+:-moz-placeholder { 
+	color: #414141 !important; text-overflow: ellipsis; 
+}
+::-moz-placeholder { 
+	color: #414141 !important; text-overflow: ellipsis; 
+} /* for the future */
+:-ms-input-placeholder { 
+	color: #b0b0b0 !important; text-overflow: ellipsis; 
+}
+
+#register-section select#gender{
+	width: 78px;
+	background: #fff url(../images/member/down-arrow.png) no-repeat 62px center;
+}
+
+#register-section select#nationality{
+	width: 214px;
+	background: #fff url(../images/member/down-arrow.png) no-repeat 195px center;
+}
+
+p.required-message{
+	text-align: left !important;
+	padding-left: 12px;
+	line-height: 1.5em;
+}
+
+p.required-message i{
+	color: #6d6d6d;
+	font-family: "Time New Roman",Helvetica,sans-serif;
+}
+
+/*RESET PASSWORD*/
+.reset-pass-wrap{
+	width: 100%;
+	border: 1px solid #CCCCCC;
+	background: white;
+}
+#reset-pass, #update-pass{
+    width: 450px;
+    margin: 30px auto;
+}
+#reset-pass h1{
+    font-size: 24px;
+    font-weight bold;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+#reset-pass p, #update-pass p{
+    margin-top: 10px;
+}
+#reset-pass p input[type=text]{
+    width:250px;
+    height: 17px;
+    padding: 5px 0 5px 10px;
+    color: #333;
+    -webkit-border-radius: 4px ;  
+    -moz-border-radius: 4px ;  
+    -o-border-radius: 4px;  
+    border-radius: 4px ;  
+    	
+}
+#reset-pass label{
+    color: #333333;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+#update-pass p  label{
+	width: 150px;
+	float:left;
+	margin-right: 10px;
+	font-size: 14px;
+	padding-top: 5px;
+}
+
+#update-pass p input[type=password]{
+    width:220px;
+    height: 17px;
+    padding: 5px 0 5px 10px;
+    color: #333;
+    -webkit-border-radius: 4px ;  
+    -moz-border-radius: 4px ;  
+    -o-border-radius: 4px;  
+    border-radius: 4px ;  
+    	
+}
+
+#send-reset-pass-mail{
+	/*width: 100%;*/
+	margin: 30px 0;
+	padding: 10px 0px 25px 15px;
+	border: 1px solid #d4d4d4;
+}
+#send-reset-pass-mail p{
+	margin: 10px 0;
+	line-height: 1.7em;
+}
+
+/* Edit and remove Profile Picture*/
+a#changeAvatar, a#removeAvatar {
+	text-decoration: none;
+}
+a#changeAvatar span, a#removeAvatar span{
+	color: #3B5998;
+}
+#previewHolder{
+	border: 3px solid white;
+	-webkit-box-shadow: 0px 0px 2px #7C7C7C;
+    box-shadow: 0px 0px 2px #7C7C7C;
+    cursor: pointer;
+}
+#user-avatar img{
+	float:left;
+	margin-right: 20px;
+}
+#user-avatar{
+	margin-top: 20px;
+}
+/* End Edit and remove Profile Picture*/
+/* Phone & country code*/
+.register-form table tr td #phone {
+	width: 88px;
+}
+.register-form table tr td #country_code {
+	width: 160px;
+}
+.register-form table tr td select{
+	padding: 3px !important;
+}
+.register-form table tr td select,.register-form table tr td input[type="text"]{
+	font-size: 12px;
+}
+/* End Phone & country code*/
+.register-table #birthday{
+	background: url("../images/calendar-icon.png") no-repeat scroll 235px center #FEFEFE;
+}
+

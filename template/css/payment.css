@@ -1,0 +1,62 @@
+@CHARSET "ISO-8859-1";
+
+#view-container {
+    border: 1px solid #DDDDDD;
+    border-radius: 0px;
+    box-shadow: none;
+    padding: 10px;
+    transition: box-shadow 0.2s ease 0s;
+}
+
+.form-payment-online {
+}
+.form-payment-online h3 {
+	color: #cc6633;
+	line-height: 36px;
+	border-bottom: 1px solid #cc6633;
+}
+.form-payment-online .tbl-order td {
+	padding: 6px 4px;
+	vertical-align: top;
+}
+.form-payment-online .tbl-order input[type="text"] {
+	width: 360px;
+	padding: 4px;
+}
+.form-payment-online .tbl-order textarea {
+	width: 360px;
+	height: 100px;
+	padding: 4px;
+	font-size: 12px;
+	font-family: Arial;
+}
+.form-payment-online .tbl-order .payfor-opt {
+	clear: both;
+	margin-bottom: 10px;
+}
+.form-payment-online .tbl-order .payfor-opt input[type="checkbox"] {
+	float: left;
+	margin-right: 5px;
+}
+.form-payment-online .tbl-payment-method td {
+	padding: 6px 4px;
+}
+.form-payment-online .button {
+    background-color: #FF8800;
+    background-image: -moz-linear-gradient(center top , #009DAF, #009DAF);
+    background-repeat: repeat-x;
+    border: 0px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: normal;
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.form-payment-online .button:hover {
+    background-image: none;
+}

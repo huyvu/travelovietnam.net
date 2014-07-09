@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS `tv_tour_option` (
+  `id` bigint(20) NOT NULL auto_increment,
+  `name` varchar(255) collate utf8_unicode_ci NOT NULL,
+  `price` double NOT NULL,
+  `tour_id` bigint(20) NOT NULL,
+  `cat_id` bigint(20) NOT NULL,
+  `active` tinyint(1) NOT NULL default '1',
+  `created_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+

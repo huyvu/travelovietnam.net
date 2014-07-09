@@ -1,0 +1,118 @@
+Main functionalities:
+
+Join In | Sign In
+Search: Product | Manufacturer | Buying Leads
+
+Display Product categories & and its' sub-categories as popup menu
+Slide-show introduce the product and buying lead
+
+Horizol Slide-show to scroll Hot products
+
+Utilities links: Bookmark page | Find Us on Facebook | Find Us on Twister
+Career | Hot searchs | Site map | Language Option
+
+Copyright, Privacy Policy, Terms of Use
+
+
+Sub page:
+
+Search page: show results as list, display summary of product
+
+Product detai: click on item in searching page -> display all detail about product, company profile. A form to post a message to manufacturer
+Diplase feature products related to concerned category
+
+Send Inquiries direct to Manufacturer(s) 
+	Customer Filling suggest or requirement and send this message to this manufacturer
+
+Sign In page:
+	Collect membership information
+	Confirm membership by email
+	
+My Account: Post Buying Lead | View Inquiry history | Apply for resourcing event
+Account setting: My Market | Company profile | My business | Application Center
+
+FAQs
+
+GMC center : Posts, Introduction, About, Benifits
+
+Services: 
+
+Target market: select by regions
+
+List with pagination
+
+
+
+//-----------------------------------------------------------------------------------
+
+Join Free | Sign In
+
+Buy menu: How to Buy, Post Buying request
+Sell menu: How to Sell | Manage Product | Seller services
+Community: Forum | Trade show | succees stories
+My Account: Message center| Manage product | Post Buying request | Premium membership
+Message (notification from site)
+Help center: Suggestion post | contact message | Submit complaint | Report issue
+
+
+Search: Product | Suppliers | Buyers
+
+Display all product categories and its' sub-categories
+
+Welcome slide-show introduce services
+
+Panel with quick guide for Buyer and Seller
+
+Horizol scroll for deals today: display products for deal
+
+Hot Producrs: A horizol scroll the hot products, left arrow and right arrow to show next product in line.
+
+Fearture partners: logo of the partner are displayed
+
+Follow Us | Find Us on ...
+
+Footer: About | Site tips for Buyers(Sellers) | Services & Tools | Help center
+
+Servey popup
+
+Suggestion popup
+
+
+
+Get vietnam visa letter in 30 minutes if you are on Rush service, 
+after 1 ....
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

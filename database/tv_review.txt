@@ -1,0 +1,3 @@
+ALTER TABLE `tv_review` CHANGE `category_id` `category_id` INT(10) UNSIGNED NOT NULL DEFAULT '0' COMMENT '0: gallery; 1: tour; 3:hotel; 5: Cuisine; 7: News; 9: Destination; 11:Attraction';
+
+ALTER TABLE `travel`.`tv_review` ADD COLUMN `avatar` VARCHAR(255) NULL AFTER `author`;

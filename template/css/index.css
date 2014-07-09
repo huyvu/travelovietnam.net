@@ -1,0 +1,922 @@
+@CHARSET "ISO-8859-1";
+
+/* Template Layout */
+
+body {
+	background: url("../images/background.jpg") no-repeat scroll top center transparent;
+	color: #2A2A2A;
+}
+
+#home-wizban {
+	background: url("../images/wizban-shadow.png") no-repeat scroll center bottom transparent;
+	height: 332px;
+	position: relative;
+}
+
+/* End Template Layout */
+
+/* Custom Controls */
+
+#search-widget {
+	background-color: #FFFFFF;
+	width: 370px;
+	height: 260px;
+	margin: 0px;
+	padding: 10px;
+	position: absolute;
+	display: block;
+	left: 15px;
+	top: 15px;
+	z-index: 900;
+}
+
+#search-widget .widget-title {
+	background: url("../images/title-arrow.png") no-repeat scroll 20px bottom transparent;
+	padding-bottom: 5px;
+}
+
+#search-widget .widget-title span {
+	width: 100%;
+	display: block;
+	border-bottom: 2px solid #db7803;
+	color: #007cc6;
+	font-size: 14px;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+#search-widget ul.widget-menu {
+	margin-top: 10px;
+}
+
+#search-widget ul.widget-menu li {
+	float: left;
+	width: 68px;
+	margin-right: 1px;
+	padding: 4px;
+	line-height: 18px;
+	background-color: #0093ea;
+	text-align: center;
+	cursor: pointer;
+}
+
+#search-widget ul.widget-menu li.selected {
+	background-color: #FFF3B0;
+}
+
+#search-widget ul.widget-menu li a {
+	font-weight: bold;
+	text-decoration: none;
+	cursor: pointer;
+	color: #FFFFFF;
+}
+
+#search-widget ul.widget-menu li.selected a {
+	color: #0060a3;
+}
+
+#search-widget .widget-content {
+	clear: both;
+	background-color: #FFF3B0;
+	height: 175px;
+	padding: 10px 0px;
+}
+
+#search-widget .widget-content p.text-form {
+    display: inline-block;
+    float: left;
+    margin: 5px 0px 0px 10px;
+}
+
+#search-widget .widget-content p.w180 {
+	width: 170px;
+}
+
+#search-widget .widget-content .text-form label {
+	display: block;
+	margin-bottom: 4px;
+}
+
+#search-widget .widget-content .text-form span {
+	background: url("../images/calendar-icon.png") no-repeat scroll 85px 4px #FEFEFE;
+	border: 1px solid #AAAAAA;
+	float: left;
+	padding: 2px 6px 4px 6px;
+	width: 90px;
+}
+
+#search-widget .widget-content .text-form input.text-input {
+	width: 158px;
+	border: 1px solid #AAAAAA;
+	padding: 2px 6px 4px 6px;
+}
+
+#search-widget .widget-content .text-form select {
+	width: 172px;
+	border: 1px solid #AAAAAA;
+	padding: 2px 4px;
+}
+
+#search-widget .widget-content .text-form span input.calendar {
+	background: none repeat scroll 0 0 transparent;
+	border: medium none;
+	float: none;
+	width: 75px;
+	font-size: 12px;
+}
+
+#search-widget .widget-content .text-form .map-ticker {
+	border: 0px;
+	bottom: 22px;
+	right: 120px;
+	position: absolute;
+	cursor: pointer;
+}
+
+#search-widget .widget-content .text-form .search-button {
+	bottom: 20px;
+	right: 15px;
+	position: absolute;
+	cursor: pointer;
+}
+
+#search-widget .widget-content .text-form .findhotel-button {
+	background: url("../images/btn-find-hotel.png") no-repeat scroll 0 0 transparent;
+	width: 114px;
+	height: 41px;
+}
+
+#search-widget .widget-content .text-form .findtour-button {
+	background: url("../images/btn-find-hotel.png") no-repeat scroll 0 0 transparent;
+	width: 114px;
+	height: 41px;
+}
+
+a.readon, p.readmore a {
+    background: url("../images/readmore.png") no-repeat scroll left center transparent;
+    color: #E4B490;
+    font-size: 100%;
+    padding-left: 15px;
+}
+
+a.readon:hover, a.readon:focus, a.readon:active, p.readmore a:hover, p.readmore a:focus, p.readmore a:active {
+    background-image: url("../images/readmore-orange.png");
+    color: #EF761A;
+}
+
+.slide-desc {
+	float:right;
+	margin-top: 220px;
+}
+
+.slide-desc a.readon {
+    background-image: url("../images/button.png");
+    color: #FEFFFF;
+    text-shadow: 1px 0 1px rgba(0, 0, 0, 0.3);
+    width: 246px;
+    height: 36px;
+    line-height: 36px;
+    display: block;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 115% !important;
+    position: absolute;
+    right: 10px;
+    text-indent: 35px;
+}
+
+.slide-desc a.readon:hover {
+	opacity: 0.9;
+}
+
+/* End Custom Controls */
+
+/* Available Tours */
+.highlight-info {
+	margin-top: 25px;
+}
+.highlight-of-vietnam {
+	
+}
+.highlight-of-vietnam .head-title {
+    color: #007CC6;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #ff8600;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.highlight-of-vietnam .head-title .highlight {
+	color: #fe4e00;
+	font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.highlight-of-vietnam .sub-title {
+	color: #fe4e00;
+	font-size: 16px;
+    font-weight: normal;
+}
+.highlight-of-vietnam .content {
+	
+}
+.highlight-of-vietnam .content .thumb_105_75 {
+	float: left;
+	background: url("../images/imgshadow_105x75.png") no-repeat scroll center bottom transparent;
+    width: 107px;
+    height: 83px;
+    margin: 0 10px 0 0;
+    overflow: hidden;
+    position: relative;
+}
+.highlight-of-vietnam .content .thumb_105_75 img {
+	margin: 1px 1px 8px;
+    width: 105px;
+    height: 75px;
+    border: 0px;
+}
+.highlight-of-vietnam .content .thumb_130_100 {
+	float: left;
+	background: url("../images/imgshadow.png") no-repeat scroll center bottom transparent;
+    width: 132px;
+    height: 110px;
+    margin: 0 10px 0 0;
+    overflow: hidden;
+    position: relative;
+}
+.highlight-of-vietnam .content .thumb_130_100 img {
+	margin: 1px 1px 8px;
+    width: 130px;
+    height: 100px;
+    border: 0px;
+}
+.highlight-of-vietnam .content .thumb_180_120 {
+	float: left;
+    width: 172px;
+    height: 130px;
+    margin: 0 10px 0 0;
+    overflow: hidden;
+    position: relative;
+}
+.highlight-of-vietnam .content .thumb_180_120 img {
+	margin: 1px 1px 8px;
+    width: 170px;
+    height: 120px;
+    border: 0px;
+}
+.highlight-of-vietnam .content h3.title a {
+	color: #333;
+	font-size: 12px;
+	font-weight: bold;
+}
+.highlight-of-vietnam .content .summary, .highlight-of-vietnam .content .summary p {
+	line-height: 18px;
+	text-align: justify;
+}
+.highlight-of-vietnam .content .captain p:FIRST-LETTER {
+	float: left;
+	font-family: Georgia,"Times New Roman",Times,serif;
+	font-size: 320%;
+    padding: 7px 4px 0 0;
+}
+.highlight-of-vietnam .content ul {
+	margin-left: 0px;
+}
+.highlight-of-vietnam .content ul li {
+}
+.highlight-of-vietnam .content ul.hotels {
+	margin-top: 10px;
+}
+.highlight-of-vietnam .content ul.hotels li {
+	background: url("../images/icon-hotel.jpg") no-repeat scroll left center transparent;
+	border-bottom: 1px dotted #DDDDDD;
+	padding: 6px 0px 6px 26px;
+	line-height: 18px;
+}
+.highlight-of-vietnam .content .resort-shadow {
+	background: url("../images/resort-shadow.jpg") no-repeat scroll 0 0 transparent;
+}
+.highlight-of-vietnam .content ul.resorts {
+	margin-top: 10px;
+}
+.highlight-of-vietnam .content ul.resorts li {
+	background: url("../images/icon-resort.jpg") no-repeat scroll left center transparent;
+	border-bottom: 1px dotted #DDDDDD;
+	padding: 6px 0px 6px 26px;
+	line-height: 18px;
+}
+.highlight-of-vietnam .content ul.events {
+	margin-top: 10px;
+}
+.highlight-of-vietnam .content ul.events li {
+	background: url("../images/icon-event.jpg") no-repeat scroll left center transparent;
+	border-bottom: 1px dotted #DDDDDD;
+	padding: 6px 0px 6px 72px;
+	line-height: 18px;
+	min-height: 72px;
+}
+.highlight-of-vietnam .content .viewmore {
+	padding-top: 6px;
+	text-align: right;
+}
+.highlight-of-vietnam .content .viewmore a {
+	font-style: italic;
+}
+.highlight-of-vietnam .content .vietnam-visa {
+	background: url("../images/vietnam-visa-bg.jpg") no-repeat scroll right 10px transparent;
+}
+.highlight-of-vietnam .content .vietnam-visa .visa-services li {
+	background: url("../images/visa-service-bg.jpg") no-repeat scroll 0 0 transparent;
+	height: 24px;
+	min-width: 208px;
+	padding: 3px 0px 4px 8px;
+}
+.highlight-of-vietnam .content .vietnam-visa .apply-visa {
+	text-align: right;
+	margin-top: -80px;
+}
+.tour-meta {
+    display: block;
+    margin-top: 8px;
+}
+.tour-meta li {
+    display: block;
+    margin-bottom: 2px;
+}
+.tour-meta .colored-icon {
+}
+.colored-icon.icon-1 {
+}
+.colored-icon.icon-2 {
+}
+.colored-icon.icon-3 {
+}
+.colored-icon {
+    bottom: -1px;
+    float: left;
+    margin: 0 0 -5px;
+    position: relative;
+}
+/* End Available Tours */
+
+/* Testimonial */
+.fade-slider-container {
+    position: relative;
+}
+.fade-slider {
+    position: relative;
+    z-index: 5;
+}
+.fade-slider ul {
+    display: block;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+.fade-slider li {
+    background: none repeat scroll 0 0 transparent;
+    display: none;
+    float: left;
+    padding: 0;
+}
+.fade-slider li:first-child {
+    display: block;
+}
+.fade-slider img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+.motion-effect .slide-overlay {
+    display: block;
+    height: auto;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 125%;
+}
+.main-slider-container .block-background {
+    background: none repeat scroll 0 0 #FFFFFF;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+.main-slider {
+    border: 10px solid #FFFFFF;
+    overflow: hidden;
+}
+.main-slider .arrow {
+    background: url("../images/main-slider-arrows.png") no-repeat scroll -13px 0 transparent;
+    cursor: pointer;
+    height: 23px;
+    margin-top: -12px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    width: 13px;
+    z-index: 100;
+}
+.main-slider:hover .arrow {
+    opacity: 1;
+}
+.main-slider .arrow-left {
+    left: 24px;
+}
+.main-slider .arrow-right {
+    background-position: 0 0;
+    right: 24px;
+}
+.testimonials-slider {
+    margin-top: 40px;
+}
+.testimonials-slider ul.testimonials li {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+.testimonials-slider .quote {
+    border: 1px solid #E2E2E2;
+    font-size: 1.1em;
+    font-style: italic;
+    line-height: 1.6em;
+    padding: 1em 20px;
+}
+.testimonials-slider .quote-author {
+    background: url("../images/testimonials-item-bg.png") no-repeat scroll right 0 transparent;
+    color: #444444;
+    font-weight: bold;
+    float: left;
+    margin: -1px 0 0;
+    padding: 0.9em 15px 0 20px;
+}
+.testimonials-slider .controls {
+    bottom: 0.4em;
+    position: absolute;
+    right: 20px;
+    z-index: 100;
+}
+.testimonials-slider .controls a {
+    background: url("../images/testimonials-control-bg.png") no-repeat scroll 0 0 #DFDFDF;
+    display: block;
+    float: left;
+    height: 10px;
+    margin-left: 5px;
+    width: 10px;
+}
+.testimonials-slider .controls a.current {
+    background-color: #FF9000;
+}
+/* End Testimonial */
+
+/* Live support */
+.live-support {
+}
+.live-support .head-title {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+.live-support .content {
+}
+.live-support ul {
+	padding-top: 20px;
+	margin-left: 10px;
+}
+.live-support ul li {
+    border: 0 none;
+    padding: 5px 0px 5px 5px;
+}
+.live-support ul li.support-phone {
+    font-size: 11px;
+    font-weight: normal;
+	font-family: Tahoma;
+}
+.live-support ul li.support-phone .label {
+	min-width: 40px;
+	display: inline-block;
+	font-size: 11px;
+	font-family: Tahoma;
+}
+.live-support ul li.support-phone .phone {
+	font-weight: bold;
+	font-size: 11px;
+	font-family: Tahoma;
+}
+.live-support ul li.hotline {
+	font-size: 11px;
+	font-family: Tahoma;
+}
+.live-support ul li.hotline .label {
+	min-width: 40px;
+	display: inline-block;
+	font-size: 11px;
+	font-family: Tahoma;
+}
+.live-support ul li.hotline .phone {
+	font-weight: bold;
+	font-size: 11px;
+	font-family: Tahoma;
+}
+.live-support ul li.support-email {
+	font-size: 11px;
+	font-family: Tahoma;
+}
+.live-support ul li.support-email .label {
+	min-width: 40px;
+	display: inline-block;
+	font-size: 11px;
+	font-family: Tahoma;
+}
+.live-support ul li.support-email .mail {
+	font-weight: bold;
+	font-size: 11px;
+	font-family: Tahoma;
+}
+.live-support ul li.support-email .mail a {
+	font-style: italic;
+	font-weight: normal;
+	font-size: 11px;
+	font-family: Tahoma;
+	text-decoration: underline;
+}
+/* End Live support */
+
+/* About Info */
+.about-info {
+	margin-top: 15px;
+	background-color: #FFF;
+	border: 1px solid #a8d4ed;
+	border-radius: 5px;
+	padding: 10px 9px;
+	width: 275px;
+}
+.about-info .head-title {
+	background: url("../images/icon-sun.png") no-repeat scroll 0 center transparent;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 40px;
+    line-height: 30px;
+}
+.about-info .content {
+	font-size: 11px;
+	font-family: Tahoma;
+	text-align: justify;
+	line-height: 18px;
+	padding-bottom: 10px;
+}
+.about-info .content a {
+	font-size: 11px;
+}
+.about-info .hline {
+	width: 100%;
+	height: 1px;
+	border-top: 1px solid #EEEEEE;
+}
+.about-info .gallery img {
+	width: 84px;
+	height: 63px;
+	padding: 4px 2px 0px 2px;
+}
+/* End About Info */
+
+/* Promotion Info */
+.promotion-info {
+    margin-top: 20px;
+}
+.subcribe-info {
+	background-color: #0072C6;
+	border: 1px solid #0072C6;
+	padding: 9px;
+	width: 275px;
+	height: 85px;
+}
+.subcribe-info .head-title {
+	background: url("../images/icon-sun.png") no-repeat scroll 0 center transparent;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 40px;
+    line-height: 30px;
+}
+.subcribe-info .sub-title {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+    margin-top: 5px;
+}
+.subcribe-info .content {
+	font-size: 11px;
+	font-family: Tahoma;
+	text-align: justify;
+	line-height: 18px;
+	padding-bottom: 10px;
+}
+.subcribe-info .content a {
+	font-size: 11px;
+}
+.subcribe-info .hline {
+	width: 100%;
+	height: 1px;
+	border-top: 1px solid #EEEEEE;
+}
+.newsletter-signup {
+	
+}
+.newsletter-signup .subscribe-email {
+	width: 200px;
+	border-color: #FFFFFF;
+	margin: 0px;
+	padding: 2px;
+}
+.newsletter-signup .subcribe-button {
+    background-color: #FF8800;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    height: 22px;
+    margin-left: 5px;
+}
+.newsletter-signup .subcribe-button:hover {
+}
+/* End About Info */
+
+/* The Best Hotels Offers */
+.best-hotel-highlight {
+	margin-top: 20px;
+}
+.best-hotel-highlight .regions {
+	margin-top: -28px;
+	margin-bottom: 10px;
+}
+.best-hotel-highlight .regions .header {
+	border-bottom: 1px solid #E1E1E1;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+	height: 31px;
+}
+.best-hotel-highlight .regions .header a {
+	padding: 0px;
+	margin: 0px;
+	cursor: pointer;
+	overflow: hidden;
+	display: inline-table;
+}
+.best-hotel-highlight .regions .content {
+	border-bottom: 1px solid #E1E1E1;
+	padding: 15px;
+}
+/* End The Best Hotels Offers */
+
+/* Recommendation */
+.recommendation h1 {
+	background-color: #FF8800;
+    padding: 2px 10px;
+    font-family: Times New Roman;
+    font-weight: bold;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.recommendation ul {
+	margin: 8px 0px;
+}
+.recommendation ul li {
+	float: left;
+	width: 170px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+.recommendation ul li.first {
+	margin-left: 0px;
+}
+.recommendation ul li.last {
+	float: right;
+}
+.recommendation ul li img:hover {
+	opacity: 0.8;
+}
+.recommendation ul li .price {
+	color: #E40000;
+	font-weight: bold;
+}
+/* End Recommendation */
+
+/* Feature Offer */
+.feature-offer {
+	border-top: 4px solid #ff8a00;
+	border-bottom: 4px solid #9f9f9f;
+	margin: 10px 0px;
+}
+.feature-offer .offer-text {
+	margin: 20px 10px;
+}
+.feature-offer .offer-text .text1 {
+	font-family: Times New Roman;
+	font-size: 14px;
+	font-weight: bold;
+}
+.feature-offer .offer-text .text2 {
+	font-family: Times New Roman;
+	font-size: 44px;
+	font-weight: bold;
+}
+.feature-offer .offer-text .text3 {
+	font-family: Times New Roman;
+	font-size: 44px;
+	font-weight: bold;
+	color: #595959;
+}
+.feature-offer ul {
+	margin: 8px 0px;
+}
+.feature-offer ul li {
+	float: left;
+}
+/* End Feature Offer */
+
+/* Contact */
+.contact-info {
+	width: 250px;
+}
+.contact-info .promise {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 14px 8px -12px #CCCCCC;
+    color: #949494;
+    height: 120px;
+    margin-top: 0;
+    padding: 9px 10px;
+    width: 230px;
+}
+.contact-info .head-office {
+    margin-top: 10px;
+    padding: 10px 5px;
+    width: 240px;
+}
+.contact-info .head-office h3 {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+}
+.contact-info .head-office div {
+	margin-left: 10px;
+    line-height: 18px;
+    margin-top: 6px;
+}
+.contact-form {
+    border: 1px solid #DDDDDD;
+    box-shadow: 0 14px 8px -12px #CCCCCC;
+}
+.contact-form h1 {
+    background-color: #FF8A00;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 8px;
+}
+.contact-form table {
+    margin-top: 20px;
+    width: 100%;
+}
+.contact-form table tr td {
+    padding: 5px;
+    vertical-align: top;
+}
+/* End Contact */
+
+/* Travel Destinations */
+.ttattdirec {
+    background: none repeat scroll 0 0 #F9F9F9;
+    border: 1px solid #D6D6D6;
+    color: #4C4C4C;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 15px;
+    position: relative;
+    text-indent: 15px;
+    width: 970px;
+    z-index: 1;
+}
+.arrowacti {
+    background-position: 0 -704px;
+    height: 8px;
+    left: 48px;
+    position: absolute;
+    top: 28px;
+    width: 17px;
+    z-index: 2;
+}
+.vnhotels {
+}
+.desmap {
+    background: url("../images/hotel-map.gif") no-repeat scroll 0 0 transparent;
+    border: 1px solid #DDCAC4;
+    float: left;
+    height: 304px;
+    margin-top: 14px;
+    position: relative;
+    width: 211px;
+}
+ul.bydest {
+    float: left;
+    margin: 0 0 0 18px;
+    width: 235px;
+}
+ul.bydest li {
+    background: url("../images/arrow.png") no-repeat scroll 0 center transparent;
+    border-bottom: 1px dotted #DFDFDF;
+    color: #7E7F7F;
+    float: left;
+    margin-top: 12px;
+    padding: 0 0 4px 10px;
+    width: 225px;
+}
+ul.bydest li span.left {
+    color: #0170A8;
+    float: left;
+}
+ul.bydest li a {
+    font-weight: bold;
+}
+ul.bydest li span.right {
+    float: right;
+    text-align: right;
+}
+ul.tabanpha {
+    border-bottom: 1px dotted #898989;
+    float: left;
+    padding: 15px 0 12px 12px;
+    width: 960px;
+}
+ul.tabanpha li {
+    background-position: 0 0;
+    border: 1px solid #CDCDCD;
+    display: inline;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 1px 0 8px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 24px;
+}
+table.listatt {
+    float: left;
+    margin-top: 10px;
+    padding: 12px 0 20px;
+    width: 100%;
+}
+table.listatt tr {
+    border-bottom: 1px dotted #898989;
+}
+table.listatt td.first {
+    padding-right: 80px;
+    width: 20%;
+}
+table.listatt td {
+    padding: 12px 0 20px;
+    vertical-align: middle;
+}
+table.listatt td .bgtab {
+    position: relative;
+    width: 102px;
+}
+table.listatt td .bgtabin {
+    border-right: 1px solid #CDCDCD;
+    font-size: 42px;
+    font-weight: bold;
+    height: 108px;
+    line-height: 108px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 90px;
+}
+table.listatt td .arrowtab {
+}
+ul.itematt {
+    float: left;
+    width: 250px;
+}
+ul.itematt li {
+    background: url("../images/arrow.png") no-repeat scroll 0 center transparent;
+    float: left;
+    margin-top: 12px;
+    width: 100%;
+}
+ul.itematt li a {
+    font-size: 11px;
+    padding-left: 10px;
+}
+/* End Travel Destinations */

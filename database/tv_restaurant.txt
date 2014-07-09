@@ -1,0 +1,5 @@
+ALTER TABLE `tv_restaurant` ADD `glat` DOUBLE NULL AFTER `catid`, ADD `glng` DOUBLE NULL AFTER `glat`;
+
+ALTER TABLE `tv_restaurant` ADD `top_choice` TINYINT NOT NULL DEFAULT '0' AFTER `catid`;
+
+ALTER TABLE `tv_restaurant` CHANGE `city` `city` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL;

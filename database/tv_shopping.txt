@@ -1,0 +1,3 @@
+ALTER TABLE `tv_shopping` ADD `glat` DOUBLE NULL AFTER `catid`, ADD `glng` DOUBLE NULL AFTER `glat`;
+
+ALTER TABLE `tv_shopping` ADD `top_choice` TINYINT NOT NULL DEFAULT '0' AFTER `catid`;

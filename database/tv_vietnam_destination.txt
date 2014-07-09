@@ -1,0 +1,8 @@
+ALTER TABLE `tv_vietnam_destination` ADD `video` VARCHAR(255) NULL AFTER `area`;
+
+ALTER TABLE  `tv_vietnam_destination` ADD  `area` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL AFTER  `content` ,
+ADD  `population` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL AFTER  `area` ,
+ADD  `location` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL AFTER  `population` ,
+ADD  `whentogo` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL AFTER  `location`
+
+

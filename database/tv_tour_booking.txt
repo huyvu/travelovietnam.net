@@ -1,0 +1,1 @@
+ALTER TABLE  `tv_tour_booking` ADD  `title` VARCHAR( 5 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT  'Mr' AFTER `fullname` ;

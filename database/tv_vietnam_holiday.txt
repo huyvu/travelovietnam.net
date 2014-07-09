@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS `tv_vietnam_holiday` (
+  `id` int(20) NOT NULL auto_increment,
+  `name` varchar(255) collate utf8_unicode_ci NOT NULL,
+  `from` date NOT NULL,
+  `to` date NOT NULL,
+  `rate` int(11) NOT NULL,
+  `active` tinyint(1) NOT NULL default '1',
+  `created_date` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+

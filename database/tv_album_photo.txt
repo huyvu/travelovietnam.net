@@ -1,0 +1,1 @@
+ALTER TABLE `travel`.`tv_album_photo` ADD COLUMN `thumbnail` VARCHAR(255) AFTER `file_path`;

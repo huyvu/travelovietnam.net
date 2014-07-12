@@ -1,0 +1,82 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	#top-header .logo {
+		border: none !important;
+		text-align: center !important;
+	}
+	
+	#top-header .slogan {
+		text-align: center;
+	}
+
+	footer .row .col-xs-12 {
+		text-align: center;
+	}
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	.inner {
+		width: 100%;
+		padding: 0px 10px !important;
+	}
+	/* .navbar-sm {
+		min-height: 50px;
+	}
+	.navbar {
+		display: block;
+	}
+	.navbar-menu {
+		display: none;
+	}
+	.navbar-menu-toggle-right {
+		display: block;
+	} */
+	
+}
+
+/* Landscape tablet */
+@media (min-width: 768px) {
+	.inner {
+		width: 100%;
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+	/* .navbar-sm {
+		min-height: 120px;
+	}
+	.navbar {
+		display: block;
+	}
+	.navbar-menu {
+		display: block;
+	}
+	.navbar-menu-toggle-right {
+		display: none;
+	} */
+	
+}
+
+/* Portrait desktop */
+@media (min-width: 992px) {
+	.inner {
+		max-width: 980px;
+		padding: 0px !important;
+	}
+	/* .navbar-sm {
+		display: none;
+	}
+	.navbar {
+		display: none;
+	} */
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+	.container {
+		width: 980px;
+	}
+}

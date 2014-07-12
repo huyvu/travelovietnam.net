@@ -1,10 +1,10 @@
 <?php
 // WEB ROOT URI
 define("PROTOCOL",		(!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://");
-define("BASE_URL",		"http://localhost/new-travelo");
-define("BASE_URL_HTTPS","http://localhost/new-travelo");
+define("BASE_URL",		"http://localhost/vietnamamazing.com");
+define("BASE_URL_HTTPS","http://localhost/vietnamamazing.com");
 define("ADMIN_URL",		BASE_URL."/administrator/logon.html");
-define("TPL_URL",		"/new-travelo/template/");
+define("TPL_URL",		"/vietnamamazing.com/template/");
 define("IMG_URL",		TPL_URL."images/");
 define("CSS_URL",		TPL_URL."css/");
 define("JS_URL",		TPL_URL."js/");

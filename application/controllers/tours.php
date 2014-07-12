@@ -19,6 +19,8 @@ class Tours extends CI_Controller {
 		$categories = $this->m_tour_category->getItems(1);
 		
 		$destinations = $this->m_tour_destination->getItems(1);
+		$vietnam_destinations = $this->m_vietnam_destination->getItems(NULL,1,6);
+		$blogs = $this->m_blog->getItems(NULL,1,3);
 		
 		$view_data = "";
 		$view_data['featured_tours']	= $featured_tours;
@@ -26,6 +28,8 @@ class Tours extends CI_Controller {
 		$view_data['popular_tours']		= $popular_tours;
 		$view_data['categories']		= $categories;
 		$view_data['destinations']		= $destinations;
+		$view_data['vietnam_destinations'] = $vietnam_destinations;
+		$view_data['blogs'] = $blogs;
 		
 		$tmpl_content = "";
 		$tmpl_content['meta']['title'] = "Vietnam Tours - Planning tours to Vietnam with the best offers";

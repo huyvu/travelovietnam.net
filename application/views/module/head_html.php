@@ -61,6 +61,8 @@ if (empty($meta['author'])) {
 <? if (!empty($meta['canonical'])) { ?>
 <link rel="canonical" href="<?=$meta['canonical']?>"/>
 <? } ?>
+<link rel="stylesheet" type="text/css" media="screen,all" href="<?=CSS_URL?>bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="screen,all" href="<?=CSS_URL?>responsive.css" />
 <link rel="stylesheet" type="text/css" media="screen,all" href="<?=CSS_URL?>site.css" />
 <link rel="stylesheet" type="text/css" href="<?=TPL_URL?>jquery/css/jquery.ui.css" />
 <link rel="stylesheet" type="text/css" href="<?=TPL_URL?>jquery/css/fancybox.css" />
@@ -81,6 +83,7 @@ if (empty($meta['author'])) {
 <script type="text/javascript" src="<?=TPL_URL?>jquery/js/jquery.lazy.min.js"></script>
 <script type="text/javascript" src="<?=TPL_URL?>js/tooltip.js"></script>
 <script type="text/javascript" src="<?=TPL_URL?>js/util.js"></script>
+<script type="text/javascript" src="<?=TPL_URL?>js/bootstrap.min.js"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

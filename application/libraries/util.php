@@ -271,8 +271,6 @@ class Util {
 			$etc = "...";
 			$text = $text.$etc;
 		}
-		if ($link && strlen($text) > $numb)
-		$text .= "<a href='$link'> (more)</a>";
 		return $text;
 	}
 	

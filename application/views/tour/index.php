@@ -130,9 +130,13 @@
 <!-- end #guarantee -->
 
 <div id="home" class="container">
-	<div class="title row">
-		<img src="<?=IMG_URL?>flight-icon.png" alt="">
-		<h2 class="title">Tour By Destination</h2>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="title">
+				<img src="<?=IMG_URL?>flight-icon.png" alt="">
+				<h2 class="title">Tour By Destination</h2>
+			</div>
+		</div>
 	</div>
 	<div id="tour-destination" class="row">
 		<?foreach($vietnam_destinations as $destination) :?>
@@ -194,52 +198,50 @@
 			<div id="best-seller" class="carousel slide" data-ride="carousel">
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
-					<div class="item active">
+					<?$active = 1;?>
+					<?foreach($promotion_tours as $tour) {
+						$count = $this->m_review->getItemsCount(1,$tour->id,1);
+						$avg_rating = 0;
+						$rev_info->category_id = 1;
+						$rev_info->ref_id = $tour->id;
+						$reviews = $this->m_review->getItems($rev_info,1);
+						foreach ($reviews as $review) {
+							$avg_rating += $review->rating;
+						}
+						if (sizeof($reviews)) {
+							$avg_rating = round($avg_rating / sizeof($reviews));
+						}else{
+							$avg_rating = 4;
+						}
+					?>
+					<div class="item <?=($active)?'active':''?>">
 						<div class="thumb">
-							<a title="" href="<?=site_url("vietnam/sights/abc")?>">
-								<img alt="" src="<?=IMG_URL?>thumb.jpg">
+							<a title="<?=$tour->name?>" >
+								<img width="290" alt="<?=$tour->name?>" src="/vietnamamazing.com/files/upload/image/banh-trang-thit-heo.jpg">
 							</a>
 						</div>
 						<div class="detail">
-							<h3 class="tourname"><a title="" href="<?=site_url("vietnam/sights")?>">Halong Bay ...</a></h3>
+							<h3 class="tourname"><a title="" href="<?=site_url("tours/vietnam/{$tour->city_alias}/{$tour->category_alias}/".$tour->alias)?>"><?=$tour->name?></a></h3>
 							<p class="reviews">
-								<img src="<?=IMG_URL?>tour/icon/star5.png" alt="rating" height="15">
-								<a href="#">200 Reviews</a>
+								<img src="<?=IMG_URL?>tour/icon/star<?=$avg_rating?>.png" alt="rating" height="15">
+								<a href="#"><?=$count->count?> <?=($count->count>1)?'Reviews':'Review'?></a>
 							</p>
 							<p style="text-align: justify;">
-								<?=$this->util->truncate("Ha Long bay is an UNESCO World Heritage Site and one of the world's 
-								most spectacular natural wonders, and one of the world's 
-								most spectacular natural wonders",120)?>
+								<?=$this->util->truncate($tour->highlight,120)?>
 							</p>						
 						</div>
 					</div>
-					<div class="item">
-						<div class="thumb">
-							<a title="" href="<?=site_url("vietnam/sights/abc")?>">
-								<img alt="" src="<?=IMG_URL?>thumb.jpg">
-							</a>
-						</div>
-						<div class="detail">
-							<h3 class="tourname"><a title="" href="<?=site_url("vietnam/sights")?>">Halong Bay ...</a></h3>
-							<p class="reviews">
-								<img src="<?=IMG_URL?>tour/icon/star5.png" alt="rating" height="15">
-								<a href="#">200 Reviews</a>
-							</p>
-							<p style="text-align: justify;">
-								<?=$this->util->truncate("Ha Long bay is an UNESCO World Heritage Site and one of the world's 
-								most spectacular natural wonders, and one of the world's 
-								most spectacular natural wonders",120)?>
-							</p>						
-						</div>
-					</div>
+					<?
+					$active = 0;
+					}?>
 				</div>
 				<!-- end carousel-inner -->
 
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					<li data-target="#best-seller" data-slide-to="0" class="active"></li>
+					<li data-target="#best-seller" data-slide-to="1"></li>
+					<li data-target="#best-seller" data-slide-to="2"></li>
 				</ol>
 			</div>
 		</div>
@@ -266,7 +268,7 @@
 </div>
 
 <div id="deal">
-	<div class="container">
+	<div class="container hidden-xs">
 		<div class="row">
 			<div class="col-md-7">
 				<h2>Deal & Discount</h2>
@@ -288,10 +290,10 @@
 <script>
 	$(document).ready(function() {
 		$('#vietnam-festival').carousel({
-		  interval: 50000
+		  interval: 5000
 		})
 		$('#best-seller').carousel({
-		  interval: 55000
+		  interval: 5500
 		})
 	});
 </script>

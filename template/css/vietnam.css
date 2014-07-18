@@ -523,6 +523,7 @@ body {
 
 #breadcrumbs {
 	background: none;
+	margin-top: 15px;
 }
 
 #header {
@@ -1912,7 +1913,7 @@ body {
 #top-destination-tours .viewmore:hover {
 	text-decoration: underline;
 }
-#top-destination-tours .list, .destination-list .list {
+#top-destination-tours .list, .destination-list .list, #top-tours > div {
 	margin-top: 10px;
 }
 #top-destination-tours .list li, .destination-list .list li {
@@ -1929,6 +1930,35 @@ body {
 	position: relative;
 	overflow: hidden;
 }
+
+/************************-TOP TOUR-********************************/
+#top-tours > div {
+	float: left;
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #DDDDDD;
+	transition: box-shadow 0.2s ease 0s;
+	margin: 0px 20px 25px 0;
+	padding: 0px;
+	line-height: 20px;
+	width: 218px;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+}
+
+#top-tours > div.hidden-col {
+	background: #eaeaea url(../images/hidden-col.png) no-repeat center center;
+}
+#top-tours > div.hidden-col:hover {
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+#top-tours > div:nth-child(3n) {
+	margin-right: 0;
+}
+
+/************************-END TOP TOUR-********************************/
+
 .destination-list .list li {
 	height: 370px;
 	width: 218px;
@@ -1949,7 +1979,7 @@ body {
 	margin-right: 0px !important;
 }
 
-#top-destination-tours .list li:hover, .destination-list .list li:hover {
+#top-destination-tours .list li:hover, .destination-list .list li:hover, #top-tours > div:hover {
 	box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
 }
 #top-destination-tours .list li.hidden, .destination-list .list li.hidden {
@@ -1958,18 +1988,18 @@ body {
 #top-destination-tours .list li.hidden:hover, .destination-list .list li.hidden:hover {
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
 }
-#top-destination-tours .list .thumb, .destination-list .list .thumb {
+#top-destination-tours .list .thumb, .destination-list .list .thumb, #top-tours .thumb {
 	position: relative;
 	width: 228px;
 	height: 150px;
 	overflow: hidden;
 }
-#top-destination-tours .list .thumb img, .destination-list .list .thumb img {
+#top-destination-tours .list .thumb img, .destination-list .list .thumb img, #top-tours .thumb img {
 	width: 230px;
 	height: 150px;
 	display: inline-block;
 }
-#top-destination-tours .list .thumb .promotion, .destination-list .list .thumb .promotion {
+#top-destination-tours .list .thumb .promotion, .destination-list .list .thumb .promotion, #top-tours .thumb .promotion {
 	width: 230px;
 	background-color: #FF8800;
 	color: #FFFFFF;
@@ -1978,18 +2008,19 @@ body {
 	position: absolute;
 	bottom: 0px;
 }
-#top-destination-tours .list .detail, .destination-list .list .detail {
+#top-destination-tours .list .detail, .destination-list .list .detail, #top-tours .detail {
 	padding: 8px;
-	background: none repeat scroll 0 0 #FFFFFF;
+	background: none repeat scroll 0 0 #eaeaea;
 	left: 0;
 	position: absolute;
 	top: 150px;
 	height: 400px;
 	transition: all 1s ease 0s;
+	color: #535353;
 }
 #top-destination-tours .list .detail p, .destination-list .list .detail p {
 }
-#top-destination-tours .list .tourname, .destination-list .list .tourname {
+#top-destination-tours .list .tourname, .destination-list .list .tourname, #top-tours .tourname {
 	color: #00A0D4;
 	font-size: 12px;
 	font-weight: bold;
@@ -1999,53 +2030,56 @@ body {
 	white-space: nowrap;
 	display: block;
 	width: 200px;
+	margin-bottom: 3px;
 }
-#top-destination-tours .list .tourname a, .destination-list .list .tourname a {
-	color: #0072BC;
-	font-size: 16px;
-	font-weight: normal;
+#top-destination-tours .list .tourname a, .destination-list .list .tourname a, #top-tours .tourname a {
+	color: #0366b2;
+	font-size: 18px;
+	font-weight: bolder;
 	line-height: 18px;
 }
-#top-destination-tours .list .price {
-	color: #ff8a00;
+#top-destination-tours .list .price, #top-tours .price {
+	color: #e36f22;
 	font-weight: bold;
+	font-size: 18px;
 }
-#top-destination-tours .list .price label {
+#top-destination-tours .list .price label, #top-tours .price label {
 	color: #2A2A2A;
 	font-weight: normal;
+	font-size: 14px;
 }
-#top-destination-tours .list .price label.original {
+#top-destination-tours .list .price label.original, #top-tours .price label.original {
 	color: #999999;
 	font-weight: normal;
 	text-decoration: line-through;
 }
 #top-destination-tours .list .photo {
 }
-#top-destination-tours .list .separator {
-	border-bottom: 1px dotted #DDDDDD;
+#top-destination-tours .list .separator, #top-tours .separator {
+	border-bottom: 1px dashed #A1A1A1;
 	margin: 8px 0px;
 }
 #top-destination-tours .list .rating {
 }
-#top-destination-tours .list .desc {
+#top-destination-tours .list .desc, #top-tours .desc {
 	height: 90px;
 	overflow: hidden;
 	line-height: 18px;
 }
-#top-destination-tours .list .booknow {
+#top-destination-tours .list .booknow, #top-tours .booknow  {
 	text-align: center;
 	position: absolute;
 	top: 348px;
 	z-index: 1;
 	width: 100%;
-	background: white;
+	background: #eaeaea;
 	padding: 10px 0;
-	height: 40px;
+	height: 50px;
 }
-#top-destination-tours .list .booknow a {
+#top-destination-tours .list .booknow a, #top-tours .booknow a {
 	padding: 4px 10px;
-	background-color: #FF8800;
-	background-image: -moz-linear-gradient(center top , #FFD200, #FF8800);
+	background-color: #e36f22;
+	/*background-image: -moz-linear-gradient(center top , #FFD200, #FF8800);*/
 	background-repeat: repeat-x;
 	border-radius: 5px 5px 5px 5px;
 	font-size: 14px;
@@ -2167,7 +2201,10 @@ div.map-mask img {
 	z-index: 1;
 }
 
-#things-todo .sights .destination .content:hover, #top-destination-tours .list .detail:hover, .destination-list .list .detail:hover {
+#things-todo .sights .destination .content:hover, 
+#top-destination-tours .list .detail:hover, 
+.destination-list .list .detail:hover,
+ #top-tours .detail:hover {
 	top: 35px;
 }
 
@@ -2376,10 +2413,10 @@ div.map-mask img {
 
 /* Show More Items */
 
-.show-more-container {
+/* .show-more-container {
 	border: 1px solid #DDDDDD;
 	background-color: #F8F8F8;
-}
+} */
 
 .show-more-container .link {
 	color: #333333;
@@ -2388,6 +2425,8 @@ div.map-mask img {
 	text-align: center;
 	display: inline-table;
 	cursor: pointer;
+	border: 1px solid #DDDDDD;
+	background-color: #F8F8F8;
 }
 
 .show-more-container .loading {

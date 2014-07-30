@@ -70,11 +70,11 @@ class M_Tour extends CI_Model
 			}
 			if (!empty($info->destinations))
 			{
-				$sql .= " AND (tv_tour.depart_from IN (".implode(",", $info->destinations).") OR tv_tour.going_to IN (".implode(",", $info->destinations)."))";
+				$sql .= " AND (tv_tour.depart_from = {$info->destinations} OR tv_tour.going_to = {$info->destinations})";
 			}
 			if (!empty($info->categories))
 			{
-				$sql .= " AND tv_tour.category_id IN (".implode(",", $info->categories).")";
+				$sql .= " AND tv_tour.category_id = $info->categories";
 			}
 			if (!empty($info->name))
 			{

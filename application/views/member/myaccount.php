@@ -77,7 +77,7 @@
 									<td class="center-text"><?= $status ? 'Paid' : '<b style="color:red">UnPaid</b> ('.anchor("member/payment/$book_id",'Click to pay').')'?></td>
 									<td><?= $this->util->dateShortFormat($booking_date) ?></td>
 								</tr>
-								<tr class="hidden" id="more_<?= $iteration ?>" style="display: none;">
+								<tr class="none" id="more_<?= $iteration ?>" style="display: none;">
 									<td colspan="5" style="background-color: #f6f6f6">
 										<span class="title-tb" style="padding-top: 4px">Tour Information</span>
 										<div class="linetb noborder" style="border: none;">
@@ -242,7 +242,7 @@
 									<td class="center-text"><?= $status ? 'Paid' : '<b style="color:red">UnPaid</b>'?></td>
 									<td><?= $this->util->dateShortFormat($booking_date) ?></td>
 								</tr>
-								<tr class="hidden" id="more_<?= $iteration ?>" style="display: none;">
+								<tr class="none" id="more_<?= $iteration ?>" style="display: none;">
 									<td colspan="5" style="background-color: #f6f6f6">
 										<span class="title-tb" style="padding-top: 4px">Hotel Information</span>
 										<div class="linetb noborder" style="border: none;">
@@ -384,7 +384,7 @@
 									<td class="center-text"><?= $status ? 'Paid' : '<b style="color:red">UnPaid</b>'?></td>
 									<td><?= $this->util->dateShortFormat($booking_date) ?></td>
 								</tr>
-								<tr class="hidden" id="more_<?= $iteration ?>" style="display: none;">
+								<tr class="none" id="more_<?= $iteration ?>" style="display: none;">
 									<td colspan="5" style="background-color: #f6f6f6">
 										<span class="title-tb" style="padding-top: 4px">Ticket Information</span>
 										<div class="linetb noborder" style="border: none;">
@@ -542,7 +542,7 @@
 									<td class="center-text"><?= $status ? 'Paid' : '<b style="color:red">UnPaid</b>'?></td>
 									<td><?= $this->util->dateShortFormat($booking_date) ?></td>
 								</tr>
-								<tr class="hidden" id="more_<?= $iteration ?>" style="display: none;">
+								<tr class="none" id="more_<?= $iteration ?>" style="display: none;">
 									<td colspan="5" style="background-color: #f6f6f6">
 										<span class="title-tb" style="padding-top: 4px">Visa Information</span>
 										<div class="linetb noborder" style="border: none;">

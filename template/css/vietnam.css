@@ -2854,8 +2854,16 @@ div.map-mask img {
 }
 
 #review-box {
-	width: 760px;
+	width: 100%;
 	padding: 4px;
+	float: left;
+}
+
+#review-box > h1 {
+	font-size: 26px;
+	font-weight: bold;
+	color: #e36f22;
+	margin-top: 0;
 }
 
 #review-box .header {
@@ -2885,15 +2893,16 @@ div.map-mask img {
 
 #review-box a.btn-review {
 	border: none;
-	padding: 8px 10px 8px 15px;
+	padding: 8px 35px 8px 20px;
 	font-size: 16px;
 	font-weight: bold;
 	color: #FFFFFF;
-	background: #ff9000;
-	border-radius: 7px;
+	background: #e36f22 url("../images/double-arrow.png") no-repeat 80px center;
+	border-radius: 5px;
 	line-height: 18px;
 	text-decoration: none;
 	cursor: pointer;
+	float: right;
 }
 
 #review-box form p {
@@ -2919,7 +2928,7 @@ div.map-mask img {
 }
 
 #review-box form p textarea {
-    width:737px;
+    width:100%;
     padding: 10px;
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -3001,12 +3010,14 @@ div.map-mask img {
 	display: block;
 	color: #d9534f;
 	line-height: 17px;
+	font-size: 13px;
 }
 
 #star {
 	width:130px !important;
 	display:inline-block;
 	margin: -4px 0 -4px 0;
+	vertical-align: text-top;
 }
 
 #review-success {

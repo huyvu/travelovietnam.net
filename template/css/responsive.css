@@ -57,6 +57,12 @@ and (max-device-width : 480px) {
 	.navbar-menu-toggle-right {
 		display: none;
 	} */
+	#login .login-title .col-md-8 div {
+		font-size: 13px;
+	}
+	#login .login-title .col-md-12 > .col-md-4 {
+		font-size: 26px;
+	}
 	
 }
 
@@ -78,5 +84,11 @@ and (max-device-width : 480px) {
 @media (min-width: 1200px) {
 	.container {
 		width: 980px;
+	}
+	#login .login-title .col-md-8 div {
+		font-size: 18px;
+	}
+	#login .login-title .col-md-12 > .col-md-4 {
+		font-size: 31px;
 	}
 }

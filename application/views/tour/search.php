@@ -1,7 +1,12 @@
 <link rel="stylesheet" type="text/css" href="<?=CSS_URL?>vietnam.css">
 <?
 	if (isset($_GET['destination'])) {
-		$destination = $this->m_tour_destination->load($_GET['destination'][0]);
+		$destination = $this->m_tour_destination->load($_GET['destination']);
+	}
+
+	$things = $this->m_tour_category->getItems(1);
+	if (isset($_GET['category'])) {
+		$cat = $_GET['category'];
 	}
 ?>
 <div class="container">

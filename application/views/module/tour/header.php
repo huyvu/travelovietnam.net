@@ -1,65 +1,4 @@
 <link rel="stylesheet" type="text/css" href="<?=TPL_URL?>jquery/layerslider/css/layerslider.css" />
-<style>
-	#things-to-do {
-		padding: 12px 10px 12px 30px;
-		background: rgba(255,255,255,0.8);
-		overflow: hidden;
-	}
-
-	.ls-s-1 .form-group label {
-		color: #000;
-	}
-
-	.ls-s-1 .form-group select {
-		height: auto;
-		padding: 5px 10px;
-		color: #7f7f7f;
-		font-weight: 100;
-	}
-	
-	#things-to-do > .form-group {
-		margin-bottom: 10px !important;
-	}
-
-	#things-to-do > .form-group:nth-child(2) {
-		margin-bottom: 0;
-	}
-
-	#things-to-do button {
-		border-radius: 0;
-		font-size: 14px;
-		font-weight: bold;
-		background: #e36f22;
-		padding: 4px 12px;
-	}
-
-	#header-testimonial div.avatar {
-		float:left;
-		height: 88px;
-		width: 88px;
-		overflow: hidden;
-		border-radius: 50%;
-		border: 2px solid #FFF;
-	}
-
-	#header-testimonial .content {
-		float: left;
-		padding: 15px 20px 15px 15px;
-		background: rgba(0,0,0,.5);
-		margin-left: 18px;
-		border-radius: 5px; 
-	}
-
-	#header-testimonial .content .quote {
-		font-family: "Segoe Print", Tahoma, sans-serif;
-		font-weight: bold;
-		margin-bottom: 10px;
-		white-space: pre-line;
-		width: 250px;
-	}
-
-
-</style>
 <script type="text/javascript">
 	$(document).ready(function() {
 		// scroll-to-top button show and hide
@@ -150,7 +89,8 @@
 				</div>
 				<div class="ls-s-1" style="position: absolute; top:177px; left: 103px; slidedirection : top; slideoutdirection : top; durationin : 1000; durationout : 1000; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 800; delayout : 0; showuntil : 0; font-family: Tahoma,Helvetica sans-serif; font-size: 16px; font-weight: 600; color: #FFF; padding: 5px 20px 10px 20px;  white-space: nowrap;"> 
 					<h1 style="display:inline-block;color: #e36f22;font-weight:bold;text-shadow: 0.5px 2px 8px #000;font-size:40px">Things to do,</h1><h1 style="font-size:40px;display:inline-block;color:#FFF;font-weight:bold;text-shadow: 0.5px 2px 8px #000;">all over Vietnam</h1>
-					<form action="" id="things-to-do" class="form-horizontal" role="form">
+					<form action="<?=site_url('tours/search')?>" id="things-to-do" class="form-horizontal" role="form">
+					<input type="hidden" id="search-type" name="smode" value="filter">
 						<div class="form-group">
 							<div class="col-md-4">
 								<label for="city">
@@ -165,22 +105,20 @@
 						</div>
 						<div class="form-group">
 							<div class="col-md-4">
-								<select class="form-control">
-									<option value="ho-chi-minh">Ho Chi Minh City</option>
+								<select class="form-control" name="destination" id="slDestination">
+									<option value="">All Places</option>
+									<?foreach($this->m_tour_destination->getItems(1,5) as $destination) :?>
+									<option value="<?=$destination->id?>"><?=$destination->name?></option>
+									<?endforeach?>
 								</select>
 							</div>
 							<div class="col-md-4">
-								<select class="form-control">
-									<option value="">All</option>
-									<option value="">Cruises, Sailing & Water Tours</option>
-									<option value="">Cultural & Theme Tours</option>
-									<option value="">Day Trips & Excursions</option>
-									<option value="">Food, Wine & Nightlife</option>
-									<option value="">Walking & Biking Tours</option>
+								<select class="form-control" name="category" id="slCategories">
+									<option value=''>All</option>
 								</select>
 							</div>
 							<div class="col-md-2">
-								<button type="button" id="letsgo-btn" class="btn">Let's go</button>		
+								<button type="submit" id="letsgo-btn" class="btn">Let's go</button>		
 							</div>
 						</div>
 					</form>
@@ -298,9 +236,25 @@
 				$('.profile-details').css('display', 'block');
 		});
 
-		$('#letsgo-btn').click(function() {
-			window.location = "<?=site_url('tours/search')?>?smode=filter&destination[]=16";
+		$("#slDestination").change(function() {
+			var p = {};
+			p["destination"] = $(this).val();
+			var link = "<?=site_url('tours/category_by_destination')?>"
+			$.ajax({
+				type: "POST",
+				url: link,
+				data: p,
+				dataType: 'json',
+				cache: false,
+				success: function(result) {
+					var str = "<option value=''>All</option>";
+					for (var i = result.length - 1; i >= 0; i--) {
+						str += "<option value='" + result[i]['id'] + "'>" + result[i]['name'] + "</option>";
+					};
+					$("#slCategories").html(str);
+				},
+				async:false
+			});
 		});
-
 	});
 </script>

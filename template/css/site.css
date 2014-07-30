@@ -1,5 +1,20 @@
+.container {
+	padding: 0;
+}
+
 .none {
 	display: none;
+}
+
+.scrollup {
+	background: url("../images/gototop.png") no-repeat scroll 0 0 transparent;
+	right: 20px;
+	bottom: 140px;
+	display: none;
+	width: 42px;
+	height: 42px;
+	position: fixed;
+	text-indent: -9999px;
 }
 /*******--------------HEADER STYLE--------------*******/
 #top-header {
@@ -104,6 +119,64 @@
 #slider {
 	background: url(../images/bg.jpg) no-repeat center center; 
 	height: 406px;
+}
+
+#things-to-do {
+	padding: 12px 10px 12px 30px;
+	background: rgba(255,255,255,0.8);
+	overflow: hidden;
+}
+
+.ls-s-1 .form-group label {
+	color: #000;
+}
+
+.ls-s-1 .form-group select {
+	height: auto;
+	padding: 5px 10px;
+	color: #7f7f7f;
+	font-weight: 100;
+}
+
+#things-to-do > .form-group {
+	margin-bottom: 10px !important;
+}
+
+#things-to-do > .form-group:nth-child(2) {
+	margin-bottom: 0;
+}
+
+#things-to-do button {
+	border-radius: 0;
+	font-size: 14px;
+	font-weight: bold;
+	background: #e36f22;
+	padding: 4px 12px;
+}
+
+#header-testimonial div.avatar {
+	float:left;
+	height: 88px;
+	width: 88px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 2px solid #FFF;
+}
+
+#header-testimonial .content {
+	float: left;
+	padding: 15px 20px 15px 15px;
+	background: rgba(0,0,0,.5);
+	margin-left: 18px;
+	border-radius: 5px; 
+}
+
+#header-testimonial .content .quote {
+	font-family: "Segoe Print", Tahoma, sans-serif;
+	font-weight: bold;
+	margin-bottom: 10px;
+	white-space: pre-line;
+	width: 250px;
 }
 /*******------------END HEADER STYLE------------*******/
 
@@ -456,8 +529,131 @@ footer > .row > div.col-xs-12 {
 	text-decoration: none;
 }
 
-.blue-panel a.all-things {
+.blue-panel a.all-things, .blue-panel a.less-things {
 	font-weight: bold;
 	color: #ff8c40;
 }
 /*******------------END MODULE THINGS TO DO STYLE------------*******/
+
+/*******------------BROCHURE STYLE------------*******/
+#brochure {
+	background: #f1f1f1;
+	padding: 15px;
+}
+
+#brochure h1 {
+	margin: 0;
+	font-weight: bold;
+	color: #e36f22;
+	font-size: 40px;
+}
+
+#brochure h3 {
+	margin-top: 0;
+	font-weight: bold;
+	color: #03599b;
+	font-size: 30px;
+}
+
+#brochure > a {
+	display: block;
+	font-weight: bold;
+	color: #FFF;
+	font-size: 20px;
+	padding: 7px 30px;
+	text-align: center;
+	background: #03599b;
+	border-radius: 4px;
+}
+
+#brochure > a:hover {
+	text-decoration: none;
+	background: #e36f22;
+}
+/*******------------END BROCHURE STYLE------------*******/
+
+/*******------------TOUR CAROUSEL STYLE------------*******/
+#vietnam-tour .carousel-inner .item {
+	padding: 10px;
+	width: 290px;
+	overflow: hidden;
+	box-sizing: content-box;
+}
+
+#vietnam-tour .carousel-inner .item .reviews {
+	margin-bottom: 10px;
+}
+
+#vietnam-tour .carousel-inner .item .tourname {
+	margin: 10px 0 5px 0;
+}
+
+#vietnam-tour .carousel-inner .item .tourname a {
+	color: #0072BC;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 18px;
+}
+
+#vietnam-tour .carousel-inner .item .tourname a:hover {
+	text-decoration: none;
+}
+
+#vietnam-tour .carousel-inner .item .reviews img {
+	margin-top: 2px;
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+
+#vietnam-tour .carousel-inner .item .reviews a {
+	text-decoration: none;
+	font-size: 12px;
+	color: #2075c2;
+	border-bottom: 2px solid #c0d2e9;
+}
+
+#vietnam-tour .carousel-inner .item .detail {
+	color: #535353;
+}
+
+#vietnam-tour .carousel-inner .item {
+	background: #eaeaea;
+	height: 382px;
+}
+
+#vietnam-tour .carousel-inner .item .thumb {
+	height: 195px;
+	overflow: hidden;
+}
+
+#vietnam-tour .col-md-4 {
+	padding: 0 15px 0 0;
+}
+
+#vietnam-tour .col-md-4:nth-child(3) {
+	padding: 0 0 0 30px;
+}
+
+#vietnam-tour .carousel-indicators {
+	position: relative;
+	margin-top: 30px;
+}
+
+#vietnam-tour .carousel-indicators li {
+	background: #cacaca;
+	height: 12px;
+	width: 12px;
+	border: none;
+	margin: 0;
+}
+
+#vietnam-tour .carousel-indicators .active {
+	background: #e36f22;
+}
+
+#home.container {
+	padding: 0;
+}
+
+/*******------------END TOUR CAROUSEL STYLE------------*******/

@@ -153,8 +153,9 @@ class Tours extends CI_Controller {
 				$tour_search->types				= !empty($_GET["type"]) ? $_GET["type"] : array();
 				
 				$tour_search->regions			= !empty($_GET["region"]) ? $_GET["region"] : array();
-				$tour_search->destinations		= !empty($_GET["destination"]) ? $_GET["destination"] : array();
-				$tour_search->categories		= !empty($_GET["category"]) ? $_GET["category"] : array();
+				// var_dump(count($_GET["destination"]));die();
+				$tour_search->destinations		= !empty($_GET["destination"]) ? $_GET["destination"] : NULL;
+				$tour_search->categories		= !empty($_GET["category"]) ? $_GET["category"] : NULL;
 				
 				$tour_search->depart_from		= "";
 				$tour_search->going_to			= "";
@@ -183,6 +184,7 @@ class Tours extends CI_Controller {
 			
 			$tour_search->sortby  			= !empty($_GET["sortby"]) ? $_GET["sortby"] : "newest";
 			$tour_search->orderby 			= !empty($_GET["orderby"]) ? $_GET["orderby"] : "asc";
+			$tour_search->daily 			= 1;
 		}
 		
 		// Exactly search
@@ -438,7 +440,7 @@ class Tours extends CI_Controller {
 			header('Location: '.$link);
 		}
 		else if (!empty($tour_search->going_to)) {
-			$link = site_url("tours/search")."?smode=filter&price=&duration=&destination[]=".$tour_search->going_to;
+			$link = site_url("tours/search")."?smode=filter&price=&duration=&destination=".$tour_search->going_to;
 			header('Location: '.$link);
 		}
 	}
@@ -460,7 +462,8 @@ class Tours extends CI_Controller {
 		$review_info->category_id	= 1;
 		$review_info->ref_id		= $item->id;
 		$review_info->topLevel		= 1;
-		$reviews = $this->m_review->getItems($review_info, 1);
+		// Limit reviews with 4 items
+		$reviews = $this->m_review->getItems($review_info, 1, 4);
 		
 		$avg_rating = 3;
 		foreach ($reviews as $review) {
@@ -472,6 +475,9 @@ class Tours extends CI_Controller {
 		$tour_info->going_to	= $item->going_to;
 		$tour_info->exclude_id	= $item->id;
 		$more_tours = $this->m_tour->getItems($tour_info, 1);
+
+		$tripnote_info->tour_id = $item->id;
+		$tripnotes = $this->m_tour_tripnote->getItems($tripnote_info, 1);
 		
 		$view_data["item"]			= $item;
 		$view_data["itineraries"]	= $itineraries;
@@ -479,10 +485,12 @@ class Tours extends CI_Controller {
 		$view_data["photos"]		= $photos;
 		$view_data["avg_rating"]	= $avg_rating;
 		$view_data["more_tours"]	= $more_tours;
+		$view_data["reviews"]		= $reviews;
+		$view_data["tripnotes"]		= $tripnotes;
 		
-		$review_data['category_id'] = 1;
-		$review_data['ref_id']		= $item->id;
-		$view_data["reviews"]		= $this->load->view("review/index", $review_data, TRUE);
+		// $review_data['category_id'] = 1;
+		// $review_data['ref_id']		= $item->id;
+		// $view_data["reviews"]		= $this->load->view("review/index", $review_data, TRUE);
 		
 		$question_data['category_id'] 	= 1;
 		$question_data['ref_id']		= $item->id;
@@ -629,7 +637,7 @@ class Tours extends CI_Controller {
 		
 		$review_data['category_id'] 	= 1;
 		$review_data['ref_id']			= $item->id;
-		$view_data["reviews"]			= $this->load->view("review/index", $review_data, TRUE);
+		$view_data["reviews"]			= $reviews;
 		
 		$question_data['category_id'] 	= 1;
 		$question_data['ref_id']		= $item->id;
@@ -1637,6 +1645,12 @@ class Tours extends CI_Controller {
 		$pdf->writeHTML($html, true, false, true, false, '');
 		$newFile  = './files/invoice/T'.$booking->id.'.pdf';
 		$pdf->Output($newFile, 'F');      
+	}
+
+	public function category_by_destination() {
+		$destination = $this->input->post('destination');
+		$categories = $this->m_tour_category->getCategoryByDestination($destination);
+		echo json_encode($categories);
 	}
 }
 

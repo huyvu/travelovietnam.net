@@ -36,9 +36,9 @@
 	
 	$arrdestination = explode(';', $item->destinations);
 	$destinations = array();
-    for ($i=0; $i < sizeof($arrdestination); $i++) {
-    	$destinations[] = $this->m_tour_destination->load($arrdestination[$i]);
-    }
+	for ($i=0; $i < sizeof($arrdestination); $i++) {
+		$destinations[] = $this->m_tour_destination->load($arrdestination[$i]);
+	}
 	
 	$glocations = array();
 	foreach ($destinations as $destination) {
@@ -46,43 +46,24 @@
 			$glocations[] = '{location: "'.$destination->name.'"}';
 		}
 	}
-?>
 
+	//Get the city where tour belongs
+	$destination = $this->m_tour_destination->load($item->city_alias);
+
+	$things = $this->m_tour_category->getItems(1);
+	$cat = $item->category_id;
+
+?>
+<link type="text/css" rel="stylesheet" href="<?=TPL_URL?>jquery/css/flexslider.css" />
 <link type="text/css" rel="stylesheet" href="<?=TPL_URL?>jquery/css/panorama.css" />
 <script type="text/javascript" src="<?=TPL_URL?>jquery/js/droplist.js"></script>
 <script type="text/javascript" src="<?=TPL_URL?>jquery/js/jquery.easing.js"></script>
 <script type="text/javascript" src="<?=TPL_URL?>jquery/js/jquery.contentcarousel.js"></script>
+<script type="text/javascript" src="<?=TPL_URL?>jquery/js/jquery.flexslider.js"></script>
 
 <link rel="stylesheet" type="text/css" href="<?=TPL_URL?>jquery/css/gdl-custom-slider.css" rel="stylesheet" />
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
 <script type="text/javascript">
-	var map;
-	var mapshown = false;
-	var directionsDisplay = new google.maps.DirectionsRenderer();
-	var directionsService = new google.maps.DirectionsService();
-
-	function initialize() {
-		var options = {
-			zoom:5,
-			mapTypeId: google.maps.MapTypeId.ROADMAP
-		};
-		map = new google.maps.Map(document.getElementById("mapcanvas"), options);
-	}
-	
-	function calcRoute(start, end, mode) {
-		var request = {
-			origin:start,
-			destination:end,
-			waypoints:[<?=implode(',', $glocations)?>],
-			travelMode: google.maps.TravelMode[mode]
-		};
-		directionsService.route(request, function(result, status) {
-			if (status == google.maps.DirectionsStatus.OK) {
-				directionsDisplay.setDirections(result);
-			}
-		});
-		directionsDisplay.setMap(map);
-	}
 	
 	function showTab(index) {
 		var tabs  = new Array("tab1", "tab2", "tab3", "tab4", "tab5", "tab6");
@@ -114,6 +95,26 @@
 		});
 		
 		$(".view-map").fancybox();
+
+		var dateoptions = {
+			numberOfMonths : 2,
+			minDate: 0
+		};
+	
+		$("#departure-date").datepicker(dateoptions);
+		$('.select-date').click(function(event) {
+			console.log('asdd');
+			$("#departure-date").trigger('focus');
+		});
+
+		$(".expand-all").click(function() {
+			$(".less-detail").hide();
+			$(".more-detail").show('fade');
+		});
+		$(".close-all").click(function() {
+			$(".less-detail").show('fade');
+			$(".more-detail").hide();
+		});
 	});
 </script>
 <?
@@ -122,381 +123,376 @@
 		$shortlist = array();
 	}
 ?>
-<div class="slideshow">
-	<div id="ca-container" class="ca-container">
-		<div class="ca-wrapper">
-			<? for ($i=0; $i<sizeof($photos); $i++) { ?>
-			<div class="ca-item">
-				<div class="ca-item-main">
-					<img alt="<?=$photos[$i]->name?>" title="<?=$photos[$i]->name?>" src="<?=$photos[$i]->file_path?>" width="426px" height="308px" />
-					<div class="ttpano-img-name">
-						<label class="number"><?=substr("0".($i+1), -2)?></label>
-						<span class="name"><h2><?=$photos[$i]->name?></h2></span>
-					</div>
-				</div>
-			</div>
-			<? } ?>
+
+
+<div id="tours" class="container">
+	<div id="breadcrumbs" class="row">
+		<div class="col-md-12">
+			<a class="pathway" title="Home" href="<?=site_url("tours/vietnam")?>">Home</a>
+			> Vietnam City > <a href="<?=site_url("tours/vietnam/{$item->city_alias}")?>"><?=$destination->name?></a>
 		</div>
 	</div>
-	<script type="text/javascript">
-		$('#ca-container').contentcarousel();
-	</script>
-</div>
+	<!-- end #breadcrumbs -->
 
-<div class="inner content-13x20">
-	<div id="breadcrumbs">
-		<a class="pathway" title="Home" href="<?=site_url("tours/vietnam")?>">Home</a>
-		<img alt="" src="<?=IMG_URL?>arrow.png">
-		<a class="pathway" title="Vietnam Tours" href="<?=site_url("tours/search")?>">Vietnam Tours</a>
-		<img alt="" src="<?=IMG_URL?>arrow.png"> <?=$item->name?>
-		<? require_once(APPPATH."views/module/social.php"); ?>
-	</div>
-	<div id="tour-view">
-		<h1><?=$item->name?></h1>
-		<h2><?=$item->sub_title?></h2>
-	</div>
-	<div class="left" style="width: 680px">
-		<div id="tour-view-detailed">
-			<h2 class="summary-name">
-				SUMMARY
-				<p class="right">
-					<a class="favorite-add favorite-add<?=$item->id?> <?=(array_key_exists($item->id, $shortlist) ? "none" : "")?>" tourid="<?=$item->id?>">Add to Shortlist</a>
-					<a class="favorite-remove favorite-remove<?=$item->id?> <?=(array_key_exists($item->id, $shortlist) ? "" : "none")?>" tourid="<?=$item->id?>">Remove from Shortlist</a>
-				</p>
-			</h2>
-			
-			<div class="tour-view-summary">
-				<div class="summary-header">
-					<div class="left tour-code">
-						<div class="label">CODE</div>
-						<div class="info"><?=$item->code?></div>
-					</div>
-					<div class="left tour-duration">
-						<div class="label">DURATION</div>
-						<div class="info"><?=($item->duration > 1) ? $item->duration." days - ".($item->duration-1)." nights" : $item->duration." day"?></div>
-					</div>
-					<div class="left tour-type">
-						<div class="label">TYPE</div>
-						<div class="info"><?=($item->throughout) ? "Throughout" : "Daily"?></div>
-					</div>
-					<div class="right tour-price">
-						<div class="label">PRICE FROM <img class="help" alt="" src="<?=IMG_URL?>tour/icon/info.png" title="<?=$this->m_tooltip->load("[Tour][Detail][Price]")->content?>" rel="tooltip"></div>
-						<div class="info">
-							<? if ($item->price < $item->original_price) { ?>
-							<span class="original">$<?=number_format($item->original_price,2,'.',',')?></span>
-							<? } ?>
-							$<?=number_format($item->price,2,'.',',')?>
+	<div id="tour-content" class="row">
+		<div class="col-md-9">
+			<div class="row tour-summary">
+				<h1 class="tour-name"><?=$item->name?></h1>
+				<div class="col-md-5">
+					<a id="tour-photo-slide" href="javascript:void(0)" data-toggle="modal" data-target="#myModal">
+						<div class="tour-thumb">
+							<img src="<?="http://localhost/vietnamamazing.com".$photos[0]->file_path?>" alt="<?=$photos[0]->name?>">
+							<span class="photo-number"><img src="<?=IMG_URL?>white-camera.png" alt=""> <?=sizeof($photos)?> Photos</span>	
+						</div>
+					</a>
+					<!-- Modal -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-body">
+									<div class="flexslider" id="flex">
+										<ul class="slides">
+											<?foreach($photos as $photo) :?>
+												<li>
+													<img src="http://localhost/vietnamamazing.com<?=$photo->file_path?>" />
+												</li>
+											<?endforeach?>
+										</ul>
+									</div>
+									<!-- end .flexslider -->
+									<div id="carousel" class="flexslider">
+										<ul class="slides">
+											<?foreach($photos as $photo) :?>
+												<li>
+													<img src="http://localhost/vietnamamazing.com<?=$photo->file_path?>" />
+												</li>
+											<?endforeach?>
+										<!-- items mirrored twice, total of 12 -->
+										</ul>
+									</div>
+									<!-- end #carousel -->
+								</div>
+							</div>
 						</div>
 					</div>
-					<? if ($item->best_deal) { ?>
-					<div class="top-seller"></div>
-					<? } ?>
-					<div class="clr"></div>
+					<!-- end #myModal -->
 				</div>
-				<div class="summary-content">
-					<div class="tour-validity">
-						<label class="tour-validity-label">Trip validity</label> : 
-						<? if (0) { ?>
-						<label class="date">Daily</label>
-						<? } else { ?>
-						<label class="date"><?=date('d-M-Y', strtotime($item->start))?></label> to <label class="date"><?=date('d-M-Y', strtotime($item->finish))?></label>
-						<? } ?>
+				<div class="col-md-6">
+					<div class="review">
+						<img height="15" src="<?=IMG_URL?>tour/icon/star5.png" alt=""> 9 Reviews | Add your review
 					</div>
-					<div class="tour-destination">
-						<label class="tour-destination-label" style="float:left">Itinerary</label> <span style="float:left;padding-left:4px">:</span> 
+					<ul class="summary-list">
+						<li><span class="summary-label">Code</span>: <?=$item->code?></li>
+						<li><span class="summary-label">Duration</span>: Full day</li>
+						<li>
+							<span class="summary-label">Itinerary</span>: 
+							<?
+								$arrdestination = explode(';', $item->destinations);
+								$destinations = array();
+								for ($i=0; $i < sizeof($arrdestination); $i++) {
+									$destinations[] = $this->m_tour_destination->load($arrdestination[$i]);
+								}
+								$destsize = sizeof($destinations);
+								// echo "<span style='padding-left:5px; display: table-cell'>";
+								for ($i=0; $i < $destsize; $i++) {
+									$destination = $destinations[$i];
+									echo '<a target="_blank" title="'.$destination->name.', '.$destination->name.' Vietnam, '.$destination->name.' travel guide" href="'.site_url("vietnam/top-destinations/".$destination->alias).'">'.$destination->name.'</a>';
+									if ($i < $destsize-1) {
+										echo '&nbsp;<img src="'.IMG_URL.'destination-arrow.gif'.'">&nbsp;';
+									}
+								}
+								// echo "</span>";
+							?>
+						</li>
 						<?
-							$arrdestination = explode(';', $item->destinations);
-							$destinations = array();
-						    for ($i=0; $i < sizeof($arrdestination); $i++) {
-						    	$destinations[] = $this->m_tour_destination->load($arrdestination[$i]);
-						    }
-				    		$destsize = sizeof($destinations);
-				    		echo "<span style='padding-left:5px; display: table-cell'>";
-				    		for ($i=0; $i < $destsize; $i++) {
-				    			$destination = $destinations[$i];
-				    			echo '<a target="_blank" title="'.$destination->name.', '.$destination->name.' Vietnam, '.$destination->name.' travel guide" href="'.site_url("vietnam/top-destinations/".$destination->alias).'">'.$destination->name.'</a>';
-				    			if ($i < $destsize-1) {
-				    				echo '&nbsp;<img src="'.IMG_URL.'destination-arrow.gif'.'">&nbsp;';
-				    			}
-				    		}
-				    		echo "</span>";
-				    	?>
-					</div>
-					<?
-						$arrcategory = explode(';', $item->categories);
-						$tour_categories = array();
-					    for ($i=0; $i < sizeof($arrcategory); $i++) {
-					    	$tour_categories[] = $this->m_tour_category->load($arrcategory[$i]);
-					    }
-			    		$catsize = sizeof($tour_categories);
-			    		if ($catsize > 1) {
-			    			?>
-			    			<div class="tour-destination">
-    						<label class="tour-destination-label">Themes</label> :
-			    			<?
-				    		for ($i=0; $i < $catsize; $i++) {
-				    			$category = $tour_categories[$i];
-				    			echo $category->name;
-				    			if ($i < $catsize-1) {
-				    				echo ', ';
-				    			}
-				    		}
-				    		?>
-				    		</div>
-				    		<?
-			    		}
-			    	?>
-					<?
-						$arractivity = explode(';', $item->activities);
-						$tour_activities = array();
-					    for ($i=0; $i < sizeof($arractivity); $i++) {
-					    	$tour_activities[] = $this->m_tour_activity->load($arractivity[$i]);
-					    }
-			    		$catsize = sizeof($tour_activities);
-			    		if ($catsize > 1) {
-			    			?>
-			    			<div class="tour-destination">
-    						<label class="tour-destination-label">Activities</label> :
-			    			<?
-				    		for ($i=0; $i < $catsize; $i++) {
-				    			$activity = $tour_activities[$i];
-				    			echo $activity->name;
-				    			if ($i < $catsize-1) {
-				    				echo ', ';
-				    			}
-				    		}
-				    		?>
-				    		</div>
-				    		<?
-			    		}
-			    	?>
-			    	<? if (!empty($item->note)) :?>
-			    		<div class="tour-destination red departure_date">
-			    			<label class="tour-destination-label">Departure date</label><span> : </span><?=$item->note?>
-			    		</div>
-			    	<? endif ?>
-			    	<div class="button-bar">
-						<div class="left">
-							<div class="button-link">
-								<div class="bookcondition"><a target="_blank" href="<?=site_url("tours/booking-conditions")?>">* Refer to booking conditions</a></div>
-							</div>
-						</div>
-						<div class="right">
-							<div class="booknow">
-								<? if ($item->daily) { ?>
-								<a href="<?=site_url("tours/booking/".$item->alias)?>">BOOKING NOW</a>
-								<? } else { ?>
-								<a href="<?=site_url("tours/vietnam/{$item->city_alias}/{$item->category_alias}/{$item->alias}/availability")?>">BOOKING NOW</a>
-								<? } ?>
-							</div>
-						</div>
-						<div class="clr"></div>
-					</div>
-					<div class="clr"></div>
-				</div>
-			</div>
-			
-			<div class="tour-view-div"></div>
-			
-			<h2 class="summary-name">DESCRIPTION</h2>
-			<div class="tour-view-highlight">
-				<?=$item->summary?>
-			</div>
-			
-			<div class="tour-view-div"></div>
-			
-			<h2 class="summary-name">HIGHLIGHTS</h2>
-			<div class="tour-view-highlight">
-				<?=$item->highlight?>
-			</div>
-			
-			<div class="tour-view-div"></div>
-			
-			<h2 id="itinerary" class="summary-name">
-				ITINERARY
-				<span class="right">
-					<a class="expand-all">Expand All</a><a class="close-all">Close All</a>
-				</span>
-			</h2>
-			<div class="tour-view-itineraries">
-				<?	
-					$i = 0;
-					foreach ($itineraries as $itinerary) {
-				?>
-					<div class="tour-view-itinerary">
-						<div class="less-detail less-detail-<?=$itinerary->id?>" style="<?=(!$i?"display:none":"")?>">
-							<div class="itinerary-header" onclick="$('.less-detail-<?=$itinerary->id?>').hide(); $('.more-detail-<?=$itinerary->id?>').show('fade')">
-								<div class="left itinerary-title">
-									<?=$itinerary->title?>
-								</div>
-								<div class="right collapsed">
-									<a title="View more"></a>
-								</div>
-								<div class="clr"></div>
-							</div>
-						</div>
-						<div class="more-detail more-detail-<?=$itinerary->id?>" style="<?=(!$i?"display:block":"")?>">
-							<div class="itinerary-header" onclick="$('.more-detail-<?=$itinerary->id?>').hide(); $('.less-detail-<?=$itinerary->id?>').show('fade')">
-								<div class="left itinerary-title">
-									<?=$itinerary->title?>
-								</div>
-								<div class="right expanded">
-									<a title="View less"></a>
-								</div>
-								<div class="clr"></div>
-							</div>
-							<div class="itinerary-content">
-								<div class="left thumbnail">
-									<img alt="" src="<?=$itinerary->file_path?>">
-								</div>
-								<div class="itinerary-detail"><?=$itinerary->detail?></div>
-							</div>
-							<div class="clr"></div>
-						</div>
-					</div>
-				<?
-						$i++;
-					}
-				?>
-			</div>
-			
-			<div class="tour-view-div"></div>
-			
-			<? if ($item->daily) { ?>
-			<h2 class="summary-name">TOUR RATES</h2>
-			<div class="tour-view-rates">
-				<div class="con_pri_inc">
-					<div class="pricetable">
-						<table width="100%" cellspacing="0" cellpadding="0" border="0">
-							<tbody>
-								<tr class="th">
-									<td class="first">Group Size</td>
-									<? foreach ($arrduration as $duration => $val) { ?>
-									<td><?=$arrduration_txt[$val]?></td>
-									<? } ?>
-									<? if ($hassupplement) { ?>
-									<td>Single Supp'</td>
-									<? } ?>
-								</tr>
-								<tr>
-									<?
-										$irow = 0;
-										foreach ($arrtype as $type => $valtype) {
-											if ($irow++) {
-												echo '</tr><tr>';
-											}
-											if ($valtype == 'Basic') {
-												$rate_tooltip = "[Tour][Detail][Price][Basic]";
-											}elseif ($valtype == 'Standard') {
-												$rate_tooltip = "[Tour][Detail][Price][Standard]";
-											}elseif ($valtype == 'Comfort') {
-												$rate_tooltip = "[Tour][Detail][Price][Comfort]";
-											}
-											echo '<td class="first">'.$valtype." <img class='help' alt='' src='".IMG_URL."tour\\icon\\info.png' title='{$this->m_tooltip->load($rate_tooltip)->content}' rel='tooltip'></td>";
-											foreach ($arrduration as $duration => $valduration) {
-												$hasrate = 0;
-												foreach ($rates as $rate) {
-													if ($rate->name == $valtype && $rate->group_size == $valduration && !$rate->single_supplement) {
-														echo '<td>$'.number_format($rate->price,0,'.',',').'</td>';
-														$hasrate = 1;
-														break;
-													}
-												}
-												if (!$hasrate) {
-													echo '<td>-</td>';
-												}
-											}
-											if ($hassupplement) {
-												$hasrate = 0;
-												foreach ($rates as $rate) {
-													if ($rate->name == $valtype && $rate->single_supplement) {
-														echo '<td>+ $'.number_format($rate->price,0,'.',',').'</td>';
-														$hasrate = 1;
-														break;
-													}
-												}
-												if (!$hasrate) {
-													echo '<td>-</td>';
-												}
-											}
-										}
-									?>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<ul class="price-type">
-						<li><span>Children under 5 years old: free of charge <?=(($item->duration > 1)?"(share bed with adult)":"")?></span></li>
-						<li><span>Children from 5 to 10 years old: 70% of adult's rate <?=(($item->duration > 1)?"(extra bed, max. 02 childs/room)":"")?></span></li>
-						<li><span>Children above 10 years old: full adult's rate</span></li>
+							$arrcategory = explode(';', $item->categories);
+							$tour_categories = array();
+							for ($i=0; $i < sizeof($arrcategory); $i++) {
+								$tour_categories[] = $this->m_tour_category->load($arrcategory[$i]);
+							}
+							$catsize = sizeof($tour_categories);
+							if ($catsize > 1) {
+								?>
+								<li>
+								<span class="summary-label">Themes</span>:
+								<?
+								for ($i=0; $i < $catsize; $i++) {
+									$category = $tour_categories[$i];
+									echo $category->name;
+									if ($i < $catsize-1) {
+										echo ', ';
+									}
+								}
+								?>
+								</li>
+								<?
+							}
+						?>
 					</ul>
 				</div>
-				<div class="clr"></div>
-			</div>
-			
-			<div class="tour-view-div"></div>
-			<? } ?>
-			
-			<h2 class="summary-name">WHAT'S INCLUDED</h2>
-			<div>
-				<div class="price_nohid">
-					<?=$item->price_inclusion?>
+				<div class="col-md-1">
+					<ul class="social-link">
+						<li><img src="<?=IMG_URL?>blue-favorite.png" alt=""><a href="">Save</a></li>
+						<li><img src="<?=IMG_URL?>blue-email.png" alt=""><a href="">Email</a></li>
+						<li><img src="<?=IMG_URL?>blue-print.png" alt=""><a href="">Print</a></li>
+						<li><div class="fb-like" data-href="https://www.facebook.com/travelovietnam.services" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div></li>
+						<li><a href="https://twitter.com/share" data-count="none" class="twitter-share-button" data-lang="en">Tweet</a></li>
+						<li><div class="g-plus" data-action="share" data-annotation="none"></div></li>
+					</ul>
+					<!-- end .social-link -->
 				</div>
 			</div>
-			
-			<div class="tour-view-div"></div>
-			
-			<h2 class="summary-name">WHAT'S EXCLUDED</h2>
-			<div>
-				<div class="price_exc">
-					<?=$item->price_exclusion?>
+			<!-- end #tour-summary -->
+
+			<div id="tour-info" class="row">
+				<div class="col-md-4">
+					<div id="tour-booking-panel">
+						<?if ($item->best_deal) :?>
+							<img src="<?=IMG_URL?>best-seller.png" alt="" id="best-seller">
+						<?endif?>
+						
+						<div class="tour-rate">
+							<h4>From USD</h4>
+							<h1><span>$</span><?=$item->price?></h1>
+							<a href="">View Tour Rates ></a>
+						</div>
+						<!-- end .tour-rate -->
+						<div class="booking-content">
+							<div>
+								<h5><span>1</span>Select Travel Date</h5>
+								<p>	
+									<input type="text" name="departure-date" id="departure-date" placeholder="mm/dd/yyyy">
+									<img src="<?=IMG_URL?>calendar-icon.png" alt="" class="select-date">
+								</p>
+								<h3>FLEXIBLE DATE GUARANTEE</h3>	
+							</div>
+							<div>
+								<h5><span>2</span>Total Travellers</h5>
+								<p>
+									<label for="adult">Adult <span>(Age 10+)</span></label>
+									<select name="adult" id="adult">
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3</option>
+										<option value="">4</option>
+										<option value="">5</option>
+										<option value="">6</option>
+										<option value="">7</option>
+										<option value="">8</option>
+										<option value="">9</option>
+										<option value="">10</option>
+										<option value="">11</option>
+										<option value="">12</option>
+										<option value="">13</option>
+										<option value="">14</option>
+										<option value="">15</option>
+										<option value="">16</option>
+										<option value="">17</option>
+										<option value="">18</option>
+										<option value="">19</option>
+										<option value="">20</option>		
+									</select>	
+								</p>
+								<p>
+									<label for="adult">Child <span>(Age 2-9)</span></label>
+									<select name="adult" id="adult">
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3</option>
+										<option value="">4</option>
+										<option value="">5</option>
+										<option value="">6</option>
+										<option value="">7</option>
+										<option value="">8</option>
+										<option value="">9</option>
+										<option value="">10</option>
+										<option value="">11</option>
+										<option value="">12</option>
+										<option value="">13</option>
+										<option value="">14</option>
+										<option value="">15</option>
+										<option value="">16</option>
+										<option value="">17</option>
+										<option value="">18</option>
+										<option value="">19</option>
+										<option value="">20</option>
+									</select>	
+								</p>
+							</div>
+							<a href="" id="book-now">BOOK NOW!</a>
+						</div>
+						<!-- end .booking-content -->
+					</div>
+					<!-- end #tour-booking panel -->
+
+					<div id="tour-inclusion-panel">
+						<h1>Inclusion</h1>
+						<?=$item->price_inclusion?>
+					</div>
+					<!-- end #tour-inclusion-panel -->
+
+					<div id="tour-exclusion-panel">
+						<h1>Exclusion</h1>
+						<?=$item->price_exclusion?>
+					</div>
+					<!-- end #tour-exclusion-panel -->
+				</div>
+
+				<div class="col-md-8">
+					<div id="tour-detail">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs" role="tablist">
+							<li class="active"><a href="#tour-infomation" role="tab" data-toggle="tab">Tour Information</a></li>
+							<li><a href="#important-note" role="tab" data-toggle="tab">Important Note</a></li>
+						</ul>
+
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div class="tab-pane active" id="tour-infomation">
+								<div class="title">
+									<img src="/vietnamamazing.com/template/images/highlight-icon.png" alt="">
+									<h2 class="title">Highlight</h2>
+								</div>
+								<div class="content">
+									<?=$item->highlight?>
+								</div>
+
+								<div class="title">
+									<img src="/vietnamamazing.com/template/images/expect-icon.png" alt="">
+									<h2 class="title">What You Can Expect</h2>
+								</div>
+								<div class="content">
+									
+								</div>
+							</div>
+							<!-- end #tour-infomation -->
+							<div class="tab-pane" id="important-note">
+								<div id="tour-view-detailed">
+									<h2 class="summary-name">TABLE OF CONTENTS</h2>
+									<div class="tour-view-tripnote-table-content">
+										<ul>
+											<? foreach ($tripnotes as $tripnote) { ?>
+											<li>
+												<a title="" href="javascript:void(0)" onclick="$('.less-detail-<?=$tripnote->id?>').hide(); $('.more-detail-<?=$tripnote->id?>').show('fade'); $('html, body').animate({ scrollTop: $('.more-detail-<?=$tripnote->id?>').offset().top });"><?=$tripnote->title?></a>
+											</li>
+											<? } ?>
+										</ul>
+										<div class="clr"></div>
+									</div>
+									
+									<div class="tour-view-div"></div>
+									
+									<h2 class="summary-name">
+										DETAILS
+										<span class="pull-right">
+											<a class="expand-all">Expand All</a><a class="close-all">Close All</a>
+										</span>
+									</h2>
+									<div class="tour-view-tripnotes">
+										<? foreach ($tripnotes as $tripnote) { ?>
+											<div class="tour-view-tripnote">
+												<div class="less-detail less-detail-<?=$tripnote->id?>">
+													<div class="tripnote-header" onclick="$('.less-detail-<?=$tripnote->id?>').hide(); $('.more-detail-<?=$tripnote->id?>').show('fade')">
+														<div class="pull-left tripnote-title">
+															<?=$tripnote->title?>
+														</div>
+														<div class="pull-right collapsed">
+															<a title="View more"></a>
+														</div>
+														<div class="clr"></div>
+													</div>
+												</div>
+												<div class="more-detail more-detail-<?=$tripnote->id?>">
+													<div class="tripnote-header" onclick="$('.more-detail-<?=$tripnote->id?>').hide(); $('.less-detail-<?=$tripnote->id?>').show('fade')">
+														<div class="pull-left tripnote-title">
+															<?=$tripnote->title?>
+														</div>
+														<div class="pull-right expanded">
+															<a title="View less"></a>
+														</div>
+														<div class="clr"></div>
+													</div>
+													<div class="tripnote-content">
+														<div class="tripnote-detail"><?=$tripnote->content?></div>
+													</div>
+													<div class="clr"></div>
+												</div>
+											</div>
+										<? } ?>
+									</div>
+								</div>
+							</div>
+							<!-- end #important-note -->
+						</div>
+						<!-- end .tab-content -->
+						<?if(!empty($reviews)) :?>
+						<div id="tour-review">
+							<div class="title">
+								<img src="/vietnamamazing.com/template/images/reviews-icon.png" alt="">
+								<h2 class="title">Traveller Reviews</h2>
+								<a href="<?=site_url("tours/vietnam/{$item->city_alias}/{$item->category_alias}/{$item->alias}/reviews")?>" class="pull-right view-all">See all review ></a>
+							</div>
+
+							<ul>
+							<?
+							$default = "mm";
+							$size = 52;
+							foreach($reviews as $review) {
+								//option for gavatar
+								$grav_url = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $review->email ) ) ) . "?d=" . urlencode( $default ) . "&s=" . $size;
+							?>
+								<li>
+									<div class="pull-left user-info">
+										<div class="img-circle">
+											<img alt="<?=$review->author?>" src="<?=$grav_url?>" class="img-circle">	
+										</div>
+										<p class="user-name">
+											<span><?=$review->author?></span><br/>
+										</p>
+									</div>
+									<!-- end .user-info -->
+									<div class="review-content">
+										<p style="font-size:13px">
+											<img height="15" src="<?=IMG_URL?>tour/icon/star<?=$review->rating?>.png" alt="rating">&nbsp;<?=date('F Y', strtotime($review->created_date))?>
+										</p>
+										<div class="main-content">
+											<p>
+												<?=$review->content?>
+											</p>
+										</div>
+									</div>
+									<!-- end .review-content -->
+								</li>
+							<? } ?>
+							</ul>
+						</div>
+						<!-- end #tour-review -->
+						<?endif?>
+					</div>
+					<!-- end #tour-detail -->
 				</div>
 			</div>
+			<!-- end #tour-info -->
 		</div>
-		<div>
-			<? require_once(APPPATH."views/module/tour/quick_finder.php"); ?>
-		</div>
-	</div>
-	<div class="right">
-		<div id="tour-view-nav">
-			<ul>
-				<li>
-					<a class="overview-selected" title="" href="">OVERVIEW</a>
-				</li>
-				<? if (!$item->daily) { ?>
-				<li>
-					<a class="availability" title="" href="<?=site_url("tours/vietnam/{$item->city_alias}/{$item->category_alias}/{$item->alias}/availability")?>">CHECK AVAILABILITY</a>
-				</li>
-				<? } ?>
-				<li>
-					<a class="tripnote" title="" href="<?=site_url("tours/vietnam/{$item->city_alias}/{$item->category_alias}/{$item->alias}/tripnote")?>">TRIP NOTES</a>
-				</li>
-				<? if (!empty($item->brochure)) { ?>
-				<li>
-					<a class="download" title="" href="<?=$item->brochure?>">DOWNLOAD BROCHURE</a>
-				</li>
-				<? } ?>
-			</ul>
-		</div>
-		<div id="tour-view-review">
-			<div class="content">
-				<p class="p1">Travellers who experienced this trip have rated it... <a title="" href="<?=site_url("tours/vietnam/{$item->city_alias}/{$item->category_alias}/{$item->alias}/reviews")?>">See reviews</a></p>
-				<p class="rating"><img alt="" src="<?=IMG_URL?>tour/icon/star<?=$avg_rating?>.png"></p>
-				<p class="p2">99% of travellers say they would travel with us again.</p>
+		<!-- end .col-md-9 -->
+		<div id="right" class="col-md-3">
+			<? require_once(APPPATH."views/module/need_help.php"); ?>
+			<? require_once(APPPATH."views/module/insider_guide.php"); ?>
+			<? require_once(APPPATH."views/module/tour/things_to_do.php"); ?>
+			<? require_once(APPPATH."views/module/tour/top_attractions.php"); ?>
+			<div id="brochure">
+				<h1>Destination</h1>
+				<h3>Brochure</h3>
+				<img style="width:100%" src="<?=IMG_URL?>brochure.jpg" alt="Brochure">
+				<a href="">Download <span class="glyphicon glyphicon-download"></span></a>
 			</div>
+			<!-- end #brochure -->
 		</div>
-		<div id="tour-view-map">
-			<a class="view-map" href="<?=$item->map?>">
-				<img alt="" src="<?=$item->map?>">
-				<div class="map-sub-title">Click to enlarge</div>
-			</a>
-		</div>
-		<? require_once(APPPATH."views/module/tour/customize.php"); ?>
-		<? require_once(APPPATH."views/module/tour/related_tours.php"); ?>
-		<div id="tour-view-shortlist-loader"></div>
 	</div>
-	<div class="clr"></div>
 </div>
+<!-- end .container -->
+
+<input id="tour_id" type="hidden" value="<?=$item->id?>">
 
 <script type="text/javascript">
 	$(document).ready(function() {
@@ -525,5 +521,65 @@
 			$('.tour-validity .tour-validity-label').css('width','90px');
 			$('.tour-destination .tour-destination-label').css('width','90px');
 		}
+	});
+
+</script>
+
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1417412731849527&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script>
+!function(d,s,id){
+	var js,fjs=d.getElementsByTagName(s)[0];
+	if(!d.getElementById(id)){
+		js=d.createElement(s);
+		js.id=id;
+		js.src="https://platform.twitter.com/widgets.js";
+		fjs.parentNode.insertBefore(js,fjs);
+	}
+}(document,"script","twitter-wjs");
+</script>
+
+<script type="text/javascript">
+  (function() {
+	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	po.src = 'https://apis.google.com/js/platform.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<script>
+	$(document).ready(function() {
+		function initFlexModal() {
+			$('#carousel').flexslider({
+				animation: "slide",
+				controlNav: false,
+				animationLoop: false,
+				slideshow: false,
+				itemWidth: 180,
+				itemMargin: 5,
+				asNavFor: '#flex'
+			});
+
+			$('#flex').flexslider({
+				animation: 'slide',
+				controlNav: false,
+				animationLoop: false,
+				slideshow: false,
+				sync: "#carousel"
+			});
+		};
+
+		$('#myModal').on('shown.bs.modal', function () {
+			initFlexModal();
+		})
 	});
 </script>

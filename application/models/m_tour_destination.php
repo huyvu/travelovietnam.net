@@ -21,7 +21,11 @@ class M_Tour_Destination extends CI_Model
 		if (!is_null($active)) {
 			$sql .= " AND active = '{$active}'";
 		}
-		$sql .= " ORDER BY name ASC";
+		if (!is_null($limit)) {
+			$sql .= " LIMIT {$limit}";
+			$sql .= " OFFSET {$offset}";
+		}
+		// $sql .= " ORDER BY name ASC";
 		$query = $this->db->query($sql);
 		return $query->result();
 	}

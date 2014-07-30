@@ -13,87 +13,6 @@
 	.subiz_offline { cursor: pointer; display: block; height: 32px; width: 166px; line-height: 32px; text-indent: -99999px; background: url(template/images/tour/icon/support-offline.png) no-repeat scroll left center transparent; }
 </style>
 
-<style type="text/css">
-	.carousel-inner .item {
-		padding: 10px;
-		width: 290px;
-		overflow: hidden;
-		box-sizing: content-box;
-	}
-
-	.carousel-inner .item .reviews {
-		margin-bottom: 10px;
-	}
-
-	.carousel-inner .item .tourname {
-		margin: 10px 0 5px 0;
-	}
-
-	.carousel-inner .item .tourname a {
-		color: #0072BC;
-		font-size: 16px;
-		font-weight: normal;
-		line-height: 18px;
-	}
-
-	.carousel-inner .item .tourname a:hover {
-		text-decoration: none;
-	}
-
-	.carousel-inner .item .reviews img {
-		margin-top: 2px;
-		display: block;
-		float: left;
-		margin-right: 10px;
-	}
-
-	.carousel-inner .item .reviews a {
-		text-decoration: none;
-		font-size: 12px;
-		color: #2075c2;
-		border-bottom: 2px solid #c0d2e9;
-	}
-
-	.carousel-inner .item .detail {
-		color: #535353;
-	}
-	
-	.carousel-inner .item {
-		background: #eaeaea;
-	}
-
-	#vietnam-tour .col-md-4 {
-		padding: 0 15px 0 0;
-	}
-
-	#vietnam-tour .col-md-4:nth-child(3) {
-		padding: 0 0 0 30px;
-	}
-
-	.carousel-indicators {
-		position: relative;
-		margin-top: 30px;
-	}
-
-	.carousel-indicators li {
-		background: #cacaca;
-		height: 12px;
-		width: 12px;
-		border: none;
-		margin: 0;
-	}
-
-	.carousel-indicators .active {
-		background: #e36f22;
-	}
-
-	#home.container {
-		padding: 0;
-	}
-
-</style>
-
-
 <script type="text/javascript">
 	$(document).ready(function() {
 		$("#tour-fromcity").change(function() {
@@ -217,7 +136,7 @@
 					<div class="item <?=($active)?'active':''?>">
 						<div class="thumb">
 							<a title="<?=$tour->name?>" >
-								<img width="290" alt="<?=$tour->name?>" src="/vietnamamazing.com/files/upload/image/banh-trang-thit-heo.jpg">
+								<img width="290" alt="<?=$tour->name?>" src="<?="http://localhost/vietnamamazing.com".$tour->thumbnail?>">
 							</a>
 						</div>
 						<div class="detail">

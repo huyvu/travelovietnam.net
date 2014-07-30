@@ -1,3 +1,69 @@
+#login .login-title {
+	font-weight: bold;
+	height: 48px;
+	margin: 16px 0 26px 0;
+}
+#login .login-title .col-md-12 {
+	padding: 0;
+}
+#login .login-title .col-md-12 > .col-md-4 {
+	color: #e36f22;
+	line-height: 44px;
+	border-bottom: 4px solid #e36f22;
+	padding-left: 0px;
+}
+#login .login-title .col-md-8 {
+	padding: 0px;
+	border-bottom: 4px solid #e36f22;
+}
+#login .login-title .col-md-8 div {
+	padding-right: 0;
+	color: #aaaaaa;
+	background: #ededed;
+	line-height: 44px;
+	border-right: 1px solid #fff;
+}
+#login .login-title .col-md-8 div.active {
+	background: #e36f22;
+	color: #fff;
+}
+#login .login-title .col-md-8 a:last-child > div {
+	border: none;
+}
+.register-content .sign-in {
+	padding-left: 0;
+}
+.register-content .sign-in h3 {
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.register-content .sign-in .form-title {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 12px;
+}
+.register-content .sign-in .form-subtitle {
+	font-size: 14px;
+	color: #0072bc;
+	font-weight: bold;
+}
+.login-account ul {
+	padding: 0;
+}
+.register-content .sign-in .or {
+	font-size: 18px;
+	font-weight: bold;
+	color: #0072bc;
+
+}
+.hd-pd-left {
+	padding-left: 0px !important;
+}
+
+
+
+
 .maincontent{
 	width: 980px;
 	margin: 0 auto;
@@ -78,6 +144,7 @@
 	float: left;
 	margin: -1px;
 	width: 100%;
+	list-style: none;
 }
 .menumember ul.topmenu li {
 	border-left: 1px solid #B0CADB;
@@ -160,7 +227,7 @@
 	 text-align: right;
 }
 .login-account ul{
-	width: 222px;
+	
 }
 .login-account ul li{
 	display: inline-block;
@@ -342,6 +409,7 @@ span.title-tb {
 .collapse {
 	background: url("../images/member/minus.jpg") no-repeat scroll 0 0 transparent;
 	padding-left: 20px;
+	display: block;
 }
 
 td.right-text{
@@ -386,28 +454,29 @@ td.error-message{
 }
 
 #sign-in{
-	width: 247px;
-	padding-right: 40px;
+	width: 300px;
+	padding: 0 40px 0 0;
 	float: left;
 	border-right: #e0e0d3 1px solid;
 	position: relative;
 }
 
 .register-form{
-	width: 363px;
+	width: 406px;
 	padding-left: 28px;
 	float: left;
 	text-align: right;
 }
 
-#benefit{
+#benefit > div{
 	width: 248px;
-	float: right;
+	/*float: right;*/
 	padding-left: 15px;
 	border: 1px solid #DDDDDD;
-	background: #fff url('../images/member/benefit-ad.png') no-repeat top right;
+	background: #ededed url('../images/member/benefit-ad.png') no-repeat right 25px;
+	overflow: hidden;
 }
-#benefit h1{
+#benefit > div h1{
 	font-size: 30px;
 	background:none;
 	text-transform: uppercase;
@@ -417,7 +486,7 @@ td.error-message{
 	color: #ff9900;
 	margin-bottom:10px;
 }
-#benefit h3{
+#benefit > div h3{
 	font-size: 12px;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -426,14 +495,21 @@ td.error-message{
 	margin-right: 15px;
 	border-bottom: 1px solid #ff9900
 }
-#benefit ul{
-	margin-top: 25px;
+#benefit > div ul{
+	margin: 25px 0 0 0;
+	list-style: none;
+	padding: 0;
 }
-#benefit ul li{
+#benefit > div ul li{
 	font-size: 12px;
 	background: url('../images/member/check.gif') no-repeat left 3px;
 	padding:5px 20px;
 	margin-bottom: 15px;
+}
+
+#benefit > p {
+	font-size: 12px;
+	margin-top: 12px;
 }
 
 #sign-in h2,#sign-in h3{
@@ -472,8 +548,24 @@ td.error-message{
 	margin-bottom:14px;
 	width: 245px;
 }
+
+.login-form ul.attention {
+	list-style: none;
+	padding: 0;
+	font-size: 12px;
+}
+
+.login-form ul.attention li img {
+	margin-right: 10px;
+	vertical-align: baseline;
+}
+
+.login-form ul.attention li {
+	margin-bottom: 10px;
+}
+
 .login-form input[type=text],.login-form input[type=password]{
-	width: 234px;
+	width: 100%;
 	-webkit-border-radius: 3px ;  
 	-moz-border-radius: 3px ;  
 	-o-border-radius: 3px;
@@ -501,7 +593,7 @@ h2.edit-profile-title{
 #btnLogin, #btnSignUp, #btnReset, #btnUpdatePassword, .btnstep{
 	float: right;
 	text-transform: uppercase;
-	background: #009daf url('../images/member/double-arrow.png') no-repeat;
+	background: #e36f22 url('../images/member/double-arrow.png') no-repeat;
 	background-position: 90% 50%;
 	color: #FFFFFF;
 	cursor: pointer;
@@ -509,7 +601,7 @@ h2.edit-profile-title{
 	font-size: 14px;
 	font-weight: bold;
 	line-height: normal;
-	padding: 6px 25px 6px 10px;
+	padding: 10px 25px 10px 13px;
 	text-align: center;
 	text-decoration: none;
 	vertical-align: middle;
@@ -524,7 +616,7 @@ h2.edit-profile-title{
 }
 
 #btnLogin:hover, #btnSignUp:hover, #btnReset:hover, #btnUpdatePassword:hover, .btnstep:hover{
-	background: #ff8800 url('../images/member/double-arrow.png') no-repeat;
+	background: #03599b url('../images/member/double-arrow.png') no-repeat;
 	background-position: 90% 50%;
 }
 
@@ -606,6 +698,7 @@ p.required-message{
 	text-align: left !important;
 	padding-left: 12px;
 	line-height: 1.5em;
+	font-size: 12px;
 }
 
 p.required-message i{

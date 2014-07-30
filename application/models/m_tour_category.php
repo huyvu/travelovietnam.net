@@ -44,6 +44,21 @@ class M_Tour_Category extends CI_Model
 		$query = $this->db->query($sql);
 		return $query->result();
 	}
+
+	function getCategoryByDestination ($detination=NULL) 
+	{
+		$sql1 = "SELECT category_id FROM tv_tour WHERE depart_from = {$detination} OR going_to = {$detination} AND active = 1 GROUP BY category_id";
+		$query = $this->db->query($sql1);
+		$result = $query->result();
+		$array = array();
+		foreach ($result as $item) {
+			array_push($array, $item->category_id);
+		}
+
+		$sql2 = "SELECT id,name FROM tv_tour_category WHERE id IN (".implode(",", $array).") AND active = 1";
+		$query = $this->db->query($sql2);
+		return $query->result();
+	}
 	
 	function add($data)
 	{
